@@ -1,0 +1,5 @@
+com.example.hospitalmanagement.test.app-core-1.6.1-0 C:\Users\Asus\.gradle\caches\8.10.2\transforms\29d6ab3cae2c2a227ee602a51cddafdf\transformed\core-1.6.1\res
+com.example.hospitalmanagement.test.app-androidTest-1 C:\Users\Asus\hospitalmanagement4\app\build\generated\res\resValues\androidTest\debug
+com.example.hospitalmanagement.test.app-mergeDebugAndroidTestResources-2 C:\Users\Asus\hospitalmanagement4\app\build\intermediates\incremental\debugAndroidTest\mergeDebugAndroidTestResources\merged.dir
+com.example.hospitalmanagement.test.app-mergeDebugAndroidTestResources-3 C:\Users\Asus\hospitalmanagement4\app\build\intermediates\incremental\debugAndroidTest\mergeDebugAndroidTestResources\stripped.dir
+com.example.hospitalmanagement.test.app-debugAndroidTest-4 C:\Users\Asus\hospitalmanagement4\app\build\intermediates\merged_res\debugAndroidTest\mergeDebugAndroidTestResources

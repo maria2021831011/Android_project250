@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="roles_array">
+        <item>patient</item>
+        <item>doctor</item>
+        <item>admin</item>
+    </string-array>
+    <color name="black">#FF000000</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="gray">#808080</color>
+    <color name="holo_red_light">#8FE7C2</color>
+    <color name="purple_500">#6200EE</color>
+    <color name="red">#FF0000</color>
+    <color name="white">#FFFFFFFF</color>
+    <item name="appLogo" type="id"/>
+    <item name="approveBtn" type="id"/>
+    <item name="btnBookAppointment" type="id"/>
+    <item name="btnLogin" type="id"/>
+    <item name="btnManagePatients" type="id"/>
+    <item name="btnRegister" type="id"/>
+    <item name="btnViewAppointments" type="id"/>
+    <item name="createPrescriptionBtn" type="id"/>
+    <item name="dateEditText" type="id"/>
+    <item name="dateText" type="id"/>
+    <item name="doctorNameText" type="id"/>
+    <item name="doctorSpinner" type="id"/>
+    <item name="emailEditText" type="id"/>
+    <item name="etConfirmPassword" type="id"/>
+    <item name="etEmail" type="id"/>
+    <item name="etPassword" type="id"/>
+    <item name="etUsername" type="id"/>
+    <item name="healthStatusBtn" type="id"/>
+    <item name="homeBtn" type="id"/>
+    <item name="ivTogglePassword" type="id"/>
+    <item name="logoutBtn" type="id"/>
+    <item name="main" type="id"/>
+    <item name="manageAppointmentsBtn" type="id"/>
+    <item name="manageUsersBtn" type="id"/>
+    <item name="messageDoctorBtn" type="id"/>
+    <item name="passwordEditText" type="id"/>
+    <item name="patientNameEditText" type="id"/>
+    <item name="patientNameText" type="id"/>
+    <item name="patientRecordsBtn" type="id"/>
+    <item name="radioAdmin" type="id"/>
+    <item name="radioDoctor" type="id"/>
+    <item name="radioPatient" type="id"/>
+    <item name="registerButton" type="id"/>
+    <item name="rejectBtn" type="id"/>
+    <item name="roleGroup" type="id"/>
+    <item name="spinnerRole" type="id"/>
+    <item name="statusText" type="id"/>
+    <item name="tvForgotPassword" type="id"/>
+    <item name="tvLogin" type="id"/>
+    <item name="tvRegister" type="id"/>
+    <item name="tvTitle" type="id"/>
+    <item name="usernameEditText" type="id"/>
+    <item name="viewAppointmentsBtn" type="id"/>
+    <item name="viewReportsBtn" type="id"/>
+    <item name="welcomeText" type="id"/>
+    <string name="already_have_an_account_login">Already have an account? Login</string>
+    <string name="app_logo">App Logo</string>
+    <string name="app_name">Hospital Management</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="create_appointment">Create Appointment</string>
+    <string name="editable_text_field_for_username">Editable text field for username</string>
+    <string name="email_address">Email Address</string>
+    <string name="enter_email">Enter Email</string>
+    <string name="enter_password">Enter Password</string>
+    <string name="enter_username">Enter Username</string>
+    <string name="enter_your_email">Enter your email</string>
+    <string name="enter_your_username">Enter your username</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="gcm_defaultSenderId" translatable="false">302830649069</string>
+    <string name="google_api_key" translatable="false">AIzaSyB42o8lBNT9Fs1Kh65-7x7dzULKwJw_G6Y</string>
+    <string name="google_app_id" translatable="false">1:302830649069:android:c3bcfe1b0ad0e96d2ad6e4</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyB42o8lBNT9Fs1Kh65-7x7dzULKwJw_G6Y</string>
+    <string name="google_storage_bucket" translatable="false">hospital-management-b6c40.firebasestorage.app</string>
+    <string name="home">Home</string>
+    <string name="hospital_management">Hospital Management</string>
+    <string name="login">Login</string>
+    <string name="logout">Logout</string>
+    <string name="manage_appointments">Manage Appointments</string>
+    <string name="manage_users">Manage Users</string>
+    <string name="new_user_register_here">New User? Register Here</string>
+    <string name="password"/>
+    <string name="password_input_field">Password input field</string>
+    <string name="project_id" translatable="false">hospital-management-b6c40</string>
+    <string name="register">Register</string>
+    <string name="reset_password">Reset Password</string>
+    <string name="send_reset_link">Send Reset Link</string>
+    <string name="todo">Toggle Password Visibility</string>
+    <string name="username"/>
+    <string name="view_reports">View Reports</string>
+    <string name="welcome_admin">Welcome Admin</string>
+    <style name="Base.Theme.HospitalManagement" parent="Theme.Material3.DayNight.NoActionBar">
+        
+        
+    </style>
+    <style name="Theme.HospitalManagement" parent="Base.Theme.HospitalManagement"/>
+</resources>

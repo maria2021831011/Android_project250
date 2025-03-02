@@ -1,0 +1,3 @@
+com.example.hospitalmanagement.test
+style WhiteBackgroundDialogTheme
+style WhiteBackgroundTheme

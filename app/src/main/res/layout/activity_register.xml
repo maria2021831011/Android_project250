@@ -1,0 +1,116 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+
+    android:background="@drawable/reg">
+    <!-- Title-->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:gravity="center"
+        android:text="Create an Account"
+        android:textColor="#EDD719"
+        android:textSize="24sp" />
+    <!-- Username-->
+    <EditText
+        android:id="@+id/etUsername"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:background="@color/red"
+        android:backgroundTint="#E9A5A5"
+        android:hint="Username"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        android:padding="10dp"
+        android:textColor="#333333"
+        android:textColorHint="#888888"
+        android:textSize="16sp" />
+    <!-- Email-->
+    <EditText
+        android:id="@+id/etEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:background="@color/holo_red_light"
+        android:backgroundTint="#FFEB3B"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:minHeight="48dp"
+        android:padding="10dp"
+        android:textColor="#333333"
+        android:textColorHint="#888888"
+        android:textSize="16sp" />
+
+    <!-- Password-->
+    <EditText
+        android:id="@+id/etPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:background="@color/holo_red_light"
+        android:backgroundTint="#D8A4E2"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:minHeight="48dp"
+        android:padding="10dp"
+        android:textColor="#333333"
+        android:textColorHint="#888888"
+        android:textSize="16sp" />
+
+    <!-- Confirm Password -->
+    <EditText
+        android:id="@+id/etConfirmPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:background="@color/holo_red_light"
+        android:backgroundTint="#FF5722"
+        android:hint="Confirm Password"
+        android:inputType="textPassword"
+        android:minHeight="48dp"
+        android:padding="15dp"
+        android:textColor="#333333"
+        android:textColorHint="#888888"
+        android:textSize="16sp" />
+
+    <Spinner
+        android:id="@+id/spinnerRole"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/roles_array"
+        android:background="@color/holo_red_light"
+        android:padding="10dp"
+        android:layout_marginBottom="20dp"
+        android:minHeight="48dp"/>
+
+    <!-- Register Button -->
+    <Button
+        android:id="@+id/btnRegister"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Register"
+        android:textColor="#ffffff"
+        android:background="@color/purple_500"
+        android:textSize="18sp"
+        android:layout_marginBottom="15dp"
+        android:padding="12dp"/>
+
+    <!-- Login Link -->
+    <TextView
+        android:id="@+id/tvLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="97dp"
+
+        android:clickable="true"
+        android:focusable="true"
+        android:gravity="center"
+        android:minHeight="48dp"
+        android:text="Already have an account? Login"
+        android:textColor="@color/white"
+        android:textSize="20sp" />
+
+</LinearLayout>
