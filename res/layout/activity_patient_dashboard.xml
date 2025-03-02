@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/patient"
+    tools:context=".PatientDashboardActivity">
+    <!-- ScrollView-->
+<ScrollView
+android:layout_width="0dp"
+android:layout_height="0dp"
+android:fillViewport="true"
+app:layout_constraintTop_toTopOf="parent"
+app:layout_constraintBottom_toTopOf="@id/logoutBtn"
+app:layout_constraintStart_toStartOf="parent"
+app:layout_constraintEnd_toEndOf="parent">
+
+<!-- Content Inside-->
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:ignore="ExtraText">
+
+    <!-- Home Button -->
+
+    <Button
+        android:id="@+id/homeBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:layout_marginBottom="16dp"
+        android:text="@string/home" />
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent" />
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/dashboard_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:textColor="@color/black"
+        tools:listitem="@layout/item_dashboard_option" />
+    <!-- Hospital Management-->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:gravity="center"
+        android:text="Welcome to Hospital Management System"
+        android:textColor="@color/black"
+        android:textSize="24sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="Our hospital management system is designed to provide a seamless and efficient experience for patients, doctors, and administrators. With a focus on innovation and user-friendly design, our system ensures that all healthcare processes are streamlined, from appointment scheduling to medical record management. Patients can easily book appointments, view prescriptions, and access their medical history, while doctors can manage their schedules and communicate with patients effectively. Administrators can oversee hospital operations, ensuring smooth workflows and optimal resource utilization."
+        android:textColor="@color/black"
+        android:textSize="16sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="Features:"
+        android:textColor="@color/black"
+        android:textSize="20sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="1. **Book Appointments**: Patients can schedule appointments with their preferred doctors at their convenience.\n
+2. **View Prescriptions**: Access and download prescriptions anytime, anywhere.\n
+3. **Access Medical Records**: Securely view and manage your medical history, including lab reports and treatment details.\n
+4. **Upload Documents**: Easily upload and share important medical documents with your healthcare provider.\n
+5. **Edit Profile**: Update your personal information and preferences to keep your profile current.\n
+6. **Doctor Communication**: Communicate directly with your doctor for follow-ups and consultations.\n
+7. **Blog and Health Tips**: Stay informed with the latest health tips and articles from medical experts.\n
+8. **Contact Us**: Reach out to our support team for any queries or assistance.\n
+9. **About Developer**: Learn more about the team behind this innovative system."
+        android:textColor="@color/black"
+        android:textSize="16sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="Our mission is to revolutionize healthcare management by leveraging technology to improve patient care, enhance doctor-patient interactions, and optimize hospital operations. Whether you are a patient seeking convenient healthcare services or a healthcare provider aiming to deliver exceptional care, our system is here to support you every step of the way. Join us in creating a healthier future for all."
+        android:textColor="@color/black"
+        android:textSize="16sp" />
+
+</LinearLayout>
+</ScrollView>
+    <!-- Logout-->
+<Button
+android:id="@+id/logoutBtn"
+android:layout_width="0dp"
+android:layout_height="wrap_content"
+android:text="Log Out"
+android:backgroundTint="@color/red"
+android:textColor="@color/white"
+android:layout_margin="16dp"
+app:layout_constraintBottom_toBottomOf="parent"
+app:layout_constraintStart_toStartOf="parent"
+app:layout_constraintEnd_toEndOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
