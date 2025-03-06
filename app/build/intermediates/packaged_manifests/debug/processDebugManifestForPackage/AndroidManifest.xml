@@ -35,6 +35,10 @@
         android:testOnly="true"
         android:theme="@style/Theme.HospitalManagement" >
         <activity
+            android:name="com.example.hospitalmanagement.AssistantDashboardActivity"
+            android:exported="true"
+            android:theme="@style/Theme.HospitalManagement" />
+        <activity
             android:name="com.example.hospitalmanagement.DashboardAdapter"
             android:exported="false" />
         <activity
@@ -218,10 +222,6 @@
             android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION"
             android:visibleToInstantApps="true" />
 
-        <uses-library
-            android:name="android.ext.adservices"
-            android:required="false" />
-
         <provider
             android:name="androidx.startup.InitializationProvider"
             android:authorities="com.example.hospitalmanagement.androidx-startup"
@@ -236,6 +236,16 @@
                 android:name="androidx.profileinstaller.ProfileInstallerInitializer"
                 android:value="androidx.startup" />
         </provider>
+
+        <uses-library
+            android:name="android.ext.adservices"
+            android:required="false" />
+        <uses-library
+            android:name="androidx.window.extensions"
+            android:required="false" />
+        <uses-library
+            android:name="androidx.window.sidecar"
+            android:required="false" />
 
         <activity
             android:name="com.google.android.gms.common.api.GoogleApiActivity"

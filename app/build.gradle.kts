@@ -31,6 +31,9 @@ android {
         sourceCompatibility = JavaVersion.VERSION_11
         targetCompatibility = JavaVersion.VERSION_11
     }
+    buildFeatures {
+        viewBinding = true
+    }
 }
 
 dependencies {
@@ -47,7 +50,9 @@ dependencies {
     implementation(libs.com.google.firebase.firebase.database)  // Firebase Realtime Database
     implementation(libs.com.google.firebase.firebase.firestore)
     implementation(libs.firebase.inappmessaging)
-    implementation(libs.recyclerview)  // Firebase Firestore
+    implementation(libs.recyclerview)
+    implementation(libs.navigation.fragment)
+    implementation(libs.navigation.ui)  // Firebase Firestore
 
     // Testing libraries
     testImplementation(libs.junit)                // Unit testing framework

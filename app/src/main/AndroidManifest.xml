@@ -14,6 +14,10 @@
         android:theme="@style/Theme.HospitalManagement"
         tools:ignore="ExtraText">
         <activity
+            android:name=".AssistantDashboardActivity"
+            android:exported="true"
+            android:theme="@style/Theme.HospitalManagement" />
+        <activity
             android:name=".DashboardAdapter"
             android:exported="false"
             tools:ignore="Instantiatable" />

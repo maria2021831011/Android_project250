@@ -1,0 +1,94 @@
+[
+    {
+        "merged": "com.example.hospitalmanagement.app-mergeDebugResources-54:/layout/activity_doctor_view_appointments.xml",
+        "source": "com.example.hospitalmanagement.app-main-57:/layout/activity_doctor_view_appointments.xml"
+    },
+    {
+        "merged": "com.example.hospitalmanagement.app-mergeDebugResources-54:/layout/activity_view_appointments.xml",
+        "source": "com.example.hospitalmanagement.app-main-57:/layout/activity_view_appointments.xml"
+    },
+    {
+        "merged": "com.example.hospitalmanagement.app-mergeDebugResources-54:/layout/activity_register.xml",
+        "source": "com.example.hospitalmanagement.app-main-57:/layout/activity_register.xml"
+    },
+    {
+        "merged": "com.example.hospitalmanagement.app-mergeDebugResources-54:/layout/activity_patient_dashboard.xml",
+        "source": "com.example.hospitalmanagement.app-main-57:/layout/activity_patient_dashboard.xml"
+    },
+    {
+        "merged": "com.example.hospitalmanagement.app-mergeDebugResources-54:/layout/activity_doctor_manage_profile.xml",
+        "source": "com.example.hospitalmanagement.app-main-57:/layout/activity_doctor_manage_profile.xml"
+    },
+    {
+        "merged": "com.example.hospitalmanagement.app-mergeDebugResources-54:/layout/activity_manage_appoinments.xml",
+        "source": "com.example.hospitalmanagement.app-main-57:/layout/activity_manage_appoinments.xml"
+    },
+    {
+        "merged": "com.example.hospitalmanagement.app-mergeDebugResources-54:/layout/activity_admin_dashboard2.xml",
+        "source": "com.example.hospitalmanagement.app-main-57:/layout/activity_admin_dashboard2.xml"
+    },
+    {
+        "merged": "com.example.hospitalmanagement.app-mergeDebugResources-54:/layout/activity_doctor_dashboard.xml",
+        "source": "com.example.hospitalmanagement.app-main-57:/layout/activity_doctor_dashboard.xml"
+    },
+    {
+        "merged": "com.example.hospitalmanagement.app-mergeDebugResources-54:/layout/activity_create_appointment.xml",
+        "source": "com.example.hospitalmanagement.app-main-57:/layout/activity_create_appointment.xml"
+    },
+    {
+        "merged": "com.example.hospitalmanagement.app-mergeDebugResources-54:/layout/activity_doctor_manage_schedule.xml",
+        "source": "com.example.hospitalmanagement.app-main-57:/layout/activity_doctor_manage_schedule.xml"
+    },
+    {
+        "merged": "com.example.hospitalmanagement.app-mergeDebugResources-54:/layout/activity_book_appointments.xml",
+        "source": "com.example.hospitalmanagement.app-main-57:/layout/activity_book_appointments.xml"
+    },
+    {
+        "merged": "com.example.hospitalmanagement.app-mergeDebugResources-54:/layout/fragment_first.xml",
+        "source": "com.example.hospitalmanagement.app-main-57:/layout/fragment_first.xml"
+    },
+    {
+        "merged": "com.example.hospitalmanagement.app-mergeDebugResources-54:/layout/fragment_second.xml",
+        "source": "com.example.hospitalmanagement.app-main-57:/layout/fragment_second.xml"
+    },
+    {
+        "merged": "com.example.hospitalmanagement.app-mergeDebugResources-54:/layout/content_assistant_dashboard.xml",
+        "source": "com.example.hospitalmanagement.app-main-57:/layout/content_assistant_dashboard.xml"
+    },
+    {
+        "merged": "com.example.hospitalmanagement.app-mergeDebugResources-54:/layout/activity_dashboard_adapter.xml",
+        "source": "com.example.hospitalmanagement.app-main-57:/layout/activity_dashboard_adapter.xml"
+    },
+    {
+        "merged": "com.example.hospitalmanagement.app-mergeDebugResources-54:/layout/activity_manage_users.xml",
+        "source": "com.example.hospitalmanagement.app-main-57:/layout/activity_manage_users.xml"
+    },
+    {
+        "merged": "com.example.hospitalmanagement.app-mergeDebugResources-54:/layout/activity_view_reports.xml",
+        "source": "com.example.hospitalmanagement.app-main-57:/layout/activity_view_reports.xml"
+    },
+    {
+        "merged": "com.example.hospitalmanagement.app-mergeDebugResources-54:/layout/activity_manage_profile.xml",
+        "source": "com.example.hospitalmanagement.app-main-57:/layout/activity_manage_profile.xml"
+    },
+    {
+        "merged": "com.example.hospitalmanagement.app-mergeDebugResources-54:/layout/item_dashboard_option.xml",
+        "source": "com.example.hospitalmanagement.app-main-57:/layout/item_dashboard_option.xml"
+    },
+    {
+        "merged": "com.example.hospitalmanagement.app-mergeDebugResources-54:/layout/activity_login.xml",
+        "source": "com.example.hospitalmanagement.app-main-57:/layout/activity_login.xml"
+    },
+    {
+        "merged": "com.example.hospitalmanagement.app-mergeDebugResources-54:/layout/activity_forgot_password.xml",
+        "source": "com.example.hospitalmanagement.app-main-57:/layout/activity_forgot_password.xml"
+    },
+    {
+        "merged": "com.example.hospitalmanagement.app-mergeDebugResources-54:/layout/activity_dashboard.xml",
+        "source": "com.example.hospitalmanagement.app-main-57:/layout/activity_dashboard.xml"
+    },
+    {
+        "merged": "com.example.hospitalmanagement.app-mergeDebugResources-54:/layout/activity_assistant_dashboard.xml",
+        "source": "com.example.hospitalmanagement.app-main-57:/layout/activity_assistant_dashboard.xml"
+    }
+]

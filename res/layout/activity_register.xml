@@ -3,79 +3,77 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:padding="20dp"
+    android:background="@android:color/white">
 
-    android:background="@drawable/reg">
-    <!-- Title-->
+    <!-- Title or Heading -->
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="20dp"
-        android:gravity="center"
         android:text="Create an Account"
-        android:textColor="#EDD719"
-        android:textSize="24sp" />
-    <!-- Username-->
+        android:textSize="24sp"
+        android:textColor="#333333"
+        android:layout_marginBottom="20dp"
+        android:gravity="center" />
+
+    <!-- Username Field -->
     <EditText
         android:id="@+id/etUsername"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="15dp"
-        android:background="@color/red"
-        android:backgroundTint="#E9A5A5"
         android:hint="Username"
         android:inputType="textPersonName"
-        android:minHeight="48dp"
+        android:textSize="16sp"
+        android:background="@color/holo_red_light"
         android:padding="10dp"
+        android:layout_marginBottom="15dp"
         android:textColor="#333333"
         android:textColorHint="#888888"
-        android:textSize="16sp" />
-    <!-- Email-->
+        android:minHeight="48dp" />
+
+    <!-- Email Field -->
     <EditText
         android:id="@+id/etEmail"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="15dp"
-        android:background="@color/holo_red_light"
-        android:backgroundTint="#FFEB3B"
         android:hint="Email"
         android:inputType="textEmailAddress"
-        android:minHeight="48dp"
+        android:textSize="16sp"
+        android:background="@color/holo_red_light"
         android:padding="10dp"
+        android:layout_marginBottom="15dp"
         android:textColor="#333333"
         android:textColorHint="#888888"
-        android:textSize="16sp" />
+        android:minHeight="48dp" />
 
-    <!-- Password-->
+    <!-- Password Field -->
     <EditText
         android:id="@+id/etPassword"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="15dp"
-        android:background="@color/holo_red_light"
-        android:backgroundTint="#D8A4E2"
         android:hint="Password"
         android:inputType="textPassword"
-        android:minHeight="48dp"
+        android:textSize="16sp"
+        android:background="@color/holo_red_light"
         android:padding="10dp"
+        android:layout_marginBottom="15dp"
         android:textColor="#333333"
         android:textColorHint="#888888"
-        android:textSize="16sp" />
+        android:minHeight="48dp" />
 
-    <!-- Confirm Password -->
+    <!-- Confirm Password Field -->
     <EditText
         android:id="@+id/etConfirmPassword"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="20dp"
-        android:background="@color/holo_red_light"
-        android:backgroundTint="#FF5722"
         android:hint="Confirm Password"
         android:inputType="textPassword"
-        android:minHeight="48dp"
+        android:textSize="16sp"
+        android:background="@color/holo_red_light"
         android:padding="15dp"
+        android:layout_marginBottom="20dp"
         android:textColor="#333333"
         android:textColorHint="#888888"
-        android:textSize="16sp" />
+        android:minHeight="48dp" />  <!-- Set minimum height to 48dp to meet the touch target requirement -->
 
     <Spinner
         android:id="@+id/spinnerRole"
@@ -85,7 +83,7 @@
         android:background="@color/holo_red_light"
         android:padding="10dp"
         android:layout_marginBottom="20dp"
-        android:minHeight="48dp"/>
+        android:minHeight="48dp" />
 
     <!-- Register Button -->
     <Button
@@ -97,20 +95,19 @@
         android:background="@color/purple_500"
         android:textSize="18sp"
         android:layout_marginBottom="15dp"
-        android:padding="12dp"/>
+        android:padding="12dp" />
 
     <!-- Login Link -->
     <TextView
         android:id="@+id/tvLogin"
         android:layout_width="wrap_content"
-        android:layout_height="97dp"
-
+        android:layout_height="wrap_content"
+        android:text="Already have an account? Login"
+        android:textColor="@android:color/holo_blue_dark"
+        android:textSize="16sp"
+        android:gravity="center"
         android:clickable="true"
         android:focusable="true"
-        android:gravity="center"
-        android:minHeight="48dp"
-        android:text="Already have an account? Login"
-        android:textColor="@color/white"
-        android:textSize="20sp" />
+        android:minHeight="48dp" />
 
 </LinearLayout>

@@ -77,12 +77,13 @@ public class LoginActivity extends AppCompatActivity {//app ar screen
         if (password.isEmpty()) {
             passwordEditText.setError("Password is required");
             passwordEditText.requestFocus();
-            return;}
+            return;
+        }
         //firebase login
         mAuth.signInWithEmailAndPassword(email, password)
                 .addOnCompleteListener(task -> {
                     if (task.isSuccessful()) {
-                        // login successful,retrieve user role firestore
+                        // Login successful, retrieve user role from Firestore
                         FirebaseUser user = mAuth.getCurrentUser();
                         if (user != null) {
                             db.collection("users").document(user.getUid())
@@ -103,10 +104,13 @@ public class LoginActivity extends AppCompatActivity {//app ar screen
                                                         case "admin":
                                                             startActivity(new Intent(LoginActivity.this, AdminDashboardActivity.class));
                                                             break;
+                                                        case "assistant": // Add case for assistant
+                                                            startActivity(new Intent(LoginActivity.this, AssistantDashboardActivity.class));
+                                                            break;
                                                         default:
                                                             Toast.makeText(LoginActivity.this, "Unknown role", Toast.LENGTH_SHORT).show();
                                                     }
-                                                    finish(); // Close login part
+                                                    finish(); // Close the login activity
                                                 }
                                             } else {
                                                 Toast.makeText(LoginActivity.this, "User data not found", Toast.LENGTH_SHORT).show();
@@ -117,9 +121,8 @@ public class LoginActivity extends AppCompatActivity {//app ar screen
                                     });
                         }
                     } else {
-                        //login fail hole
+                        // Login failed
                         Toast.makeText(LoginActivity.this, "Login failed: " + task.getException().getMessage(), Toast.LENGTH_SHORT).show();
                     }
                 });
-    }
-}
+    }}

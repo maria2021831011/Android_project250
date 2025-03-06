@@ -103,6 +103,9 @@ public class LoginActivity extends AppCompatActivity {//app ar screen
                                                         case "admin":
                                                             startActivity(new Intent(LoginActivity.this, AdminDashboardActivity.class));
                                                             break;
+                                                        case "assistant":
+                                                            startActivity(new Intent(LoginActivity.this, AssistantDashboardActivity.class));
+                                                            break;
                                                         default:
                                                             Toast.makeText(LoginActivity.this, "Unknown role", Toast.LENGTH_SHORT).show();
                                                     }

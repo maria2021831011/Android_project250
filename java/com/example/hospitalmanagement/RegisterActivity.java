@@ -69,6 +69,8 @@ public class RegisterActivity extends AppCompatActivity {
                                 role = "doctor";
                             } else if (email.endsWith("@admin.com")) {
                                 role = "admin";
+                            }else if (email.endsWith("@assistant.com")) {
+                                role = "assistant";
                             }
                             //user object
                             Map<String, Object> userData = new HashMap<>();
