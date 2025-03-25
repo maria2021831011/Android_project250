@@ -1,24 +1,61 @@
 package com.example.hospitalmanagement;
 
-import android.os.Bundle;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.TextView;
+import androidx.recyclerview.widget.RecyclerView;
+import java.util.List;
 
-import androidx.activity.EdgeToEdge;
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.graphics.Insets;
-import androidx.core.view.ViewCompat;
-import androidx.core.view.WindowInsetsCompat;
+public class DoctorAdapter extends RecyclerView.Adapter<DoctorAdapter.DoctorViewHolder> {
 
-public class DoctorAdapter extends AppCompatActivity {
+    public interface OnDoctorClickListener {
+        void onDoctorClick(Doctor doctor);
+    }
+
+    private List<Doctor> doctorList;
+    private OnDoctorClickListener listener;
+    private int selectedPosition = RecyclerView.NO_POSITION;
+
+    public DoctorAdapter(List<Doctor> doctorList, OnDoctorClickListener listener) {
+        this.doctorList = doctorList;
+        this.listener = listener;
+    }
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        EdgeToEdge.enable(this);
-        setContentView(R.layout.activity_doctor_adapter2);
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
-            Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
-            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
-            return insets;
+    public DoctorViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
+        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.item_doctor, parent, false);
+        return new DoctorViewHolder(view);
+    }
+
+    @Override
+    public void onBindViewHolder(DoctorViewHolder holder, int position) {
+        Doctor doctor = doctorList.get(position);
+        holder.nameTextView.setText(doctor.getUsername());
+        String roleText = doctor.getRole().equalsIgnoreCase("assistant") ? "Assistant" : "Doctor";
+        holder.nameTextView.setText(doctor.getUsername() + " (" + roleText + ")");
+
+        holder.itemView.setSelected(selectedPosition == position);
+        holder.itemView.setOnClickListener(v -> {
+            notifyItemChanged(selectedPosition);
+            selectedPosition = holder.getAdapterPosition();
+            notifyItemChanged(selectedPosition);
+            listener.onDoctorClick(doctor);
         });
     }
+
+    @Override
+    public int getItemCount() {
+        return doctorList.size();
+    }
+
+    public static class DoctorViewHolder extends RecyclerView.ViewHolder {
+        TextView nameTextView;
+
+        public DoctorViewHolder(View itemView) {
+            super(itemView);
+            nameTextView = itemView.findViewById(R.id.doctorNameTextView);
+        }
+    }
 }
+

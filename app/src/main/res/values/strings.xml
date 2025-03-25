@@ -18,12 +18,12 @@
     <string name="password" />
     <string name="username" />
 
-        <string-array name="roles_array">
-            <item>patient</item>
-            <item>doctor</item>
-            <item>admin</item>
-            <item>assistant</item>
-        </string-array>
+    <string-array name="roles_array">
+        <item>patient</item>
+        <item>doctor</item>
+        <item>admin</item>
+        <item>assistant</item>
+    </string-array>
 
     <string name="editable_text_field_for_username">Editable text field for username</string>
     <string name="password_input_field">Password input field</string>
@@ -79,4 +79,33 @@
         vestibulum. Fusce dictum libero quis erat maximus, vitae volutpat diam dignissim.
     </string>
     <string name="welcome_assistant">Welcome, Assistant!</string>
+    <string name="select_slot">Select Slot</string>
+    <string name="approve">Approve</string>
+    <string name="reject">Reject</string>
+    <string name="complete">Complete</string>
+    <string name="appointment_details">Appointment Details</string>
+    <string name="pending_appointments">Pending Appointments</string>
+    <string name="time_10_00_am">Time: 10:00 AM</string>
+    <string name="patient_john_doe">Patient: John Doe</string>
+    <string name="request_appointment">Request Appointment</string>
+    <string name="book_appointment" />
+    <string name="appointments">Appointments</string>
+    <string name="enter_your_phone_number">Enter your phone number</string>
+    <string name="select_date">Select Date</string>
+    <string name="confirm_appointment">Confirm Appointment</string>
+    <string name="completed_appointments">complete Appointment</string>
+    <string name="completed_appointments_description" />
+    <string name="notify_assistant">Notify Assistant</string>
+    <string name="enter_busy_reason">Enter busy reason</string>
+    <string name="enter_busy_time_e_g_2_00_pm_3_00_pm">Enter busy time (e.g., 2:00 PM - 3:00 PM)</string>
+    <string name="enter_phone_number">Enter Phone Number</string>
+    <string name="send_status_to_patient">Send Status to Patient</string>
+    <string name="prescribe_medicine" />
+    <string name="view_prescription" />
+    <string name="dosage">Dosage</string>
+    <string name="medicine">Medicine</string>
+    <string name="_1_dr_ayesha_rahman_nspecialization_cardiologist_ncontact_880_1712_345678_nemail_ayesha_rahman_hospital_com_nassistant_mehedi_hasan_nassistant_contact_880_1712_987654_nassistant_email_mehedi_hasan_hospital_com_n_n">1. Dr. Ayesha Rahman\nSpecialization: Cardiologist\nContact: +880 1712 345678\nEmail: ayesha.rahman@hospital.com\nAssistant: Mehedi Hasan\nAssistant Contact: +880 1712 987654\nAssistant Email: mehedi.hasan@hospital.com\n\n</string>
+    <string name="doctor_details_text" />
+    <string name="view_status">View Status</string>
+
 </resources>

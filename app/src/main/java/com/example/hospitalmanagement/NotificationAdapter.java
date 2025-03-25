@@ -1,24 +1,46 @@
 package com.example.hospitalmanagement;
 
-import android.os.Bundle;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.TextView;
+import androidx.recyclerview.widget.RecyclerView;
+import java.util.List;
 
-import androidx.activity.EdgeToEdge;
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.graphics.Insets;
-import androidx.core.view.ViewCompat;
-import androidx.core.view.WindowInsetsCompat;
+public class NotificationAdapter extends RecyclerView.Adapter<NotificationAdapter.NotificationViewHolder> {
 
-public class NotificationAdapter extends AppCompatActivity {
+    private List<Notification> notificationList;
+
+    public NotificationAdapter(List<Notification> notificationList) {
+        this.notificationList = notificationList;
+    }
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        EdgeToEdge.enable(this);
-        setContentView(R.layout.activity_notification_adapter);
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
-            Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
-            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
-            return insets;
-        });
+    public NotificationViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
+        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.notiification_item, parent, false);
+        return new NotificationViewHolder(view);
+    }
+
+    @Override
+    public void onBindViewHolder(NotificationViewHolder holder, int position) {
+        Notification notification = notificationList.get(position);
+        holder.titleTextView.setText(notification.getTitle());
+        holder.messageTextView.setText(notification.getMessage());
+    }
+
+    @Override
+    public int getItemCount() {
+        return notificationList.size();
+    }
+
+    public static class NotificationViewHolder extends RecyclerView.ViewHolder {
+
+        TextView titleTextView, messageTextView;
+
+        public NotificationViewHolder(View itemView) {
+            super(itemView);
+            titleTextView = itemView.findViewById(R.id.notificationTitle);
+            messageTextView = itemView.findViewById(R.id.notificationMessage);
+        }
     }
 }

@@ -5,6 +5,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.constraintlayout.widget.ConstraintLayout;
@@ -22,10 +23,14 @@ public final class ActivityAdminDashboard2Binding implements ViewBinding {
   @NonNull
   public final Button logoutBtn;
 
+  @NonNull
+  public final TextView monthlyReportText;
+
   private ActivityAdminDashboard2Binding(@NonNull ConstraintLayout rootView,
-      @NonNull Button logoutBtn) {
+      @NonNull Button logoutBtn, @NonNull TextView monthlyReportText) {
     this.rootView = rootView;
     this.logoutBtn = logoutBtn;
+    this.monthlyReportText = monthlyReportText;
   }
 
   @Override
@@ -61,7 +66,14 @@ public final class ActivityAdminDashboard2Binding implements ViewBinding {
         break missingId;
       }
 
-      return new ActivityAdminDashboard2Binding((ConstraintLayout) rootView, logoutBtn);
+      id = R.id.monthlyReportText;
+      TextView monthlyReportText = ViewBindings.findChildViewById(rootView, id);
+      if (monthlyReportText == null) {
+        break missingId;
+      }
+
+      return new ActivityAdminDashboard2Binding((ConstraintLayout) rootView, logoutBtn,
+          monthlyReportText);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

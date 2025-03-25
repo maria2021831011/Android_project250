@@ -4,7 +4,10 @@ package com.example.hospitalmanagement.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.RelativeLayout;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.LinearLayout;
+import android.widget.ScrollView;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -17,20 +20,51 @@ import java.lang.String;
 
 public final class ActivityAssistantDashboardBinding implements ViewBinding {
   @NonNull
-  private final RelativeLayout rootView;
+  private final ScrollView rootView;
+
+  @NonNull
+  public final Button appointmentsBtn;
+
+  @NonNull
+  public final LinearLayout appointmentsContainer;
+
+  @NonNull
+  public final TextView busyStatusTextView;
+
+  @NonNull
+  public final Button logoutButton;
+
+  @NonNull
+  public final EditText messageInput;
+
+  @NonNull
+  public final Button sendMessageButton;
+
+  @NonNull
+  public final Button toggleBusyStatusButton;
 
   @NonNull
   public final TextView welcomeText;
 
-  private ActivityAssistantDashboardBinding(@NonNull RelativeLayout rootView,
-      @NonNull TextView welcomeText) {
+  private ActivityAssistantDashboardBinding(@NonNull ScrollView rootView,
+      @NonNull Button appointmentsBtn, @NonNull LinearLayout appointmentsContainer,
+      @NonNull TextView busyStatusTextView, @NonNull Button logoutButton,
+      @NonNull EditText messageInput, @NonNull Button sendMessageButton,
+      @NonNull Button toggleBusyStatusButton, @NonNull TextView welcomeText) {
     this.rootView = rootView;
+    this.appointmentsBtn = appointmentsBtn;
+    this.appointmentsContainer = appointmentsContainer;
+    this.busyStatusTextView = busyStatusTextView;
+    this.logoutButton = logoutButton;
+    this.messageInput = messageInput;
+    this.sendMessageButton = sendMessageButton;
+    this.toggleBusyStatusButton = toggleBusyStatusButton;
     this.welcomeText = welcomeText;
   }
 
   @Override
   @NonNull
-  public RelativeLayout getRoot() {
+  public ScrollView getRoot() {
     return rootView;
   }
 
@@ -55,13 +89,57 @@ public final class ActivityAssistantDashboardBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
+      id = R.id.appointmentsBtn;
+      Button appointmentsBtn = ViewBindings.findChildViewById(rootView, id);
+      if (appointmentsBtn == null) {
+        break missingId;
+      }
+
+      id = R.id.appointmentsContainer;
+      LinearLayout appointmentsContainer = ViewBindings.findChildViewById(rootView, id);
+      if (appointmentsContainer == null) {
+        break missingId;
+      }
+
+      id = R.id.busyStatusTextView;
+      TextView busyStatusTextView = ViewBindings.findChildViewById(rootView, id);
+      if (busyStatusTextView == null) {
+        break missingId;
+      }
+
+      id = R.id.logoutButton;
+      Button logoutButton = ViewBindings.findChildViewById(rootView, id);
+      if (logoutButton == null) {
+        break missingId;
+      }
+
+      id = R.id.messageInput;
+      EditText messageInput = ViewBindings.findChildViewById(rootView, id);
+      if (messageInput == null) {
+        break missingId;
+      }
+
+      id = R.id.sendMessageButton;
+      Button sendMessageButton = ViewBindings.findChildViewById(rootView, id);
+      if (sendMessageButton == null) {
+        break missingId;
+      }
+
+      id = R.id.toggleBusyStatusButton;
+      Button toggleBusyStatusButton = ViewBindings.findChildViewById(rootView, id);
+      if (toggleBusyStatusButton == null) {
+        break missingId;
+      }
+
       id = R.id.welcomeText;
       TextView welcomeText = ViewBindings.findChildViewById(rootView, id);
       if (welcomeText == null) {
         break missingId;
       }
 
-      return new ActivityAssistantDashboardBinding((RelativeLayout) rootView, welcomeText);
+      return new ActivityAssistantDashboardBinding((ScrollView) rootView, appointmentsBtn,
+          appointmentsContainer, busyStatusTextView, logoutButton, messageInput, sendMessageButton,
+          toggleBusyStatusButton, welcomeText);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

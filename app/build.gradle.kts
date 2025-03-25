@@ -1,3 +1,5 @@
+
+
 plugins {
     alias(libs.plugins.android.application)  // Android plugin for the app
     id("com.google.gms.google-services")      // Google services plugin (Firebase)
@@ -52,7 +54,10 @@ dependencies {
     implementation(libs.firebase.inappmessaging)
     implementation(libs.recyclerview)
     implementation(libs.navigation.fragment)
-    implementation(libs.navigation.ui)  // Firebase Firestore
+    implementation(libs.navigation.ui)
+    implementation(libs.firebase.messaging)  // Firebase Firestore
+
+
 
     // Testing libraries
     testImplementation(libs.junit)                // Unit testing framework

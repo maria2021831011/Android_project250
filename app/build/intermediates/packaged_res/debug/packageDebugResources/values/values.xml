@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string-array name="roles_array">
-            <item>patient</item>
-            <item>doctor</item>
-            <item>admin</item>
-            <item>assistant</item>
-        </string-array>
+        <item>patient</item>
+        <item>doctor</item>
+        <item>admin</item>
+        <item>assistant</item>
+    </string-array>
     <color name="black">#FF000000</color>
     <color name="colorAccent">#FF4081</color>
     <color name="colorPrimary">#3F51B5</color>
@@ -17,17 +17,35 @@
     <color name="white">#FFFFFFFF</color>
     <dimen name="fab_margin">16dp</dimen>
     <item name="appLogo" type="id"/>
+    <item name="appointmentButton" type="id"/>
+    <item name="appointmentCard" type="id"/>
+    <item name="appointmentRecyclerView" type="id"/>
     <item name="approveBtn" type="id"/>
+    <item name="bookAppointmentButton" type="id"/>
     <item name="btnBookAppointment" type="id"/>
+    <item name="btnCallHelpline" type="id"/>
+    <item name="btnComplete" type="id"/>
     <item name="btnLogin" type="id"/>
     <item name="btnManagePatients" type="id"/>
     <item name="btnRegister" type="id"/>
     <item name="btnViewAppointments" type="id"/>
+    <item name="busyStatusButton" type="id"/>
+    <item name="busyTextEditText" type="id"/>
+    <item name="busyTimeEditText" type="id"/>
+    <item name="completedAppointmentButton" type="id"/>
+    <item name="completedAppointmentCard" type="id"/>
+    <item name="confirmButton" type="id"/>
     <item name="createPrescriptionBtn" type="id"/>
+    <item name="dashboard_recycler_view" type="id"/>
     <item name="dateEditText" type="id"/>
     <item name="dateText" type="id"/>
+    <item name="doctorDetailsCard" type="id"/>
+    <item name="doctorDetailsScrollView" type="id"/>
+    <item name="doctorDetailsText" type="id"/>
     <item name="doctorNameText" type="id"/>
+    <item name="doctorRecyclerView" type="id"/>
     <item name="doctorSpinner" type="id"/>
+    <item name="doctorsRecyclerView" type="id"/>
     <item name="emailEditText" type="id"/>
     <item name="etConfirmPassword" type="id"/>
     <item name="etEmail" type="id"/>
@@ -41,18 +59,25 @@
     <item name="manageAppointmentsBtn" type="id"/>
     <item name="manageUsersBtn" type="id"/>
     <item name="messageDoctorBtn" type="id"/>
+    <item name="notifyAssistantButton" type="id"/>
     <item name="passwordEditText" type="id"/>
     <item name="patientNameEditText" type="id"/>
     <item name="patientNameText" type="id"/>
     <item name="patientRecordsBtn" type="id"/>
+    <item name="pendingAppointmentButton" type="id"/>
+    <item name="pendingAppointmentCard" type="id"/>
     <item name="radioAdmin" type="id"/>
     <item name="radioDoctor" type="id"/>
     <item name="radioPatient" type="id"/>
     <item name="registerButton" type="id"/>
     <item name="rejectBtn" type="id"/>
     <item name="roleGroup" type="id"/>
+    <item name="selectDateButton" type="id"/>
+    <item name="showNotificationsButton" type="id"/>
+    <item name="slotSpinner" type="id"/>
     <item name="spinnerRole" type="id"/>
     <item name="statusText" type="id"/>
+    <item name="tvAppointmentDetails" type="id"/>
     <item name="tvForgotPassword" type="id"/>
     <item name="tvLogin" type="id"/>
     <item name="tvRegister" type="id"/>
@@ -61,17 +86,33 @@
     <item name="viewAppointmentsBtn" type="id"/>
     <item name="viewReportsBtn" type="id"/>
     <item name="welcomeText" type="id"/>
+    <item name="welcomeTextView" type="id"/>
+    <string name="_1_dr_ayesha_rahman_nspecialization_cardiologist_ncontact_880_1712_345678_nemail_ayesha_rahman_hospital_com_nassistant_mehedi_hasan_nassistant_contact_880_1712_987654_nassistant_email_mehedi_hasan_hospital_com_n_n">1. Dr. Ayesha Rahman\nSpecialization: Cardiologist\nContact: +880 1712 345678\nEmail: ayesha.rahman@hospital.com\nAssistant: Mehedi Hasan\nAssistant Contact: +880 1712 987654\nAssistant Email: mehedi.hasan@hospital.com\n\n</string>
     <string name="already_have_an_account_login">Already have an account? Login</string>
     <string name="app_logo">App Logo</string>
     <string name="app_name">Hospital Management</string>
+    <string name="appointment_details">Appointment Details</string>
+    <string name="appointments">Appointments</string>
+    <string name="approve">Approve</string>
+    <string name="book_appointment"/>
+    <string name="complete">Complete</string>
+    <string name="completed_appointments">complete Appointment</string>
+    <string name="completed_appointments_description"/>
+    <string name="confirm_appointment">Confirm Appointment</string>
     <string name="confirm_password">Confirm Password</string>
     <string name="create_appointment">Create Appointment</string>
+    <string name="doctor_details_text"/>
+    <string name="dosage">Dosage</string>
     <string name="editable_text_field_for_username">Editable text field for username</string>
     <string name="email_address">Email Address</string>
+    <string name="enter_busy_reason">Enter busy reason</string>
+    <string name="enter_busy_time_e_g_2_00_pm_3_00_pm">Enter busy time (e.g., 2:00 PM - 3:00 PM)</string>
     <string name="enter_email">Enter Email</string>
     <string name="enter_password">Enter Password</string>
+    <string name="enter_phone_number">Enter Phone Number</string>
     <string name="enter_username">Enter Username</string>
     <string name="enter_your_email">Enter your email</string>
+    <string name="enter_your_phone_number">Enter your phone number</string>
     <string name="enter_your_username">Enter your username</string>
     <string name="first_fragment_label">First Fragment</string>
     <string name="forgot_password">Forgot Password?</string>
@@ -122,19 +163,32 @@
     </string>
     <string name="manage_appointments">Manage Appointments</string>
     <string name="manage_users">Manage Users</string>
+    <string name="medicine">Medicine</string>
     <string name="new_user_register_here">New User? Register Here</string>
     <string name="next">Next</string>
+    <string name="notify_assistant">Notify Assistant</string>
     <string name="password"/>
     <string name="password_input_field">Password input field</string>
+    <string name="patient_john_doe">Patient: John Doe</string>
+    <string name="pending_appointments">Pending Appointments</string>
+    <string name="prescribe_medicine"/>
     <string name="previous">Previous</string>
     <string name="project_id" translatable="false">hospital-management-b6c40</string>
     <string name="register">Register</string>
+    <string name="reject">Reject</string>
+    <string name="request_appointment">Request Appointment</string>
     <string name="reset_password">Reset Password</string>
     <string name="second_fragment_label">Second Fragment</string>
+    <string name="select_date">Select Date</string>
+    <string name="select_slot">Select Slot</string>
     <string name="send_reset_link">Send Reset Link</string>
+    <string name="send_status_to_patient">Send Status to Patient</string>
+    <string name="time_10_00_am">Time: 10:00 AM</string>
     <string name="todo">Toggle Password Visibility</string>
     <string name="username"/>
+    <string name="view_prescription"/>
     <string name="view_reports">View Reports</string>
+    <string name="view_status">View Status</string>
     <string name="welcome_admin">Welcome Admin</string>
     <string name="welcome_assistant">Welcome, Assistant!</string>
     <style name="Base.Theme.HospitalManagement" parent="Theme.Material3.DayNight.NoActionBar">

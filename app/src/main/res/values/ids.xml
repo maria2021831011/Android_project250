@@ -45,4 +45,30 @@
     <item name="doctorSpinner" type="id" />
     <item name="patientNameEditText" type="id" />
     <item name="homeBtn" type="id" />
+    <item name="welcomeTextView" type="id" />
+    <item name="doctorsRecyclerView" type="id" />
+    <item name="tvAppointmentDetails" type="id" />
+    <item name="btnComplete" type="id" />
+    <item name="dashboard_recycler_view" type="id" />
+    <item name="confirmButton" type="id" />
+    <item name="selectDateButton" type="id" />
+    <item name="slotSpinner" type="id" />
+    <item name="pendingAppointmentButton" type="id" />
+    <item name="appointmentButton" type="id" />
+    <item name="pendingAppointmentCard" type="id" />
+    <item name="appointmentRecyclerView" type="id" />
+    <item name="notifyAssistantButton" type="id" />
+    <item name="busyTimeEditText" type="id" />
+    <item name="completedAppointmentCard" type="id" />
+    <item name="appointmentCard" type="id" />
+    <item name="completedAppointmentButton" type="id" />
+    <item name="busyTextEditText" type="id" />
+    <item name="bookAppointmentButton" type="id" />
+    <item name="doctorRecyclerView" type="id" />
+    <item name="busyStatusButton" type="id" />
+    <item name="showNotificationsButton" type="id" />
+    <item name="doctorDetailsCard" type="id" />
+    <item name="doctorDetailsScrollView" type="id" />
+    <item name="doctorDetailsText" type="id" />
+    <item name="btnCallHelpline" type="id" />
 </resources>
