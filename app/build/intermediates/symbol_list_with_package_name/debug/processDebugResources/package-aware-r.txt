@@ -1426,6 +1426,7 @@ color background_floating_material_light
 color background_material_dark
 color background_material_light
 color black
+color blue_700
 color bright_foreground_disabled_material_dark
 color bright_foreground_disabled_material_light
 color bright_foreground_inverse_material_dark
@@ -1509,6 +1510,8 @@ color green_700
 color highlighted_text_material_dark
 color highlighted_text_material_light
 color holo_red_light
+color light_blue_100
+color light_green_100
 color m3_appbar_overlay_color
 color m3_assist_chip_icon_tint_color
 color m3_assist_chip_stroke_color
@@ -2165,6 +2168,7 @@ color mtrl_textinput_focused_box_stroke_color
 color mtrl_textinput_hovered_box_stroke_color
 color notification_action_color_filter
 color notification_icon_bg_color
+color orange_700
 color primary_dark_material_dark
 color primary_dark_material_light
 color primary_material_dark
@@ -2173,8 +2177,11 @@ color primary_text_default_material_dark
 color primary_text_default_material_light
 color primary_text_disabled_material_dark
 color primary_text_disabled_material_light
+color purple_100
 color purple_500
+color purple_700
 color red
+color red_700
 color ripple_material_dark
 color ripple_material_light
 color secondary_text_default_material_dark
@@ -2187,6 +2194,7 @@ color switch_thumb_material_dark
 color switch_thumb_material_light
 color switch_thumb_normal_material_dark
 color switch_thumb_normal_material_light
+color teal_700
 color tooltip_background_dark
 color tooltip_background_light
 color white
@@ -3127,7 +3135,9 @@ drawable ic_about
 drawable ic_appointments
 drawable ic_arrow_back_black_24
 drawable ic_blog
+drawable ic_busy
 drawable ic_calendar
+drawable ic_calendar_outline
 drawable ic_call_answer
 drawable ic_call_answer_low
 drawable ic_call_answer_video
@@ -3135,6 +3145,7 @@ drawable ic_call_answer_video_low
 drawable ic_call_decline
 drawable ic_call_decline_low
 drawable ic_check_circle
+drawable ic_check_circle_outline
 drawable ic_clear_black_24
 drawable ic_clock_black_24dp
 drawable ic_contact
@@ -3164,8 +3175,10 @@ drawable ic_other_sign_in
 drawable ic_passkey
 drawable ic_password
 drawable ic_prescription
+drawable ic_prescription_outline
 drawable ic_prescriptions
 drawable ic_search_black_24
+drawable ic_send
 drawable ic_upload
 drawable indeterminate_static
 drawable m3_avd_hide_password
@@ -3246,6 +3259,12 @@ drawable patientb
 drawable patientbac
 drawable pp
 drawable reg
+drawable rounded_button_blue
+drawable rounded_button_green
+drawable rounded_button_orange
+drawable rounded_button_purple
+drawable rounded_button_red
+drawable rounded_button_teal
 drawable rounded_card_background
 drawable rounded_card_selected
 drawable rounded_corners_accent

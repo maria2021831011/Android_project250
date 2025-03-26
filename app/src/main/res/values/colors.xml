@@ -1,6 +1,6 @@
 <resources>
     <color name="black">#FF000000</color>
-    <color name="white">#FFFFFFFF</color>
+
     <color name="purple_500">#6200EE</color>
     <color name="holo_red_light">#8FE7C2</color>
     <color name="gray">#808080</color>
@@ -8,4 +8,18 @@
     <color name="colorPrimaryDark">#303F9F</color> <!-- Darker blue -->
     <color name="colorAccent">#FF4081</color>
     <color name="red">#FF0000</color>
+    <color name="purple_700">#FF6200EE</color>
+    <color name="purple_100">#E1BEE7</color>
+
+    <color name="green_700">#388E3C</color>
+    <color name="light_green_100">#DCEDC8</color>
+    <color name="red_700">#D32F2F</color>
+    <color name="blue_700">#1976D2</color>
+    <color name="light_blue_100">#B3E5FC</color>
+
+    <color name="teal_700">#00796B</color>
+    <color name="orange_700">#F57C00</color>
+
+
+    <color name="white">#FFFFFF</color>
 </resources>

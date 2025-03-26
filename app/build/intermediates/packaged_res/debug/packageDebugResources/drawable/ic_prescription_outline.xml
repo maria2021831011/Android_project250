@@ -1,0 +1,9 @@
+<!-- res/drawable/ic_prescription_outline.xml -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp"
+    android:height="24dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24"
+    android:tint="@color/white">
+    <path android:fillColor="@android:color/white" android:pathData="M19,8H18V5H16V8H8V5H6V8H5V10H6V15H5V17H6V19H8V17H16V19H18V17H19V15H18V10H19V8ZM16,15H8V10H16V15Z"/>
+</vector>

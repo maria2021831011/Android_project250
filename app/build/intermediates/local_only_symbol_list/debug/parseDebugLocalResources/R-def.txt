@@ -2,14 +2,22 @@ R_DEF: Internal format may change without notice
 local
 array roles_array
 color black
+color blue_700
 color colorAccent
 color colorPrimary
 color colorPrimaryDark
 color gray
 color green_700
 color holo_red_light
+color light_blue_100
+color light_green_100
+color orange_700
+color purple_100
 color purple_500
+color purple_700
 color red
+color red_700
+color teal_700
 color white
 dimen fab_margin
 drawable assistant
@@ -26,8 +34,11 @@ drawable hospital_logo
 drawable ic_about
 drawable ic_appointments
 drawable ic_blog
+drawable ic_busy
 drawable ic_calendar
+drawable ic_calendar_outline
 drawable ic_check_circle
+drawable ic_check_circle_outline
 drawable ic_contact
 drawable ic_doctors
 drawable ic_edit_profile
@@ -44,7 +55,9 @@ drawable ic_logout
 drawable ic_medical_records
 drawable ic_navbar
 drawable ic_prescription
+drawable ic_prescription_outline
 drawable ic_prescriptions
+drawable ic_send
 drawable ic_upload
 drawable ounded_corners_yellow
 drawable patient
@@ -52,6 +65,12 @@ drawable patientb
 drawable patientbac
 drawable pp
 drawable reg
+drawable rounded_button_blue
+drawable rounded_button_green
+drawable rounded_button_orange
+drawable rounded_button_purple
+drawable rounded_button_red
+drawable rounded_button_teal
 drawable rounded_card_background
 drawable rounded_card_selected
 drawable rounded_corners_accent
