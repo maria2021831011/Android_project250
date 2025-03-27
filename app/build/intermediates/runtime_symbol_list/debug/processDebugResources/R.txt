@@ -84,6 +84,7 @@ int animator nav_default_enter_anim 0x7f020022
 int animator nav_default_exit_anim 0x7f020023
 int animator nav_default_pop_enter_anim 0x7f020024
 int animator nav_default_pop_exit_anim 0x7f020025
+int array months_array 0x7f030001
 int array roles_array 0x7f030000
 int attr SharedValue 0x7f040000
 int attr SharedValueId 0x7f040001
@@ -3618,6 +3619,7 @@ int id ltr 0x7f090144
 int id lvDoctors 0x7f090145
 int id m3_side_sheet 0x7f090146
 int id main 0x7f090147
+int id makeReportBtn 0x7f0902c5
 int id manageAppointmentsBtn 0x7f090148
 int id manageUsersBtn 0x7f090149
 int id marquee 0x7f09014a
@@ -3658,7 +3660,7 @@ int id month_navigation_fragment_toggle 0x7f090169
 int id month_navigation_next 0x7f09016a
 int id month_navigation_previous 0x7f09016b
 int id month_title 0x7f09016c
-int id monthlyReportText 0x7f09028b
+int id monthlyReportBtn 0x7f0902c6
 int id motion_base 0x7f09016d
 int id mtrl_anchor_parent 0x7f09016e
 int id mtrl_calendar_day_selector_frame 0x7f09016f
@@ -3770,6 +3772,7 @@ int id recyclerViewAppointments 0x7f0901d5
 int id registerButton 0x7f0901d6
 int id rejectBtn 0x7f0901d7
 int id rejectButton 0x7f0901d8
+int id reportTextView 0x7f0902b6
 int id report_drawn 0x7f0901d9
 int id reportsRecyclerView 0x7f0901da
 int id resetPasswordButton 0x7f0901db
@@ -3898,6 +3901,7 @@ int id titleDividerNoCustom 0x7f09024e
 int id title_template 0x7f09024f
 int id toggle 0x7f090250
 int id toggleBusyStatusButton 0x7f0902a4
+int id toggleReportBtn 0x7f0902c4
 int id toolbar 0x7f090251
 int id top 0x7f090252
 int id topPanel 0x7f090253
@@ -4448,7 +4452,9 @@ int string searchview_clear_text_content_description 0x7f1300f0
 int string searchview_navigation_content_description 0x7f1300f1
 int string second_fragment_label 0x7f1300f2
 int string select_date 0x7f1300f3
+int string select_month 0x7f130107
 int string select_slot 0x7f1300f4
+int string select_year 0x7f130108
 int string send_reset_link 0x7f1300f5
 int string send_status_to_patient 0x7f1300ff
 int string side_sheet_accessibility_pane_title 0x7f1300f6

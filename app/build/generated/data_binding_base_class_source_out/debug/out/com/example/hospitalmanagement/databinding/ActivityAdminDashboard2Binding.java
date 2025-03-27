@@ -5,10 +5,10 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
-import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
 import com.example.hospitalmanagement.R;
@@ -18,24 +18,37 @@ import java.lang.String;
 
 public final class ActivityAdminDashboard2Binding implements ViewBinding {
   @NonNull
-  private final ConstraintLayout rootView;
+  private final LinearLayout rootView;
 
   @NonNull
   public final Button logoutBtn;
 
   @NonNull
-  public final TextView monthlyReportText;
+  public final Button makeReportBtn;
 
-  private ActivityAdminDashboard2Binding(@NonNull ConstraintLayout rootView,
-      @NonNull Button logoutBtn, @NonNull TextView monthlyReportText) {
+  @NonNull
+  public final Button monthlyReportBtn;
+
+  @NonNull
+  public final TextView reportTextView;
+
+  @NonNull
+  public final Button toggleReportBtn;
+
+  private ActivityAdminDashboard2Binding(@NonNull LinearLayout rootView, @NonNull Button logoutBtn,
+      @NonNull Button makeReportBtn, @NonNull Button monthlyReportBtn,
+      @NonNull TextView reportTextView, @NonNull Button toggleReportBtn) {
     this.rootView = rootView;
     this.logoutBtn = logoutBtn;
-    this.monthlyReportText = monthlyReportText;
+    this.makeReportBtn = makeReportBtn;
+    this.monthlyReportBtn = monthlyReportBtn;
+    this.reportTextView = reportTextView;
+    this.toggleReportBtn = toggleReportBtn;
   }
 
   @Override
   @NonNull
-  public ConstraintLayout getRoot() {
+  public LinearLayout getRoot() {
     return rootView;
   }
 
@@ -66,14 +79,32 @@ public final class ActivityAdminDashboard2Binding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.monthlyReportText;
-      TextView monthlyReportText = ViewBindings.findChildViewById(rootView, id);
-      if (monthlyReportText == null) {
+      id = R.id.makeReportBtn;
+      Button makeReportBtn = ViewBindings.findChildViewById(rootView, id);
+      if (makeReportBtn == null) {
         break missingId;
       }
 
-      return new ActivityAdminDashboard2Binding((ConstraintLayout) rootView, logoutBtn,
-          monthlyReportText);
+      id = R.id.monthlyReportBtn;
+      Button monthlyReportBtn = ViewBindings.findChildViewById(rootView, id);
+      if (monthlyReportBtn == null) {
+        break missingId;
+      }
+
+      id = R.id.reportTextView;
+      TextView reportTextView = ViewBindings.findChildViewById(rootView, id);
+      if (reportTextView == null) {
+        break missingId;
+      }
+
+      id = R.id.toggleReportBtn;
+      Button toggleReportBtn = ViewBindings.findChildViewById(rootView, id);
+      if (toggleReportBtn == null) {
+        break missingId;
+      }
+
+      return new ActivityAdminDashboard2Binding((LinearLayout) rootView, logoutBtn, makeReportBtn,
+          monthlyReportBtn, reportTextView, toggleReportBtn);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

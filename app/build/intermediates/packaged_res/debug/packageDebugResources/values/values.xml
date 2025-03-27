@@ -1,5 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string-array name="months_array">
+        <item>January</item>
+        <item>February</item>
+        <item>March</item>
+        <item>April</item>
+        <item>May</item>
+        <item>June</item>
+        <item>July</item>
+        <item>August</item>
+        <item>September</item>
+        <item>October</item>
+        <item>November</item>
+        <item>December</item>
+    </string-array>
     <string-array name="roles_array">
         <item>patient</item>
         <item>doctor</item>
@@ -86,6 +100,7 @@
     <item name="slotSpinner" type="id"/>
     <item name="spinnerRole" type="id"/>
     <item name="statusText" type="id"/>
+    <item name="toggleReportBtn" type="id"/>
     <item name="tvAppointmentDetails" type="id"/>
     <item name="tvForgotPassword" type="id"/>
     <item name="tvLogin" type="id"/>
@@ -189,7 +204,9 @@
     <string name="reset_password">Reset Password</string>
     <string name="second_fragment_label">Second Fragment</string>
     <string name="select_date">Select Date</string>
+    <string name="select_month"/>
     <string name="select_slot">Select Slot</string>
+    <string name="select_year"/>
     <string name="send_reset_link">Send Reset Link</string>
     <string name="send_status_to_patient">Send Status to Patient</string>
     <string name="time_10_00_am">Time: 10:00 AM</string>

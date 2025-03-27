@@ -85,6 +85,7 @@ animator nav_default_enter_anim
 animator nav_default_exit_anim
 animator nav_default_pop_enter_anim
 animator nav_default_pop_exit_anim
+array months_array
 array roles_array
 attr SharedValue
 attr SharedValueId
@@ -3619,6 +3620,7 @@ id ltr
 id lvDoctors
 id m3_side_sheet
 id main
+id makeReportBtn
 id manageAppointmentsBtn
 id manageUsersBtn
 id marquee
@@ -3659,7 +3661,7 @@ id month_navigation_fragment_toggle
 id month_navigation_next
 id month_navigation_previous
 id month_title
-id monthlyReportText
+id monthlyReportBtn
 id motion_base
 id mtrl_anchor_parent
 id mtrl_calendar_day_selector_frame
@@ -3771,6 +3773,7 @@ id recyclerViewAppointments
 id registerButton
 id rejectBtn
 id rejectButton
+id reportTextView
 id report_drawn
 id reportsRecyclerView
 id resetPasswordButton
@@ -3899,6 +3902,7 @@ id titleDividerNoCustom
 id title_template
 id toggle
 id toggleBusyStatusButton
+id toggleReportBtn
 id toolbar
 id top
 id topPanel
@@ -4449,7 +4453,9 @@ string searchview_clear_text_content_description
 string searchview_navigation_content_description
 string second_fragment_label
 string select_date
+string select_month
 string select_slot
+string select_year
 string send_reset_link
 string send_status_to_patient
 string side_sheet_accessibility_pane_title

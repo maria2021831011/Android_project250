@@ -71,4 +71,5 @@
     <item name="doctorDetailsScrollView" type="id" />
     <item name="doctorDetailsText" type="id" />
     <item name="btnCallHelpline" type="id" />
+    <item name="toggleReportBtn" type="id" />
 </resources>

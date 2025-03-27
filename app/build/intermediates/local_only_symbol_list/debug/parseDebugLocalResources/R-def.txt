@@ -1,5 +1,6 @@
 R_DEF: Internal format may change without notice
 local
+array months_array
 array roles_array
 color black
 color blue_700
@@ -162,13 +163,14 @@ id logoutBtn
 id logoutButton
 id lvDoctors
 id main
+id makeReportBtn
 id manageAppointmentsBtn
 id manageUsersBtn
 id medicineEditText
 id medicineTextView
 id messageDoctorBtn
 id messageInput
-id monthlyReportText
+id monthlyReportBtn
 id nameField
 id nav_graph
 id notificationMessage
@@ -194,6 +196,7 @@ id recyclerViewAppointments
 id registerButton
 id rejectBtn
 id rejectButton
+id reportTextView
 id reportsRecyclerView
 id resetPasswordButton
 id roleGroup
@@ -216,6 +219,7 @@ id timeEditText
 id timePicker
 id timeTextView
 id toggleBusyStatusButton
+id toggleReportBtn
 id toolbar
 id tvAppointmentDetails
 id tvForgotPassword
@@ -337,7 +341,9 @@ string request_appointment
 string reset_password
 string second_fragment_label
 string select_date
+string select_month
 string select_slot
+string select_year
 string send_reset_link
 string send_status_to_patient
 string time_10_00_am

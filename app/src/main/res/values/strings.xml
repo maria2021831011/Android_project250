@@ -17,6 +17,21 @@
     <string name="email_address">Email Address</string>
     <string name="password" />
     <string name="username" />
+    <string-array name="months_array">
+        <item>January</item>
+        <item>February</item>
+        <item>March</item>
+        <item>April</item>
+        <item>May</item>
+        <item>June</item>
+        <item>July</item>
+        <item>August</item>
+        <item>September</item>
+        <item>October</item>
+        <item>November</item>
+        <item>December</item>
+    </string-array>
+
 
     <string-array name="roles_array">
         <item>patient</item>
@@ -107,5 +122,7 @@
     <string name="_1_dr_ayesha_rahman_nspecialization_cardiologist_ncontact_880_1712_345678_nemail_ayesha_rahman_hospital_com_nassistant_mehedi_hasan_nassistant_contact_880_1712_987654_nassistant_email_mehedi_hasan_hospital_com_n_n">1. Dr. Ayesha Rahman\nSpecialization: Cardiologist\nContact: +880 1712 345678\nEmail: ayesha.rahman@hospital.com\nAssistant: Mehedi Hasan\nAssistant Contact: +880 1712 987654\nAssistant Email: mehedi.hasan@hospital.com\n\n</string>
     <string name="doctor_details_text" />
     <string name="view_status">View Status</string>
+    <string name="select_month" />
+    <string name="select_year" />
 
 </resources>
