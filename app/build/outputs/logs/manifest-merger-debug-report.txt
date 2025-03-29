@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\Asus\hospitalmanagement4\app\src\main\AndroidManifest.xml:2:1-102:12
-INJECTED from C:\Users\Asus\hospitalmanagement4\app\src\main\AndroidManifest.xml:2:1-102:12
-INJECTED from C:\Users\Asus\hospitalmanagement4\app\src\main\AndroidManifest.xml:2:1-102:12
-INJECTED from C:\Users\Asus\hospitalmanagement4\app\src\main\AndroidManifest.xml:2:1-102:12
+ADDED from C:\Users\Asus\hospitalmanagement4\app\src\main\AndroidManifest.xml:2:1-113:12
+INJECTED from C:\Users\Asus\hospitalmanagement4\app\src\main\AndroidManifest.xml:2:1-113:12
+INJECTED from C:\Users\Asus\hospitalmanagement4\app\src\main\AndroidManifest.xml:2:1-113:12
+INJECTED from C:\Users\Asus\hospitalmanagement4\app\src\main\AndroidManifest.xml:2:1-113:12
 MERGED from [androidx.databinding:viewbinding:8.8.0] C:\Users\Asus\.gradle\caches\8.10.2\transforms\9460e393c86006d62c1dc59cf77e3b67\transformed\viewbinding-8.8.0\AndroidManifest.xml:2:1-7:12
 MERGED from [androidx.navigation:navigation-common:2.8.6] C:\Users\Asus\.gradle\caches\8.10.2\transforms\615d33dc51ce38ffc8707b28cd4382ae\transformed\navigation-common-2.8.6\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.navigation:navigation-runtime:2.8.6] C:\Users\Asus\.gradle\caches\8.10.2\transforms\d89298a587ef75a3cc9ae43c7af73cfc\transformed\navigation-runtime-2.8.6\AndroidManifest.xml:17:1-22:12
@@ -192,8 +192,8 @@ ADDED from C:\Users\Asus\hospitalmanagement4\app\src\main\AndroidManifest.xml:11
 	android:name
 		ADDED from C:\Users\Asus\hospitalmanagement4\app\src\main\AndroidManifest.xml:11:22-66
 application
-ADDED from C:\Users\Asus\hospitalmanagement4\app\src\main\AndroidManifest.xml:12:5-100:19
-INJECTED from C:\Users\Asus\hospitalmanagement4\app\src\main\AndroidManifest.xml:12:5-100:19
+ADDED from C:\Users\Asus\hospitalmanagement4\app\src\main\AndroidManifest.xml:13:5-111:19
+INJECTED from C:\Users\Asus\hospitalmanagement4\app\src\main\AndroidManifest.xml:13:5-111:19
 MERGED from [com.google.android.material:material:1.12.0] C:\Users\Asus\.gradle\caches\8.10.2\transforms\2a9872ed7080578e121d54456b3018dc\transformed\material-1.12.0\AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.material:material:1.12.0] C:\Users\Asus\.gradle\caches\8.10.2\transforms\2a9872ed7080578e121d54456b3018dc\transformed\material-1.12.0\AndroidManifest.xml:22:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:2.2.0] C:\Users\Asus\.gradle\caches\8.10.2\transforms\cc3f85165c992b0daf1fc2696bb6559c\transformed\constraintlayout-2.2.0\AndroidManifest.xml:7:5-20
@@ -283,177 +283,197 @@ MERGED from [com.google.android.play:core-common:2.0.3] C:\Users\Asus\.gradle\ca
 	android:appComponentFactory
 		ADDED from [androidx.core:core:1.13.0] C:\Users\Asus\.gradle\caches\8.10.2\transforms\36683b2c13c394deeb526183048df89c\transformed\core-1.13.0\AndroidManifest.xml:28:18-86
 	android:supportsRtl
-		ADDED from C:\Users\Asus\hospitalmanagement4\app\src\main\AndroidManifest.xml:17:9-35
+		ADDED from C:\Users\Asus\hospitalmanagement4\app\src\main\AndroidManifest.xml:18:9-35
 	android:label
-		ADDED from C:\Users\Asus\hospitalmanagement4\app\src\main\AndroidManifest.xml:15:9-41
+		ADDED from C:\Users\Asus\hospitalmanagement4\app\src\main\AndroidManifest.xml:16:9-41
 	tools:ignore
-		ADDED from C:\Users\Asus\hospitalmanagement4\app\src\main\AndroidManifest.xml:19:9-33
+		ADDED from C:\Users\Asus\hospitalmanagement4\app\src\main\AndroidManifest.xml:20:9-33
 	android:roundIcon
-		ADDED from C:\Users\Asus\hospitalmanagement4\app\src\main\AndroidManifest.xml:16:9-54
+		ADDED from C:\Users\Asus\hospitalmanagement4\app\src\main\AndroidManifest.xml:17:9-54
 	android:icon
-		ADDED from C:\Users\Asus\hospitalmanagement4\app\src\main\AndroidManifest.xml:14:9-43
+		ADDED from C:\Users\Asus\hospitalmanagement4\app\src\main\AndroidManifest.xml:15:9-43
 	android:allowBackup
-		ADDED from C:\Users\Asus\hospitalmanagement4\app\src\main\AndroidManifest.xml:13:9-35
+		ADDED from C:\Users\Asus\hospitalmanagement4\app\src\main\AndroidManifest.xml:14:9-35
 	android:theme
-		ADDED from C:\Users\Asus\hospitalmanagement4\app\src\main\AndroidManifest.xml:18:9-56
+		ADDED from C:\Users\Asus\hospitalmanagement4\app\src\main\AndroidManifest.xml:19:9-56
+activity#com.example.hospitalmanagement.EditProfileActivity
+ADDED from C:\Users\Asus\hospitalmanagement4\app\src\main\AndroidManifest.xml:21:9-23:40
+	android:exported
+		ADDED from C:\Users\Asus\hospitalmanagement4\app\src\main\AndroidManifest.xml:23:13-37
+	android:name
+		ADDED from C:\Users\Asus\hospitalmanagement4\app\src\main\AndroidManifest.xml:22:13-48
+activity#com.example.hospitalmanagement.ProfileActivity
+ADDED from C:\Users\Asus\hospitalmanagement4\app\src\main\AndroidManifest.xml:24:9-26:40
+	android:exported
+		ADDED from C:\Users\Asus\hospitalmanagement4\app\src\main\AndroidManifest.xml:26:13-37
+	android:name
+		ADDED from C:\Users\Asus\hospitalmanagement4\app\src\main\AndroidManifest.xml:25:13-44
+activity#com.example.hospitalmanagement.NotificationsAdapter2
+ADDED from C:\Users\Asus\hospitalmanagement4\app\src\main\AndroidManifest.xml:27:9-30:63
+	android:exported
+		ADDED from C:\Users\Asus\hospitalmanagement4\app\src\main\AndroidManifest.xml:29:13-37
+	android:theme
+		ADDED from C:\Users\Asus\hospitalmanagement4\app\src\main\AndroidManifest.xml:30:13-60
+	android:name
+		ADDED from C:\Users\Asus\hospitalmanagement4\app\src\main\AndroidManifest.xml:28:13-50
 activity#com.example.hospitalmanagement.AssistantAppointmentAdapter
-ADDED from C:\Users\Asus\hospitalmanagement4\app\src\main\AndroidManifest.xml:20:9-22:40
+ADDED from C:\Users\Asus\hospitalmanagement4\app\src\main\AndroidManifest.xml:31:9-33:40
 	android:exported
-		ADDED from C:\Users\Asus\hospitalmanagement4\app\src\main\AndroidManifest.xml:22:13-37
+		ADDED from C:\Users\Asus\hospitalmanagement4\app\src\main\AndroidManifest.xml:33:13-37
 	android:name
-		ADDED from C:\Users\Asus\hospitalmanagement4\app\src\main\AndroidManifest.xml:21:13-56
+		ADDED from C:\Users\Asus\hospitalmanagement4\app\src\main\AndroidManifest.xml:32:13-56
 activity#com.example.hospitalmanagement.NotificationAdapter
-ADDED from C:\Users\Asus\hospitalmanagement4\app\src\main\AndroidManifest.xml:23:9-25:40
+ADDED from C:\Users\Asus\hospitalmanagement4\app\src\main\AndroidManifest.xml:34:9-36:40
 	android:exported
-		ADDED from C:\Users\Asus\hospitalmanagement4\app\src\main\AndroidManifest.xml:25:13-37
+		ADDED from C:\Users\Asus\hospitalmanagement4\app\src\main\AndroidManifest.xml:36:13-37
 	android:name
-		ADDED from C:\Users\Asus\hospitalmanagement4\app\src\main\AndroidManifest.xml:24:13-48
+		ADDED from C:\Users\Asus\hospitalmanagement4\app\src\main\AndroidManifest.xml:35:13-48
 activity#com.example.hospitalmanagement.DoctorAdapter
-ADDED from C:\Users\Asus\hospitalmanagement4\app\src\main\AndroidManifest.xml:26:9-29:45
+ADDED from C:\Users\Asus\hospitalmanagement4\app\src\main\AndroidManifest.xml:37:9-40:45
 	android:exported
-		ADDED from C:\Users\Asus\hospitalmanagement4\app\src\main\AndroidManifest.xml:28:13-37
+		ADDED from C:\Users\Asus\hospitalmanagement4\app\src\main\AndroidManifest.xml:39:13-37
 	tools:ignore
-		ADDED from C:\Users\Asus\hospitalmanagement4\app\src\main\AndroidManifest.xml:29:13-42
+		ADDED from C:\Users\Asus\hospitalmanagement4\app\src\main\AndroidManifest.xml:40:13-42
 	android:name
-		ADDED from C:\Users\Asus\hospitalmanagement4\app\src\main\AndroidManifest.xml:27:13-42
+		ADDED from C:\Users\Asus\hospitalmanagement4\app\src\main\AndroidManifest.xml:38:13-42
 activity#com.example.hospitalmanagement.ViewDoctorsActivity
-ADDED from C:\Users\Asus\hospitalmanagement4\app\src\main\AndroidManifest.xml:30:9-32:40
+ADDED from C:\Users\Asus\hospitalmanagement4\app\src\main\AndroidManifest.xml:41:9-43:40
 	android:exported
-		ADDED from C:\Users\Asus\hospitalmanagement4\app\src\main\AndroidManifest.xml:32:13-37
+		ADDED from C:\Users\Asus\hospitalmanagement4\app\src\main\AndroidManifest.xml:43:13-37
 	android:name
-		ADDED from C:\Users\Asus\hospitalmanagement4\app\src\main\AndroidManifest.xml:31:13-48
+		ADDED from C:\Users\Asus\hospitalmanagement4\app\src\main\AndroidManifest.xml:42:13-48
 activity#com.example.hospitalmanagement.ViewDoctorActivity
-ADDED from C:\Users\Asus\hospitalmanagement4\app\src\main\AndroidManifest.xml:33:9-35:40
-	android:exported
-		ADDED from C:\Users\Asus\hospitalmanagement4\app\src\main\AndroidManifest.xml:35:13-37
-	android:name
-		ADDED from C:\Users\Asus\hospitalmanagement4\app\src\main\AndroidManifest.xml:34:13-47
-activity#com.example.hospitalmanagement.AppointmentAdapter
-ADDED from C:\Users\Asus\hospitalmanagement4\app\src\main\AndroidManifest.xml:36:9-39:45
-	android:exported
-		ADDED from C:\Users\Asus\hospitalmanagement4\app\src\main\AndroidManifest.xml:38:13-37
-	tools:ignore
-		ADDED from C:\Users\Asus\hospitalmanagement4\app\src\main\AndroidManifest.xml:39:13-42
-	android:name
-		ADDED from C:\Users\Asus\hospitalmanagement4\app\src\main\AndroidManifest.xml:37:13-47
-activity#com.example.hospitalmanagement.AssistantDashboardActivity
-ADDED from C:\Users\Asus\hospitalmanagement4\app\src\main\AndroidManifest.xml:40:9-43:63
-	android:exported
-		ADDED from C:\Users\Asus\hospitalmanagement4\app\src\main\AndroidManifest.xml:42:13-36
-	android:theme
-		ADDED from C:\Users\Asus\hospitalmanagement4\app\src\main\AndroidManifest.xml:43:13-60
-	android:name
-		ADDED from C:\Users\Asus\hospitalmanagement4\app\src\main\AndroidManifest.xml:41:13-55
-activity#com.example.hospitalmanagement.DashboardAdapter
-ADDED from C:\Users\Asus\hospitalmanagement4\app\src\main\AndroidManifest.xml:44:9-47:45
+ADDED from C:\Users\Asus\hospitalmanagement4\app\src\main\AndroidManifest.xml:44:9-46:40
 	android:exported
 		ADDED from C:\Users\Asus\hospitalmanagement4\app\src\main\AndroidManifest.xml:46:13-37
-	tools:ignore
-		ADDED from C:\Users\Asus\hospitalmanagement4\app\src\main\AndroidManifest.xml:47:13-42
 	android:name
-		ADDED from C:\Users\Asus\hospitalmanagement4\app\src\main\AndroidManifest.xml:45:13-45
+		ADDED from C:\Users\Asus\hospitalmanagement4\app\src\main\AndroidManifest.xml:45:13-47
+activity#com.example.hospitalmanagement.AppointmentAdapter
+ADDED from C:\Users\Asus\hospitalmanagement4\app\src\main\AndroidManifest.xml:47:9-50:45
+	android:exported
+		ADDED from C:\Users\Asus\hospitalmanagement4\app\src\main\AndroidManifest.xml:49:13-37
+	tools:ignore
+		ADDED from C:\Users\Asus\hospitalmanagement4\app\src\main\AndroidManifest.xml:50:13-42
+	android:name
+		ADDED from C:\Users\Asus\hospitalmanagement4\app\src\main\AndroidManifest.xml:48:13-47
+activity#com.example.hospitalmanagement.AssistantDashboardActivity
+ADDED from C:\Users\Asus\hospitalmanagement4\app\src\main\AndroidManifest.xml:51:9-54:63
+	android:exported
+		ADDED from C:\Users\Asus\hospitalmanagement4\app\src\main\AndroidManifest.xml:53:13-36
+	android:theme
+		ADDED from C:\Users\Asus\hospitalmanagement4\app\src\main\AndroidManifest.xml:54:13-60
+	android:name
+		ADDED from C:\Users\Asus\hospitalmanagement4\app\src\main\AndroidManifest.xml:52:13-55
+activity#com.example.hospitalmanagement.DashboardAdapter
+ADDED from C:\Users\Asus\hospitalmanagement4\app\src\main\AndroidManifest.xml:55:9-58:45
+	android:exported
+		ADDED from C:\Users\Asus\hospitalmanagement4\app\src\main\AndroidManifest.xml:57:13-37
+	tools:ignore
+		ADDED from C:\Users\Asus\hospitalmanagement4\app\src\main\AndroidManifest.xml:58:13-42
+	android:name
+		ADDED from C:\Users\Asus\hospitalmanagement4\app\src\main\AndroidManifest.xml:56:13-45
 activity#com.example.hospitalmanagement.PatientDashboardActivity
-ADDED from C:\Users\Asus\hospitalmanagement4\app\src\main\AndroidManifest.xml:48:9-51:45
+ADDED from C:\Users\Asus\hospitalmanagement4\app\src\main\AndroidManifest.xml:59:9-62:45
 	android:exported
-		ADDED from C:\Users\Asus\hospitalmanagement4\app\src\main\AndroidManifest.xml:50:13-36
+		ADDED from C:\Users\Asus\hospitalmanagement4\app\src\main\AndroidManifest.xml:61:13-36
 	tools:ignore
-		ADDED from C:\Users\Asus\hospitalmanagement4\app\src\main\AndroidManifest.xml:51:13-42
+		ADDED from C:\Users\Asus\hospitalmanagement4\app\src\main\AndroidManifest.xml:62:13-42
 	android:name
-		ADDED from C:\Users\Asus\hospitalmanagement4\app\src\main\AndroidManifest.xml:49:13-53
+		ADDED from C:\Users\Asus\hospitalmanagement4\app\src\main\AndroidManifest.xml:60:13-53
 activity#com.example.hospitalmanagement.ManageAppointmentsActivity
-ADDED from C:\Users\Asus\hospitalmanagement4\app\src\main\AndroidManifest.xml:52:9-55:45
+ADDED from C:\Users\Asus\hospitalmanagement4\app\src\main\AndroidManifest.xml:63:9-66:45
 	android:exported
-		ADDED from C:\Users\Asus\hospitalmanagement4\app\src\main\AndroidManifest.xml:54:13-36
+		ADDED from C:\Users\Asus\hospitalmanagement4\app\src\main\AndroidManifest.xml:65:13-36
 	tools:ignore
-		ADDED from C:\Users\Asus\hospitalmanagement4\app\src\main\AndroidManifest.xml:55:13-42
+		ADDED from C:\Users\Asus\hospitalmanagement4\app\src\main\AndroidManifest.xml:66:13-42
 	android:name
-		ADDED from C:\Users\Asus\hospitalmanagement4\app\src\main\AndroidManifest.xml:53:13-55
+		ADDED from C:\Users\Asus\hospitalmanagement4\app\src\main\AndroidManifest.xml:64:13-55
 activity#com.example.hospitalmanagement.ManageUsersActivity
-ADDED from C:\Users\Asus\hospitalmanagement4\app\src\main\AndroidManifest.xml:56:9-59:45
+ADDED from C:\Users\Asus\hospitalmanagement4\app\src\main\AndroidManifest.xml:67:9-70:45
 	android:exported
-		ADDED from C:\Users\Asus\hospitalmanagement4\app\src\main\AndroidManifest.xml:58:13-36
+		ADDED from C:\Users\Asus\hospitalmanagement4\app\src\main\AndroidManifest.xml:69:13-36
 	tools:ignore
-		ADDED from C:\Users\Asus\hospitalmanagement4\app\src\main\AndroidManifest.xml:59:13-42
+		ADDED from C:\Users\Asus\hospitalmanagement4\app\src\main\AndroidManifest.xml:70:13-42
 	android:name
-		ADDED from C:\Users\Asus\hospitalmanagement4\app\src\main\AndroidManifest.xml:57:13-48
+		ADDED from C:\Users\Asus\hospitalmanagement4\app\src\main\AndroidManifest.xml:68:13-48
 activity#com.example.hospitalmanagement.ViewReportsActivity
-ADDED from C:\Users\Asus\hospitalmanagement4\app\src\main\AndroidManifest.xml:60:9-63:45
-	android:exported
-		ADDED from C:\Users\Asus\hospitalmanagement4\app\src\main\AndroidManifest.xml:62:13-36
-	tools:ignore
-		ADDED from C:\Users\Asus\hospitalmanagement4\app\src\main\AndroidManifest.xml:63:13-42
-	android:name
-		ADDED from C:\Users\Asus\hospitalmanagement4\app\src\main\AndroidManifest.xml:61:13-48
-activity#com.example.hospitalmanagement.CreateAppointmentActivity
-ADDED from C:\Users\Asus\hospitalmanagement4\app\src\main\AndroidManifest.xml:64:9-67:45
-	android:exported
-		ADDED from C:\Users\Asus\hospitalmanagement4\app\src\main\AndroidManifest.xml:66:13-36
-	tools:ignore
-		ADDED from C:\Users\Asus\hospitalmanagement4\app\src\main\AndroidManifest.xml:67:13-42
-	android:name
-		ADDED from C:\Users\Asus\hospitalmanagement4\app\src\main\AndroidManifest.xml:65:13-54
-activity#com.example.hospitalmanagement.DoctorDashboardActivity
-ADDED from C:\Users\Asus\hospitalmanagement4\app\src\main\AndroidManifest.xml:68:9-70:39
-	android:exported
-		ADDED from C:\Users\Asus\hospitalmanagement4\app\src\main\AndroidManifest.xml:70:13-36
-	android:name
-		ADDED from C:\Users\Asus\hospitalmanagement4\app\src\main\AndroidManifest.xml:69:13-52
-activity#com.example.hospitalmanagement.BaseActivity
 ADDED from C:\Users\Asus\hospitalmanagement4\app\src\main\AndroidManifest.xml:71:9-74:45
 	android:exported
 		ADDED from C:\Users\Asus\hospitalmanagement4\app\src\main\AndroidManifest.xml:73:13-36
 	tools:ignore
 		ADDED from C:\Users\Asus\hospitalmanagement4\app\src\main\AndroidManifest.xml:74:13-42
 	android:name
-		ADDED from C:\Users\Asus\hospitalmanagement4\app\src\main\AndroidManifest.xml:72:13-41
-activity#com.example.hospitalmanagement.DashboardActivity
+		ADDED from C:\Users\Asus\hospitalmanagement4\app\src\main\AndroidManifest.xml:72:13-48
+activity#com.example.hospitalmanagement.CreateAppointmentActivity
 ADDED from C:\Users\Asus\hospitalmanagement4\app\src\main\AndroidManifest.xml:75:9-78:45
 	android:exported
-		ADDED from C:\Users\Asus\hospitalmanagement4\app\src\main\AndroidManifest.xml:77:13-37
+		ADDED from C:\Users\Asus\hospitalmanagement4\app\src\main\AndroidManifest.xml:77:13-36
 	tools:ignore
 		ADDED from C:\Users\Asus\hospitalmanagement4\app\src\main\AndroidManifest.xml:78:13-42
 	android:name
-		ADDED from C:\Users\Asus\hospitalmanagement4\app\src\main\AndroidManifest.xml:76:13-46
-activity#com.example.hospitalmanagement.AdminDashboardActivity
-ADDED from C:\Users\Asus\hospitalmanagement4\app\src\main\AndroidManifest.xml:79:9-82:45
+		ADDED from C:\Users\Asus\hospitalmanagement4\app\src\main\AndroidManifest.xml:76:13-54
+activity#com.example.hospitalmanagement.DoctorDashboardActivity
+ADDED from C:\Users\Asus\hospitalmanagement4\app\src\main\AndroidManifest.xml:79:9-81:39
 	android:exported
 		ADDED from C:\Users\Asus\hospitalmanagement4\app\src\main\AndroidManifest.xml:81:13-36
-	tools:ignore
-		ADDED from C:\Users\Asus\hospitalmanagement4\app\src\main\AndroidManifest.xml:82:13-42
 	android:name
-		ADDED from C:\Users\Asus\hospitalmanagement4\app\src\main\AndroidManifest.xml:80:13-51
+		ADDED from C:\Users\Asus\hospitalmanagement4\app\src\main\AndroidManifest.xml:80:13-52
+activity#com.example.hospitalmanagement.BaseActivity
+ADDED from C:\Users\Asus\hospitalmanagement4\app\src\main\AndroidManifest.xml:82:9-85:45
+	android:exported
+		ADDED from C:\Users\Asus\hospitalmanagement4\app\src\main\AndroidManifest.xml:84:13-36
+	tools:ignore
+		ADDED from C:\Users\Asus\hospitalmanagement4\app\src\main\AndroidManifest.xml:85:13-42
+	android:name
+		ADDED from C:\Users\Asus\hospitalmanagement4\app\src\main\AndroidManifest.xml:83:13-41
+activity#com.example.hospitalmanagement.DashboardActivity
+ADDED from C:\Users\Asus\hospitalmanagement4\app\src\main\AndroidManifest.xml:86:9-89:45
+	android:exported
+		ADDED from C:\Users\Asus\hospitalmanagement4\app\src\main\AndroidManifest.xml:88:13-37
+	tools:ignore
+		ADDED from C:\Users\Asus\hospitalmanagement4\app\src\main\AndroidManifest.xml:89:13-42
+	android:name
+		ADDED from C:\Users\Asus\hospitalmanagement4\app\src\main\AndroidManifest.xml:87:13-46
+activity#com.example.hospitalmanagement.AdminDashboardActivity
+ADDED from C:\Users\Asus\hospitalmanagement4\app\src\main\AndroidManifest.xml:90:9-93:45
+	android:exported
+		ADDED from C:\Users\Asus\hospitalmanagement4\app\src\main\AndroidManifest.xml:92:13-36
+	tools:ignore
+		ADDED from C:\Users\Asus\hospitalmanagement4\app\src\main\AndroidManifest.xml:93:13-42
+	android:name
+		ADDED from C:\Users\Asus\hospitalmanagement4\app\src\main\AndroidManifest.xml:91:13-51
 activity#com.example.hospitalmanagement.LoginActivity
-ADDED from C:\Users\Asus\hospitalmanagement4\app\src\main\AndroidManifest.xml:83:9-91:20
+ADDED from C:\Users\Asus\hospitalmanagement4\app\src\main\AndroidManifest.xml:94:9-102:20
 	android:exported
-		ADDED from C:\Users\Asus\hospitalmanagement4\app\src\main\AndroidManifest.xml:85:13-36
+		ADDED from C:\Users\Asus\hospitalmanagement4\app\src\main\AndroidManifest.xml:96:13-36
 	android:name
-		ADDED from C:\Users\Asus\hospitalmanagement4\app\src\main\AndroidManifest.xml:84:13-42
-intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from C:\Users\Asus\hospitalmanagement4\app\src\main\AndroidManifest.xml:86:13-90:29
-action#android.intent.action.MAIN
-ADDED from C:\Users\Asus\hospitalmanagement4\app\src\main\AndroidManifest.xml:87:17-69
-	android:name
-		ADDED from C:\Users\Asus\hospitalmanagement4\app\src\main\AndroidManifest.xml:87:25-66
-category#android.intent.category.LAUNCHER
-ADDED from C:\Users\Asus\hospitalmanagement4\app\src\main\AndroidManifest.xml:89:17-77
-	android:name
-		ADDED from C:\Users\Asus\hospitalmanagement4\app\src\main\AndroidManifest.xml:89:27-74
-activity#com.example.hospitalmanagement.RegisterActivity
-ADDED from C:\Users\Asus\hospitalmanagement4\app\src\main\AndroidManifest.xml:92:9-95:45
-	android:exported
-		ADDED from C:\Users\Asus\hospitalmanagement4\app\src\main\AndroidManifest.xml:94:13-36
-	tools:ignore
 		ADDED from C:\Users\Asus\hospitalmanagement4\app\src\main\AndroidManifest.xml:95:13-42
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from C:\Users\Asus\hospitalmanagement4\app\src\main\AndroidManifest.xml:97:13-101:29
+action#android.intent.action.MAIN
+ADDED from C:\Users\Asus\hospitalmanagement4\app\src\main\AndroidManifest.xml:98:17-69
 	android:name
-		ADDED from C:\Users\Asus\hospitalmanagement4\app\src\main\AndroidManifest.xml:93:13-45
-activity#com.example.hospitalmanagement.ForgotPasswordActivity
-ADDED from C:\Users\Asus\hospitalmanagement4\app\src\main\AndroidManifest.xml:96:9-99:45
+		ADDED from C:\Users\Asus\hospitalmanagement4\app\src\main\AndroidManifest.xml:98:25-66
+category#android.intent.category.LAUNCHER
+ADDED from C:\Users\Asus\hospitalmanagement4\app\src\main\AndroidManifest.xml:100:17-77
+	android:name
+		ADDED from C:\Users\Asus\hospitalmanagement4\app\src\main\AndroidManifest.xml:100:27-74
+activity#com.example.hospitalmanagement.RegisterActivity
+ADDED from C:\Users\Asus\hospitalmanagement4\app\src\main\AndroidManifest.xml:103:9-106:45
 	android:exported
-		ADDED from C:\Users\Asus\hospitalmanagement4\app\src\main\AndroidManifest.xml:98:13-36
+		ADDED from C:\Users\Asus\hospitalmanagement4\app\src\main\AndroidManifest.xml:105:13-36
 	tools:ignore
-		ADDED from C:\Users\Asus\hospitalmanagement4\app\src\main\AndroidManifest.xml:99:13-42
+		ADDED from C:\Users\Asus\hospitalmanagement4\app\src\main\AndroidManifest.xml:106:13-42
 	android:name
-		ADDED from C:\Users\Asus\hospitalmanagement4\app\src\main\AndroidManifest.xml:97:13-51
+		ADDED from C:\Users\Asus\hospitalmanagement4\app\src\main\AndroidManifest.xml:104:13-45
+activity#com.example.hospitalmanagement.ForgotPasswordActivity
+ADDED from C:\Users\Asus\hospitalmanagement4\app\src\main\AndroidManifest.xml:107:9-110:45
+	android:exported
+		ADDED from C:\Users\Asus\hospitalmanagement4\app\src\main\AndroidManifest.xml:109:13-36
+	tools:ignore
+		ADDED from C:\Users\Asus\hospitalmanagement4\app\src\main\AndroidManifest.xml:110:13-42
+	android:name
+		ADDED from C:\Users\Asus\hospitalmanagement4\app\src\main\AndroidManifest.xml:108:13-51
 uses-sdk
 INJECTED from C:\Users\Asus\hospitalmanagement4\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from C:\Users\Asus\hospitalmanagement4\app\src\main\AndroidManifest.xml

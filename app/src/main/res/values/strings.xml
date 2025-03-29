@@ -124,5 +124,6 @@
     <string name="view_status">View Status</string>
     <string name="select_month" />
     <string name="select_year" />
+    <string name="detailed_report">Detailed Report</string>
 
 </resources>

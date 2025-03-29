@@ -125,6 +125,7 @@
     <string name="confirm_appointment">Confirm Appointment</string>
     <string name="confirm_password">Confirm Password</string>
     <string name="create_appointment">Create Appointment</string>
+    <string name="detailed_report">Detailed Report</string>
     <string name="doctor_details_text"/>
     <string name="dosage">Dosage</string>
     <string name="editable_text_field_for_username">Editable text field for username</string>
@@ -221,5 +222,6 @@
         
         
     </style>
+    <style name="TextButton"/>
     <style name="Theme.HospitalManagement" parent="Base.Theme.HospitalManagement"/>
 </resources>
