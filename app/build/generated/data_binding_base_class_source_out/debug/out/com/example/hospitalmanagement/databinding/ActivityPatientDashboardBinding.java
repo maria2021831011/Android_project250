@@ -11,7 +11,6 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.cardview.widget.CardView;
-import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.recyclerview.widget.RecyclerView;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
@@ -22,16 +21,13 @@ import java.lang.String;
 
 public final class ActivityPatientDashboardBinding implements ViewBinding {
   @NonNull
-  private final ConstraintLayout rootView;
+  private final ScrollView rootView;
 
   @NonNull
   public final Button aboutHospitalButton;
 
   @NonNull
   public final Button bookAppointmentButton;
-
-  @NonNull
-  public final CardView bookAppointmentCard;
 
   @NonNull
   public final Button callAmbulanceButton;
@@ -43,10 +39,7 @@ public final class ActivityPatientDashboardBinding implements ViewBinding {
   public final Button doctorDetailsButton;
 
   @NonNull
-  public final CardView doctorDetailsCard;
-
-  @NonNull
-  public final ScrollView doctorDetailsScrollView;
+  public final CardView doctorDetailsScrollView;
 
   @NonNull
   public final TextView doctorDetailsText;
@@ -59,9 +52,6 @@ public final class ActivityPatientDashboardBinding implements ViewBinding {
 
   @NonNull
   public final ImageView homeButton;
-
-  @NonNull
-  public final CardView homeOptionsCard;
 
   @NonNull
   public final Button logoutBtn;
@@ -82,50 +72,40 @@ public final class ActivityPatientDashboardBinding implements ViewBinding {
   public final Button viewPrescriptionButton;
 
   @NonNull
-  public final CardView viewPrescriptionCard;
-
-  @NonNull
   public final Button viewStatusButton;
 
-  private ActivityPatientDashboardBinding(@NonNull ConstraintLayout rootView,
+  private ActivityPatientDashboardBinding(@NonNull ScrollView rootView,
       @NonNull Button aboutHospitalButton, @NonNull Button bookAppointmentButton,
-      @NonNull CardView bookAppointmentCard, @NonNull Button callAmbulanceButton,
-      @NonNull Button closeDoctorDetailsButton, @NonNull Button doctorDetailsButton,
-      @NonNull CardView doctorDetailsCard, @NonNull ScrollView doctorDetailsScrollView,
+      @NonNull Button callAmbulanceButton, @NonNull Button closeDoctorDetailsButton,
+      @NonNull Button doctorDetailsButton, @NonNull CardView doctorDetailsScrollView,
       @NonNull TextView doctorDetailsText, @NonNull RecyclerView doctorRecyclerView,
-      @NonNull Button helplineButton, @NonNull ImageView homeButton,
-      @NonNull CardView homeOptionsCard, @NonNull Button logoutBtn,
+      @NonNull Button helplineButton, @NonNull ImageView homeButton, @NonNull Button logoutBtn,
       @NonNull TextView selectedDoctorTextView, @NonNull TextView statusTextView,
       @NonNull TextView statusTextView1, @NonNull Button updateStatusButton,
-      @NonNull Button viewPrescriptionButton, @NonNull CardView viewPrescriptionCard,
-      @NonNull Button viewStatusButton) {
+      @NonNull Button viewPrescriptionButton, @NonNull Button viewStatusButton) {
     this.rootView = rootView;
     this.aboutHospitalButton = aboutHospitalButton;
     this.bookAppointmentButton = bookAppointmentButton;
-    this.bookAppointmentCard = bookAppointmentCard;
     this.callAmbulanceButton = callAmbulanceButton;
     this.closeDoctorDetailsButton = closeDoctorDetailsButton;
     this.doctorDetailsButton = doctorDetailsButton;
-    this.doctorDetailsCard = doctorDetailsCard;
     this.doctorDetailsScrollView = doctorDetailsScrollView;
     this.doctorDetailsText = doctorDetailsText;
     this.doctorRecyclerView = doctorRecyclerView;
     this.helplineButton = helplineButton;
     this.homeButton = homeButton;
-    this.homeOptionsCard = homeOptionsCard;
     this.logoutBtn = logoutBtn;
     this.selectedDoctorTextView = selectedDoctorTextView;
     this.statusTextView = statusTextView;
     this.statusTextView1 = statusTextView1;
     this.updateStatusButton = updateStatusButton;
     this.viewPrescriptionButton = viewPrescriptionButton;
-    this.viewPrescriptionCard = viewPrescriptionCard;
     this.viewStatusButton = viewStatusButton;
   }
 
   @Override
   @NonNull
-  public ConstraintLayout getRoot() {
+  public ScrollView getRoot() {
     return rootView;
   }
 
@@ -162,12 +142,6 @@ public final class ActivityPatientDashboardBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.bookAppointmentCard;
-      CardView bookAppointmentCard = ViewBindings.findChildViewById(rootView, id);
-      if (bookAppointmentCard == null) {
-        break missingId;
-      }
-
       id = R.id.callAmbulanceButton;
       Button callAmbulanceButton = ViewBindings.findChildViewById(rootView, id);
       if (callAmbulanceButton == null) {
@@ -186,14 +160,8 @@ public final class ActivityPatientDashboardBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.doctorDetailsCard;
-      CardView doctorDetailsCard = ViewBindings.findChildViewById(rootView, id);
-      if (doctorDetailsCard == null) {
-        break missingId;
-      }
-
       id = R.id.doctorDetailsScrollView;
-      ScrollView doctorDetailsScrollView = ViewBindings.findChildViewById(rootView, id);
+      CardView doctorDetailsScrollView = ViewBindings.findChildViewById(rootView, id);
       if (doctorDetailsScrollView == null) {
         break missingId;
       }
@@ -219,12 +187,6 @@ public final class ActivityPatientDashboardBinding implements ViewBinding {
       id = R.id.homeButton;
       ImageView homeButton = ViewBindings.findChildViewById(rootView, id);
       if (homeButton == null) {
-        break missingId;
-      }
-
-      id = R.id.homeOptionsCard;
-      CardView homeOptionsCard = ViewBindings.findChildViewById(rootView, id);
-      if (homeOptionsCard == null) {
         break missingId;
       }
 
@@ -264,24 +226,17 @@ public final class ActivityPatientDashboardBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.viewPrescriptionCard;
-      CardView viewPrescriptionCard = ViewBindings.findChildViewById(rootView, id);
-      if (viewPrescriptionCard == null) {
-        break missingId;
-      }
-
       id = R.id.viewStatusButton;
       Button viewStatusButton = ViewBindings.findChildViewById(rootView, id);
       if (viewStatusButton == null) {
         break missingId;
       }
 
-      return new ActivityPatientDashboardBinding((ConstraintLayout) rootView, aboutHospitalButton,
-          bookAppointmentButton, bookAppointmentCard, callAmbulanceButton, closeDoctorDetailsButton,
-          doctorDetailsButton, doctorDetailsCard, doctorDetailsScrollView, doctorDetailsText,
-          doctorRecyclerView, helplineButton, homeButton, homeOptionsCard, logoutBtn,
-          selectedDoctorTextView, statusTextView, statusTextView1, updateStatusButton,
-          viewPrescriptionButton, viewPrescriptionCard, viewStatusButton);
+      return new ActivityPatientDashboardBinding((ScrollView) rootView, aboutHospitalButton,
+          bookAppointmentButton, callAmbulanceButton, closeDoctorDetailsButton, doctorDetailsButton,
+          doctorDetailsScrollView, doctorDetailsText, doctorRecyclerView, helplineButton,
+          homeButton, logoutBtn, selectedDoctorTextView, statusTextView, statusTextView1,
+          updateStatusButton, viewPrescriptionButton, viewStatusButton);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

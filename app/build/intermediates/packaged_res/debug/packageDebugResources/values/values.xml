@@ -20,24 +20,49 @@
         <item>admin</item>
         <item>assistant</item>
     </string-array>
+    <color name="background_gray">#FAFAFA</color>
     <color name="black">#FF000000</color>
+    <color name="blue_500">#2196F3</color>
     <color name="blue_700">#1976D2</color>
+    <color name="blue_primary">#2196F3</color>
+    <color name="card_stroke">#E0E0E0</color>
     <color name="colorAccent">#FF4081</color>
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
+    <color name="dark_gray">#424242</color>
+    <color name="dark_text">#212121</color>
     <color name="gray">#808080</color>
+    <color name="gray_stroke">#BDBDBD</color>
+    <color name="gray_text">#757575</color>
+    <color name="green_500">#4CAF50</color>
     <color name="green_700">#388E3C</color>
+    <color name="green_primary">#4CAF50</color>
     <color name="holo_red_light">#8FE7C2</color>
+    <color name="light_blue">#4285F4</color>
     <color name="light_blue_100">#B3E5FC</color>
+    <color name="light_blue_transparent">#802196F3</color>
+    <color name="light_gray_background">#FAFAFA</color>
+    <color name="light_gray_stroke">#E0E0E0</color>
+    <color name="light_gray_text">#E0E0E0</color>
+    <color name="light_green">#34A853</color>
     <color name="light_green_100">#DCEDC8</color>
+    <color name="light_purple">#9C27B0</color>
+    <color name="orange_500">#FF5722</color>
     <color name="orange_700">#F57C00</color>
+    <color name="orange_primary">#FF5722</color>
     <color name="purple_100">#E1BEE7</color>
     <color name="purple_500">#6200EE</color>
     <color name="purple_700">#FF6200EE</color>
     <color name="red">#FF0000</color>
+    <color name="red_500">#F44336</color>
     <color name="red_700">#D32F2F</color>
+    <color name="red_primary">#F44336</color>
     <color name="teal_700">#00796B</color>
+    <color name="text_primary">#212121</color>
+    <color name="text_secondary">#757575</color>
     <color name="white">#FFFFFF</color>
+    <color name="white_alpha_50">#80FFFFFF</color>
+    <color name="white_alpha_80">#CCFFFFFF</color>
     <dimen name="fab_margin">16dp</dimen>
     <item name="appLogo" type="id"/>
     <item name="appointmentButton" type="id"/>
@@ -112,13 +137,22 @@
     <item name="welcomeText" type="id"/>
     <item name="welcomeTextView" type="id"/>
     <string name="_1_dr_ayesha_rahman_nspecialization_cardiologist_ncontact_880_1712_345678_nemail_ayesha_rahman_hospital_com_nassistant_mehedi_hasan_nassistant_contact_880_1712_987654_nassistant_email_mehedi_hasan_hospital_com_n_n">1. Dr. Ayesha Rahman\nSpecialization: Cardiologist\nContact: +880 1712 345678\nEmail: ayesha.rahman@hospital.com\nAssistant: Mehedi Hasan\nAssistant Contact: +880 1712 987654\nAssistant Email: mehedi.hasan@hospital.com\n\n</string>
+    <string name="_4_8">4.8</string>
+    <string name="about_hospital"/>
     <string name="already_have_an_account_login">Already have an account? Login</string>
+    <string name="ambulance"/>
     <string name="app_logo">App Logo</string>
     <string name="app_name">Hospital Management</string>
     <string name="appointment_details">Appointment Details</string>
+    <string name="appointment_status"/>
     <string name="appointments">Appointments</string>
     <string name="approve">Approve</string>
+    <string name="assistant_profile_picture">Assistant profile picture</string>
+    <string name="assistant_update"/>
+    <string name="available_doctors"/>
     <string name="book_appointment"/>
+    <string name="check_doctor_status">Check Doctor Status</string>
+    <string name="close"/>
     <string name="complete">Complete</string>
     <string name="completed_appointments">complete Appointment</string>
     <string name="completed_appointments_description"/>
@@ -126,10 +160,15 @@
     <string name="confirm_password">Confirm Password</string>
     <string name="create_appointment">Create Appointment</string>
     <string name="detailed_report">Detailed Report</string>
+    <string name="doctor_details"/>
     <string name="doctor_details_text"/>
+    <string name="doctor_details_text_desc"/>
+    <string name="doctors"/>
     <string name="dosage">Dosage</string>
+    <string name="dr_sarah_johnson">Dr. Sarah Johnson</string>
     <string name="editable_text_field_for_username">Editable text field for username</string>
     <string name="email_address">Email Address</string>
+    <string name="emergency_services"/>
     <string name="enter_busy_reason">Enter busy reason</string>
     <string name="enter_busy_time_e_g_2_00_pm_3_00_pm">Enter busy time (e.g., 2:00 PM - 3:00 PM)</string>
     <string name="enter_email">Enter Email</string>
@@ -146,10 +185,15 @@
     <string name="google_app_id" translatable="false">1:302830649069:android:c3bcfe1b0ad0e96d2ad6e4</string>
     <string name="google_crash_reporting_api_key" translatable="false">AIzaSyB42o8lBNT9Fs1Kh65-7x7dzULKwJw_G6Y</string>
     <string name="google_storage_bucket" translatable="false">hospital-management-b6c40.firebasestorage.app</string>
+    <string name="helpline"/>
     <string name="home">Home</string>
+    <string name="home_button"/>
     <string name="hospital_management">Hospital Management</string>
+    <string name="how_can_we_help"/>
+    <string name="loading_doctor_details">Loading doctor details...</string>
     <string name="login">Login</string>
     <string name="logout">Logout</string>
+    <string name="logout_button_desc"/>
     <string name="lorem_ipsum">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam in scelerisque sem. Mauris
         volutpat, dolor id interdum ullamcorper, risus dolor egestas lectus, sit amet mattis purus
@@ -188,17 +232,28 @@
     </string>
     <string name="manage_appointments">Manage Appointments</string>
     <string name="manage_users">Manage Users</string>
+    <string name="medical_assistant">Medical Assistant</string>
     <string name="medicine">Medicine</string>
+    <string name="message">Message</string>
+    <string name="my_status"/>
     <string name="new_user_register_here">New User? Register Here</string>
     <string name="next">Next</string>
+    <string name="no_assistant_update"/>
+    <string name="no_doctor_selected"/>
+    <string name="no_status_available"/>
     <string name="notify_assistant">Notify Assistant</string>
     <string name="password"/>
     <string name="password_input_field">Password input field</string>
+    <string name="patient_dashboard">Patient Dashboard</string>
     <string name="patient_john_doe">Patient: John Doe</string>
+    <string name="patients">Patients</string>
     <string name="pending_appointments">Pending Appointments</string>
     <string name="prescribe_medicine"/>
+    <string name="prescriptions"/>
     <string name="previous">Previous</string>
+    <string name="profile_button"/>
     <string name="project_id" translatable="false">hospital-management-b6c40</string>
+    <string name="rating">Rating</string>
     <string name="register">Register</string>
     <string name="reject">Reject</string>
     <string name="request_appointment">Request Appointment</string>
@@ -208,9 +263,12 @@
     <string name="select_month"/>
     <string name="select_slot">Select Slot</string>
     <string name="select_year"/>
+    <string name="send_message">Send Message</string>
     <string name="send_reset_link">Send Reset Link</string>
     <string name="send_status_to_patient">Send Status to Patient</string>
+    <string name="show_appointments">Show Appointments</string>
     <string name="time_10_00_am">Time: 10:00 AM</string>
+    <string name="today_s_appointments">Today\'s Appointments</string>
     <string name="todo">Toggle Password Visibility</string>
     <string name="username"/>
     <string name="view_prescription"/>
@@ -218,10 +276,15 @@
     <string name="view_status">View Status</string>
     <string name="welcome_admin">Welcome Admin</string>
     <string name="welcome_assistant">Welcome, Assistant!</string>
+    <string name="welcome_back"/>
     <style name="Base.Theme.HospitalManagement" parent="Theme.Material3.DayNight.NoActionBar">
         
         
     </style>
+    <style name="CircleImageViewStyle" parent="">
+            <item name="cornerFamily">rounded</item>
+            <item name="cornerSize">50%</item>
+        </style>
     <style name="TextButton"/>
     <style name="Theme.HospitalManagement" parent="Base.Theme.HospitalManagement"/>
 </resources>

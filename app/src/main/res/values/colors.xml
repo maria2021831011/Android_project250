@@ -20,6 +20,44 @@
     <color name="teal_700">#00796B</color>
     <color name="orange_700">#F57C00</color>
 
+    <color name="light_gray_background">#FAFAFA</color>
+    <color name="light_gray_stroke">#E0E0E0</color>
+    <color name="light_gray_text">#E0E0E0</color>
+    <color name="dark_text">#212121</color>
+    <color name="gray_text">#757575</color>
+    <color name="gray_stroke">#BDBDBD</color>
+    <color name="green_primary">#4CAF50</color>
+    <color name="blue_primary">#2196F3</color>
+    <color name="orange_primary">#FF5722</color>
+    <color name="red_primary">#F44336</color>
+
+        <!-- Backgrounds -->
+        <color name="background_gray">#FAFAFA</color>
+        <color name="card_stroke">#E0E0E0</color>
+
+
+    <color name="light_blue">#4285F4</color>
+    <color name="light_green">#34A853</color>
+    <color name="light_purple">#9C27B0</color>
+    <color name="light_blue_transparent">#802196F3</color>
+    <color name="dark_gray">#424242</color>
+
+        <!-- Text Colors -->
+        <color name="text_primary">#212121</color>
+        <color name="text_secondary">#757575</color>
+
+        <!-- White Variations -->
+
+        <color name="white_alpha_80">#CCFFFFFF</color>
+        <color name="white_alpha_50">#80FFFFFF</color>
+
+        <!-- Material Colors -->
+        <color name="green_500">#4CAF50</color>
+        <color name="blue_500">#2196F3</color>
+        <color name="orange_500">#FF5722</color>
+        <color name="red_500">#F44336</color>
+
+
 
     <color name="white">#FFFFFF</color>
 </resources>

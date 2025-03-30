@@ -12,6 +12,10 @@
         "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.10.2\\com.example.hospitalmanagement.app-main-58:\\layout\\dialog_send_status.xml"
     },
     {
+        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.10.2\\com.example.hospitalmanagement.app-debug-56:\\drawable_rounded_stats_bg.xml.flat",
+        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.10.2\\com.example.hospitalmanagement.app-main-58:\\drawable\\rounded_stats_bg.xml"
+    },
+    {
         "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.10.2\\com.example.hospitalmanagement.app-debug-56:\\xml_backup_rules.xml.flat",
         "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.10.2\\com.example.hospitalmanagement.app-main-58:\\xml\\backup_rules.xml"
     },
@@ -24,12 +28,24 @@
         "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.10.2\\com.example.hospitalmanagement.app-main-58:\\drawable\\gradient_orange.xml"
     },
     {
+        "merged": "com.example.hospitalmanagement.app-debug-56:/drawable_card_gradient_blue.xml.flat",
+        "source": "com.example.hospitalmanagement.app-main-58:/drawable/card_gradient_blue.xml"
+    },
+    {
         "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.10.2\\com.example.hospitalmanagement.app-debug-56:\\layout_fragment_second.xml.flat",
         "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.10.2\\com.example.hospitalmanagement.app-main-58:\\layout\\fragment_second.xml"
     },
     {
+        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.10.2\\com.example.hospitalmanagement.app-debug-56:\\drawable_bg_gradient_blue_green.xml.flat",
+        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.10.2\\com.example.hospitalmanagement.app-main-58:\\drawable\\bg_gradient_blue_green.xml"
+    },
+    {
         "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.10.2\\com.example.hospitalmanagement.app-debug-56:\\drawable_edittext_bg.xml.flat",
         "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.10.2\\com.example.hospitalmanagement.app-main-58:\\drawable\\edittext_bg.xml"
+    },
+    {
+        "merged": "com.example.hospitalmanagement.app-debug-56:/drawable_card_gradient_green.xml.flat",
+        "source": "com.example.hospitalmanagement.app-main-58:/drawable/card_gradient_green.xml"
     },
     {
         "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.10.2\\com.example.hospitalmanagement.app-debug-56:\\drawable_bottom_nav_colors.xml.flat",
@@ -46,6 +62,10 @@
     {
         "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.10.2\\com.example.hospitalmanagement.app-debug-56:\\drawable_rounded_corners_yellow.xml.flat",
         "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.10.2\\com.example.hospitalmanagement.app-main-58:\\drawable\\rounded_corners_yellow.xml"
+    },
+    {
+        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.10.2\\com.example.hospitalmanagement.app-debug-56:\\drawable_rounded_button_primary.xml.flat",
+        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.10.2\\com.example.hospitalmanagement.app-main-58:\\drawable\\rounded_button_primary.xml"
     },
     {
         "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.10.2\\com.example.hospitalmanagement.app-debug-56:\\drawable_ic_calendar.xml.flat",
@@ -108,6 +128,10 @@
         "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.10.2\\com.example.hospitalmanagement.app-main-58:\\drawable\\ic_email.xml"
     },
     {
+        "merged": "com.example.hospitalmanagement.app-debug-56:/drawable_section_underline.xml.flat",
+        "source": "com.example.hospitalmanagement.app-main-58:/drawable/section_underline.xml"
+    },
+    {
         "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.10.2\\com.example.hospitalmanagement.app-debug-56:\\layout_item_dashboard_option.xml.flat",
         "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.10.2\\com.example.hospitalmanagement.app-main-58:\\layout\\item_dashboard_option.xml"
     },
@@ -124,16 +148,16 @@
         "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.10.2\\com.example.hospitalmanagement.app-main-58:\\layout\\activity_login.xml"
     },
     {
-        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.10.2\\com.example.hospitalmanagement.app-debug-56:\\drawable_ic_profile.xml.flat",
-        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.10.2\\com.example.hospitalmanagement.app-main-58:\\drawable\\ic_profile.xml"
+        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.10.2\\com.example.hospitalmanagement.app-debug-56:\\drawable_rounded_button_teal.xml.flat",
+        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.10.2\\com.example.hospitalmanagement.app-main-58:\\drawable\\rounded_button_teal.xml"
     },
     {
         "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.10.2\\com.example.hospitalmanagement.app-debug-56:\\layout_activity_manage_appoinments.xml.flat",
         "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.10.2\\com.example.hospitalmanagement.app-main-58:\\layout\\activity_manage_appoinments.xml"
     },
     {
-        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.10.2\\com.example.hospitalmanagement.app-debug-56:\\drawable_rounded_button_teal.xml.flat",
-        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.10.2\\com.example.hospitalmanagement.app-main-58:\\drawable\\rounded_button_teal.xml"
+        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.10.2\\com.example.hospitalmanagement.app-debug-56:\\drawable_ic_profile.xml.flat",
+        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.10.2\\com.example.hospitalmanagement.app-main-58:\\drawable\\ic_profile.xml"
     },
     {
         "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.10.2\\com.example.hospitalmanagement.app-debug-56:\\anim_slide_in_right.xml.flat",
@@ -248,12 +272,12 @@
         "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.10.2\\com.example.hospitalmanagement.app-main-58:\\drawable\\ic_busy.xml"
     },
     {
-        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.10.2\\com.example.hospitalmanagement.app-debug-56:\\drawable_ic_department.xml.flat",
-        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.10.2\\com.example.hospitalmanagement.app-main-58:\\drawable\\ic_department.xml"
-    },
-    {
         "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.10.2\\com.example.hospitalmanagement.app-debug-56:\\xml_data_extraction_rules.xml.flat",
         "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.10.2\\com.example.hospitalmanagement.app-main-58:\\xml\\data_extraction_rules.xml"
+    },
+    {
+        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.10.2\\com.example.hospitalmanagement.app-debug-56:\\drawable_ic_department.xml.flat",
+        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.10.2\\com.example.hospitalmanagement.app-main-58:\\drawable\\ic_department.xml"
     },
     {
         "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.10.2\\com.example.hospitalmanagement.app-debug-56:\\drawable_ic_send.xml.flat",
@@ -286,6 +310,10 @@
     {
         "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.10.2\\com.example.hospitalmanagement.app-debug-56:\\menu_main_menu.xml.flat",
         "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.10.2\\com.example.hospitalmanagement.app-main-58:\\menu\\main_menu.xml"
+    },
+    {
+        "merged": "com.example.hospitalmanagement.app-debug-56:/drawable_gradient_status_blue.xml.flat",
+        "source": "com.example.hospitalmanagement.app-main-58:/drawable/gradient_status_blue.xml"
     },
     {
         "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.10.2\\com.example.hospitalmanagement.app-debug-56:\\menu_bottom_nav_menu.xml.flat",
@@ -348,6 +376,18 @@
         "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.10.2\\com.example.hospitalmanagement.app-main-58:\\drawable\\ic_prescription_outline.xml"
     },
     {
+        "merged": "com.example.hospitalmanagement.app-debug-56:/drawable_selected_doctor_bg.xml.flat",
+        "source": "com.example.hospitalmanagement.app-main-58:/drawable/selected_doctor_bg.xml"
+    },
+    {
+        "merged": "com.example.hospitalmanagement.app-debug-56:/drawable_ic_doctor.xml.flat",
+        "source": "com.example.hospitalmanagement.app-main-58:/drawable/ic_doctor.xml"
+    },
+    {
+        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.10.2\\com.example.hospitalmanagement.app-debug-56:\\drawable_rounded_button_white.xml.flat",
+        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.10.2\\com.example.hospitalmanagement.app-main-58:\\drawable\\rounded_button_white.xml"
+    },
+    {
         "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.10.2\\com.example.hospitalmanagement.app-debug-56:\\drawable_ic_contact.xml.flat",
         "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.10.2\\com.example.hospitalmanagement.app-main-58:\\drawable\\ic_contact.xml"
     },
@@ -376,12 +416,24 @@
         "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.10.2\\com.example.hospitalmanagement.app-main-58:\\drawable\\hospital_logo.jpg"
     },
     {
+        "merged": "com.example.hospitalmanagement.app-debug-56:/drawable_ic_call.xml.flat",
+        "source": "com.example.hospitalmanagement.app-main-58:/drawable/ic_call.xml"
+    },
+    {
         "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.10.2\\com.example.hospitalmanagement.app-debug-56:\\mipmap-mdpi_ic_launcher.webp.flat",
         "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.10.2\\com.example.hospitalmanagement.app-main-58:\\mipmap-mdpi\\ic_launcher.webp"
     },
     {
+        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.10.2\\com.example.hospitalmanagement.app-debug-56:\\drawable_profile_header_bg_gradient.xml.flat",
+        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.10.2\\com.example.hospitalmanagement.app-main-58:\\drawable\\profile_header_bg_gradient.xml"
+    },
+    {
         "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.10.2\\com.example.hospitalmanagement.app-debug-56:\\drawable_ic_lock.xml.flat",
         "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.10.2\\com.example.hospitalmanagement.app-main-58:\\drawable\\ic_lock.xml"
+    },
+    {
+        "merged": "com.example.hospitalmanagement.app-debug-56:/drawable_card_gradient_purple.xml.flat",
+        "source": "com.example.hospitalmanagement.app-main-58:/drawable/card_gradient_purple.xml"
     },
     {
         "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.10.2\\com.example.hospitalmanagement.app-debug-56:\\drawable_button_background.xml.flat",
@@ -390,6 +442,10 @@
     {
         "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.10.2\\com.example.hospitalmanagement.app-debug-56:\\mipmap-xxhdpi_ic_launcher_round.webp.flat",
         "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.10.2\\com.example.hospitalmanagement.app-main-58:\\mipmap-xxhdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.example.hospitalmanagement.app-debug-56:/drawable_gradient_emergency_red.xml.flat",
+        "source": "com.example.hospitalmanagement.app-main-58:/drawable/gradient_emergency_red.xml"
     },
     {
         "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.10.2\\com.example.hospitalmanagement.app-debug-56:\\layout_fragment_first.xml.flat",
@@ -422,6 +478,14 @@
     {
         "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.10.2\\com.example.hospitalmanagement.app-debug-56:\\drawable_ic_prescription.xml.flat",
         "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.10.2\\com.example.hospitalmanagement.app-main-58:\\drawable\\ic_prescription.xml"
+    },
+    {
+        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.10.2\\com.example.hospitalmanagement.app-debug-56:\\drawable_profile_header_bg.xml.flat",
+        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.10.2\\com.example.hospitalmanagement.app-main-58:\\drawable\\profile_header_bg.xml"
+    },
+    {
+        "merged": "com.example.hospitalmanagement.app-debug-56:/drawable_header_gradient.xml.flat",
+        "source": "com.example.hospitalmanagement.app-main-58:/drawable/header_gradient.xml"
     },
     {
         "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.10.2\\com.example.hospitalmanagement.app-debug-56:\\drawable_patient.jpg.flat",
@@ -468,12 +532,20 @@
         "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.10.2\\com.example.hospitalmanagement.app-main-58:\\layout\\activity_profile.xml"
     },
     {
+        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.10.2\\com.example.hospitalmanagement.app-debug-56:\\drawable_ic_ambulance.xml.flat",
+        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.10.2\\com.example.hospitalmanagement.app-main-58:\\drawable\\ic_ambulance.xml"
+    },
+    {
         "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.10.2\\com.example.hospitalmanagement.app-debug-56:\\drawable_ic_prescriptions.xml.flat",
         "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.10.2\\com.example.hospitalmanagement.app-main-58:\\drawable\\ic_prescriptions.xml"
     },
     {
         "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.10.2\\com.example.hospitalmanagement.app-debug-56:\\drawable_rounded_button_green.xml.flat",
         "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.10.2\\com.example.hospitalmanagement.app-main-58:\\drawable\\rounded_button_green.xml"
+    },
+    {
+        "merged": "com.example.hospitalmanagement.app-debug-56:/drawable_section_underline_purple.xml.flat",
+        "source": "com.example.hospitalmanagement.app-main-58:/drawable/section_underline_purple.xml"
     },
     {
         "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.10.2\\com.example.hospitalmanagement.app-debug-56:\\layout_activity_doctor_dashboard.xml.flat",
@@ -492,6 +564,10 @@
         "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.10.2\\com.example.hospitalmanagement.app-main-58:\\layout\\activity_view_doctors2.xml"
     },
     {
+        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.10.2\\com.example.hospitalmanagement.app-debug-56:\\drawable_rounded_button_logout.xml.flat",
+        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.10.2\\com.example.hospitalmanagement.app-main-58:\\drawable\\rounded_button_logout.xml"
+    },
+    {
         "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.10.2\\com.example.hospitalmanagement.app-debug-56:\\layout_dialog_book_appointment.xml.flat",
         "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.10.2\\com.example.hospitalmanagement.app-main-58:\\layout\\dialog_book_appointment.xml"
     },
@@ -508,10 +584,6 @@
         "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.10.2\\com.example.hospitalmanagement.app-main-58:\\layout\\activity_view_doctors.xml"
     },
     {
-        "merged": "com.example.hospitalmanagement.app-debug-56:/layout_activity_admin_dashboard2.xml.flat",
-        "source": "com.example.hospitalmanagement.app-main-58:/layout/activity_admin_dashboard2.xml"
-    },
-    {
         "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.10.2\\com.example.hospitalmanagement.app-debug-56:\\layout_activity_dashboard.xml.flat",
         "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.10.2\\com.example.hospitalmanagement.app-main-58:\\layout\\activity_dashboard.xml"
     },
@@ -522,6 +594,10 @@
     {
         "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.10.2\\com.example.hospitalmanagement.app-debug-56:\\layout_activity_assistant_appointment_adapter.xml.flat",
         "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.10.2\\com.example.hospitalmanagement.app-main-58:\\layout\\activity_assistant_appointment_adapter.xml"
+    },
+    {
+        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.10.2\\com.example.hospitalmanagement.app-debug-56:\\drawable_circle_background.xml.flat",
+        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.10.2\\com.example.hospitalmanagement.app-main-58:\\drawable\\circle_background.xml"
     },
     {
         "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.10.2\\com.example.hospitalmanagement.app-debug-56:\\drawable_ic_medical_records.xml.flat",
@@ -550,6 +626,10 @@
     {
         "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.10.2\\com.example.hospitalmanagement.app-debug-56:\\layout_item_report_card.xml.flat",
         "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.10.2\\com.example.hospitalmanagement.app-main-58:\\layout\\item_report_card.xml"
+    },
+    {
+        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.10.2\\com.example.hospitalmanagement.app-debug-56:\\drawable_pattern_overlay.xml.flat",
+        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.10.2\\com.example.hospitalmanagement.app-main-58:\\drawable\\pattern_overlay.xml"
     },
     {
         "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.10.2\\com.example.hospitalmanagement.app-debug-56:\\layout_item_appointment.xml.flat",
