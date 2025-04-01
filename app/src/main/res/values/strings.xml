@@ -159,5 +159,6 @@
     <string name="home_button" />
     <string name="logout_button_desc" />
     <string name="doctor_details_text_desc" />
+    <string name="status" />
 
 </resources>

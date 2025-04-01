@@ -5,21 +5,24 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.LinearLayout;
+import android.widget.ScrollView;
+import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.cardview.widget.CardView;
-import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.recyclerview.widget.RecyclerView;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
 import com.example.hospitalmanagement.R;
+import com.google.android.material.imageview.ShapeableImageView;
 import java.lang.NullPointerException;
 import java.lang.Override;
 import java.lang.String;
 
 public final class ActivityDoctorDashboardBinding implements ViewBinding {
   @NonNull
-  private final ConstraintLayout rootView;
+  private final ScrollView rootView;
 
   @NonNull
   public final Button appointmentButton;
@@ -31,6 +34,12 @@ public final class ActivityDoctorDashboardBinding implements ViewBinding {
   public final RecyclerView appointmentRecyclerView;
 
   @NonNull
+  public final TextView appointmentsCount;
+
+  @NonNull
+  public final TextView appointmentsLabel;
+
+  @NonNull
   public final Button busyStatusButton;
 
   @NonNull
@@ -40,7 +49,22 @@ public final class ActivityDoctorDashboardBinding implements ViewBinding {
   public final CardView completedAppointmentCard;
 
   @NonNull
+  public final TextView doctorName;
+
+  @NonNull
+  public final TextView doctorSpecialty;
+
+  @NonNull
+  public final TextView doctorStatus;
+
+  @NonNull
+  public final LinearLayout firstActionRow;
+
+  @NonNull
   public final Button logoutBtn;
+
+  @NonNull
+  public final TextView patientsCount;
 
   @NonNull
   public final Button prescribeButton;
@@ -49,30 +73,67 @@ public final class ActivityDoctorDashboardBinding implements ViewBinding {
   public final CardView prescribeCard;
 
   @NonNull
+  public final CardView profileCard;
+
+  @NonNull
+  public final ShapeableImageView profileImage;
+
+  @NonNull
+  public final TextView quickActionsLabel;
+
+  @NonNull
+  public final TextView ratingValue;
+
+  @NonNull
+  public final LinearLayout secondActionRow;
+
+  @NonNull
   public final Button sendStatusButton;
 
-  private ActivityDoctorDashboardBinding(@NonNull ConstraintLayout rootView,
+  @NonNull
+  public final CardView statusCard;
+
+  private ActivityDoctorDashboardBinding(@NonNull ScrollView rootView,
       @NonNull Button appointmentButton, @NonNull CardView appointmentCard,
-      @NonNull RecyclerView appointmentRecyclerView, @NonNull Button busyStatusButton,
+      @NonNull RecyclerView appointmentRecyclerView, @NonNull TextView appointmentsCount,
+      @NonNull TextView appointmentsLabel, @NonNull Button busyStatusButton,
       @NonNull Button completedAppointmentButton, @NonNull CardView completedAppointmentCard,
-      @NonNull Button logoutBtn, @NonNull Button prescribeButton, @NonNull CardView prescribeCard,
-      @NonNull Button sendStatusButton) {
+      @NonNull TextView doctorName, @NonNull TextView doctorSpecialty,
+      @NonNull TextView doctorStatus, @NonNull LinearLayout firstActionRow,
+      @NonNull Button logoutBtn, @NonNull TextView patientsCount, @NonNull Button prescribeButton,
+      @NonNull CardView prescribeCard, @NonNull CardView profileCard,
+      @NonNull ShapeableImageView profileImage, @NonNull TextView quickActionsLabel,
+      @NonNull TextView ratingValue, @NonNull LinearLayout secondActionRow,
+      @NonNull Button sendStatusButton, @NonNull CardView statusCard) {
     this.rootView = rootView;
     this.appointmentButton = appointmentButton;
     this.appointmentCard = appointmentCard;
     this.appointmentRecyclerView = appointmentRecyclerView;
+    this.appointmentsCount = appointmentsCount;
+    this.appointmentsLabel = appointmentsLabel;
     this.busyStatusButton = busyStatusButton;
     this.completedAppointmentButton = completedAppointmentButton;
     this.completedAppointmentCard = completedAppointmentCard;
+    this.doctorName = doctorName;
+    this.doctorSpecialty = doctorSpecialty;
+    this.doctorStatus = doctorStatus;
+    this.firstActionRow = firstActionRow;
     this.logoutBtn = logoutBtn;
+    this.patientsCount = patientsCount;
     this.prescribeButton = prescribeButton;
     this.prescribeCard = prescribeCard;
+    this.profileCard = profileCard;
+    this.profileImage = profileImage;
+    this.quickActionsLabel = quickActionsLabel;
+    this.ratingValue = ratingValue;
+    this.secondActionRow = secondActionRow;
     this.sendStatusButton = sendStatusButton;
+    this.statusCard = statusCard;
   }
 
   @Override
   @NonNull
-  public ConstraintLayout getRoot() {
+  public ScrollView getRoot() {
     return rootView;
   }
 
@@ -115,6 +176,18 @@ public final class ActivityDoctorDashboardBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.appointmentsCount;
+      TextView appointmentsCount = ViewBindings.findChildViewById(rootView, id);
+      if (appointmentsCount == null) {
+        break missingId;
+      }
+
+      id = R.id.appointmentsLabel;
+      TextView appointmentsLabel = ViewBindings.findChildViewById(rootView, id);
+      if (appointmentsLabel == null) {
+        break missingId;
+      }
+
       id = R.id.busyStatusButton;
       Button busyStatusButton = ViewBindings.findChildViewById(rootView, id);
       if (busyStatusButton == null) {
@@ -133,9 +206,39 @@ public final class ActivityDoctorDashboardBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.doctorName;
+      TextView doctorName = ViewBindings.findChildViewById(rootView, id);
+      if (doctorName == null) {
+        break missingId;
+      }
+
+      id = R.id.doctorSpecialty;
+      TextView doctorSpecialty = ViewBindings.findChildViewById(rootView, id);
+      if (doctorSpecialty == null) {
+        break missingId;
+      }
+
+      id = R.id.doctorStatus;
+      TextView doctorStatus = ViewBindings.findChildViewById(rootView, id);
+      if (doctorStatus == null) {
+        break missingId;
+      }
+
+      id = R.id.firstActionRow;
+      LinearLayout firstActionRow = ViewBindings.findChildViewById(rootView, id);
+      if (firstActionRow == null) {
+        break missingId;
+      }
+
       id = R.id.logoutBtn;
       Button logoutBtn = ViewBindings.findChildViewById(rootView, id);
       if (logoutBtn == null) {
+        break missingId;
+      }
+
+      id = R.id.patientsCount;
+      TextView patientsCount = ViewBindings.findChildViewById(rootView, id);
+      if (patientsCount == null) {
         break missingId;
       }
 
@@ -151,15 +254,54 @@ public final class ActivityDoctorDashboardBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.profileCard;
+      CardView profileCard = ViewBindings.findChildViewById(rootView, id);
+      if (profileCard == null) {
+        break missingId;
+      }
+
+      id = R.id.profileImage;
+      ShapeableImageView profileImage = ViewBindings.findChildViewById(rootView, id);
+      if (profileImage == null) {
+        break missingId;
+      }
+
+      id = R.id.quickActionsLabel;
+      TextView quickActionsLabel = ViewBindings.findChildViewById(rootView, id);
+      if (quickActionsLabel == null) {
+        break missingId;
+      }
+
+      id = R.id.ratingValue;
+      TextView ratingValue = ViewBindings.findChildViewById(rootView, id);
+      if (ratingValue == null) {
+        break missingId;
+      }
+
+      id = R.id.secondActionRow;
+      LinearLayout secondActionRow = ViewBindings.findChildViewById(rootView, id);
+      if (secondActionRow == null) {
+        break missingId;
+      }
+
       id = R.id.sendStatusButton;
       Button sendStatusButton = ViewBindings.findChildViewById(rootView, id);
       if (sendStatusButton == null) {
         break missingId;
       }
 
-      return new ActivityDoctorDashboardBinding((ConstraintLayout) rootView, appointmentButton,
-          appointmentCard, appointmentRecyclerView, busyStatusButton, completedAppointmentButton,
-          completedAppointmentCard, logoutBtn, prescribeButton, prescribeCard, sendStatusButton);
+      id = R.id.statusCard;
+      CardView statusCard = ViewBindings.findChildViewById(rootView, id);
+      if (statusCard == null) {
+        break missingId;
+      }
+
+      return new ActivityDoctorDashboardBinding((ScrollView) rootView, appointmentButton,
+          appointmentCard, appointmentRecyclerView, appointmentsCount, appointmentsLabel,
+          busyStatusButton, completedAppointmentButton, completedAppointmentCard, doctorName,
+          doctorSpecialty, doctorStatus, firstActionRow, logoutBtn, patientsCount, prescribeButton,
+          prescribeCard, profileCard, profileImage, quickActionsLabel, ratingValue, secondActionRow,
+          sendStatusButton, statusCard);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

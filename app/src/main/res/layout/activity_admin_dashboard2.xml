@@ -19,7 +19,7 @@
             android:id="@+id/profileImage"
             android:layout_width="48dp"
             android:layout_height="48dp"
-            android:src="@drawable/pf"
+            android:src="@drawable/ad"
             android:contentDescription="Admin profile"
             android:layout_marginEnd="16dp"/>
 
@@ -347,6 +347,7 @@
         android:minHeight="0dp"
         android:paddingVertical="8dp"
         app:cornerRadius="8dp"
+
         style="@style/Widget.MaterialComponents.Button.OutlinedButton"/>
     <!-- Bottom Navigation -->
     <com.google.android.material.bottomnavigation.BottomNavigationView

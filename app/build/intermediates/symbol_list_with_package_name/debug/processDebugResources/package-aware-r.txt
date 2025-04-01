@@ -1430,8 +1430,11 @@ color background_gray
 color background_material_dark
 color background_material_light
 color black
+color blue_100
+color blue_50
 color blue_500
 color blue_700
+color blue_800
 color blue_primary
 color bright_foreground_disabled_material_dark
 color bright_foreground_disabled_material_light
@@ -1515,10 +1518,16 @@ color error_color_material_light
 color foreground_material_dark
 color foreground_material_light
 color gray
+color gray_200
+color gray_600
 color gray_stroke
 color gray_text
+color green_100
+color green_50
 color green_500
+color green_600
 color green_700
+color green_800
 color green_primary
 color highlighted_text_material_dark
 color highlighted_text_material_light
@@ -2200,11 +2209,16 @@ color primary_text_default_material_light
 color primary_text_disabled_material_dark
 color primary_text_disabled_material_light
 color purple_100
+color purple_50
 color purple_500
 color purple_700
+color purple_800
 color red
+color red_100
+color red_50
 color red_500
 color red_700
+color red_800
 color red_primary
 color ripple_material_dark
 color ripple_material_light
@@ -2218,7 +2232,11 @@ color switch_thumb_material_dark
 color switch_thumb_material_light
 color switch_thumb_normal_material_dark
 color switch_thumb_normal_material_light
+color teal_100
+color teal_50
+color teal_500
 color teal_700
+color teal_800
 color text_primary
 color text_secondary
 color tooltip_background_dark
@@ -3112,6 +3130,7 @@ drawable abc_textfield_search_activated_mtrl_alpha
 drawable abc_textfield_search_default_mtrl_alpha
 drawable abc_textfield_search_material
 drawable abc_vector_test
+drawable ad
 drawable assistant
 drawable avd_hide_password
 drawable avd_show_password
@@ -3151,12 +3170,14 @@ drawable common_google_signin_btn_text_light
 drawable common_google_signin_btn_text_light_focused
 drawable common_google_signin_btn_text_light_normal
 drawable common_google_signin_btn_text_light_normal_background
+drawable dc
 drawable design_fab_background
 drawable design_ic_visibility
 drawable design_ic_visibility_off
 drawable design_password_eye
 drawable design_snackbar_background
 drawable doctor
+drawable drawable_start_indicator
 drawable edittext_background
 drawable edittext_bg
 drawable forgot
@@ -3189,6 +3210,8 @@ drawable ic_call_decline
 drawable ic_call_decline_low
 drawable ic_check_circle
 drawable ic_check_circle_outline
+drawable ic_circle_green
+drawable ic_circle_red
 drawable ic_clear_black_24
 drawable ic_clock_black_24dp
 drawable ic_contact
@@ -3232,6 +3255,7 @@ drawable ic_quick_report
 drawable ic_reports
 drawable ic_search_black_24
 drawable ic_send
+drawable ic_status
 drawable ic_upload
 drawable indeterminate_static
 drawable m3_avd_hide_password
@@ -3443,6 +3467,8 @@ id appointmentCard
 id appointmentRecyclerView
 id appointmentsBtn
 id appointmentsContainer
+id appointmentsCount
+id appointmentsLabel
 id appointmentsRecyclerView
 id approveBtn
 id approveButton
@@ -3573,7 +3599,9 @@ id doctorName
 id doctorNameText
 id doctorNameTextView
 id doctorRecyclerView
+id doctorSpecialty
 id doctorSpinner
+id doctorStatus
 id doctorText
 id doctorsRecyclerView
 id dosageEditText
@@ -3621,6 +3649,7 @@ id fill
 id fill_horizontal
 id fill_vertical
 id filled
+id firstActionRow
 id fitCenter
 id fitEnd
 id fitStart
@@ -3829,6 +3858,7 @@ id patientNameEditText
 id patientNameText
 id patientRecordsBtn
 id patientText
+id patientsCount
 id peekHeight
 id pendingAppointmentButton
 id pendingAppointmentCard
@@ -3841,6 +3871,7 @@ id postLayout
 id prescribeButton
 id prescribeCard
 id pressed
+id profileCard
 id profileDepartment
 id profileEmail
 id profileImage
@@ -3850,10 +3881,12 @@ id profilePhone
 id profileTitle
 id progress_circular
 id progress_horizontal
+id quickActionsLabel
 id radio
 id radioAdmin
 id radioDoctor
 id radioPatient
+id ratingValue
 id ratio
 id rectangles
 id recyclerViewAppointments
@@ -3897,6 +3930,7 @@ id search_mag_icon
 id search_plate
 id search_src_text
 id search_voice_btn
+id secondActionRow
 id selectDateButton
 id selectTimeButton
 id select_dialog_listview
@@ -3947,6 +3981,7 @@ id staticPostLayout
 id statsApproved
 id statsRejected
 id statsTotal
+id statusCard
 id statusText
 id statusTextView
 id statusTextView1
@@ -4601,6 +4636,7 @@ string send_status_to_patient
 string show_appointments
 string side_sheet_accessibility_pane_title
 string side_sheet_behavior
+string status
 string status_bar_notification_info_overflow
 string time_10_00_am
 string today_s_appointments
@@ -5744,6 +5780,7 @@ style Widget_MaterialComponents_Toolbar_PrimarySurface
 style Widget_MaterialComponents_Toolbar_Surface
 style Widget_MaterialComponents_Tooltip
 style Widget_Support_CoordinatorLayout
+style circleImageView
 styleable ActionBar background backgroundSplit backgroundStacked contentInsetEnd contentInsetEndWithActions contentInsetLeft contentInsetRight contentInsetStart contentInsetStartWithNavigation customNavigationLayout displayOptions divider elevation height hideOnContentScroll homeAsUpIndicator homeLayout icon indeterminateProgressStyle itemPadding logo navigationMode popupTheme progressBarPadding progressBarStyle subtitle subtitleTextStyle title titleTextStyle
 styleable ActionBarLayout android_layout_gravity
 styleable ActionMenuItemView android_minWidth

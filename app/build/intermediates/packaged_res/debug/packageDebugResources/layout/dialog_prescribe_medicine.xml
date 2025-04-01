@@ -5,30 +5,60 @@
     android:orientation="vertical"
     android:padding="16dp">
 
-    <EditText
-        android:id="@+id/patientIdEditText"
+    <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Patient ID"
-        android:minHeight="48dp"/>
+        android:text="New Prescription"
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:layout_marginBottom="16dp"/>
 
-    <EditText
-        android:id="@+id/medicineEditText"
+    <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Medicine"
-        android:minHeight="48dp"/>
+        android:layout_marginBottom="8dp">
 
-    <EditText
-        android:id="@+id/dosageEditText"
+        <EditText
+            android:id="@+id/patientIdEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Patient ID"
+            android:inputType="text"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="@string/dosage"
-        android:minHeight="48dp"/>
+        android:layout_marginBottom="8dp">
+
+        <EditText
+            android:id="@+id/medicineEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Medicine"
+            android:inputType="text"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp">
+
+        <EditText
+            android:id="@+id/dosageEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Dosage"
+            android:inputType="text"/>
+    </com.google.android.material.textfield.TextInputLayout>
 
     <Button
         android:id="@+id/prescribeButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Prescribe" />
+        android:text="Prescribe"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/blue_500"
+        android:textAllCaps="false"/>
 </LinearLayout>

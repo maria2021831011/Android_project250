@@ -4,20 +4,16 @@
         "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.10.2\\com.example.hospitalmanagement.app-main-58:\\layout\\activity_login.xml"
     },
     {
-        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.10.2\\com.example.hospitalmanagement.app-mergeDebugResources-55:\\layout\\activity_manage_profile.xml",
-        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.10.2\\com.example.hospitalmanagement.app-main-58:\\layout\\activity_manage_profile.xml"
-    },
-    {
         "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.10.2\\com.example.hospitalmanagement.app-mergeDebugResources-55:\\layout\\activity_forgot_password.xml",
         "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.10.2\\com.example.hospitalmanagement.app-main-58:\\layout\\activity_forgot_password.xml"
     },
     {
-        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.10.2\\com.example.hospitalmanagement.app-mergeDebugResources-55:\\layout\\dialog_view_prescription.xml",
-        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.10.2\\com.example.hospitalmanagement.app-main-58:\\layout\\dialog_view_prescription.xml"
+        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.10.2\\com.example.hospitalmanagement.app-mergeDebugResources-55:\\layout\\activity_manage_profile.xml",
+        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.10.2\\com.example.hospitalmanagement.app-main-58:\\layout\\activity_manage_profile.xml"
     },
     {
-        "merged": "com.example.hospitalmanagement.app-mergeDebugResources-55:/layout/activity_patient_dashboard.xml",
-        "source": "com.example.hospitalmanagement.app-main-58:/layout/activity_patient_dashboard.xml"
+        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.10.2\\com.example.hospitalmanagement.app-mergeDebugResources-55:\\layout\\dialog_view_prescription.xml",
+        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.10.2\\com.example.hospitalmanagement.app-main-58:\\layout\\dialog_view_prescription.xml"
     },
     {
         "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.10.2\\com.example.hospitalmanagement.app-mergeDebugResources-55:\\layout\\dialog_about_hospital.xml",
@@ -64,6 +60,10 @@
         "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.10.2\\com.example.hospitalmanagement.app-main-58:\\layout\\activity_appointment_adapter.xml"
     },
     {
+        "merged": "com.example.hospitalmanagement.app-mergeDebugResources-55:/layout/activity_doctor_dashboard.xml",
+        "source": "com.example.hospitalmanagement.app-main-58:/layout/activity_doctor_dashboard.xml"
+    },
+    {
         "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.10.2\\com.example.hospitalmanagement.app-mergeDebugResources-55:\\layout\\item_appointment_completed.xml",
         "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.10.2\\com.example.hospitalmanagement.app-main-58:\\layout\\item_appointment_completed.xml"
     },
@@ -72,12 +72,12 @@
         "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.10.2\\com.example.hospitalmanagement.app-main-58:\\layout\\dialog_notifications.xml"
     },
     {
-        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.10.2\\com.example.hospitalmanagement.app-mergeDebugResources-55:\\layout\\activity_notifications_adapter2.xml",
-        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.10.2\\com.example.hospitalmanagement.app-main-58:\\layout\\activity_notifications_adapter2.xml"
-    },
-    {
         "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.10.2\\com.example.hospitalmanagement.app-mergeDebugResources-55:\\layout\\activity_dashboard_adapter.xml",
         "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.10.2\\com.example.hospitalmanagement.app-main-58:\\layout\\activity_dashboard_adapter.xml"
+    },
+    {
+        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.10.2\\com.example.hospitalmanagement.app-mergeDebugResources-55:\\layout\\activity_notifications_adapter2.xml",
+        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.10.2\\com.example.hospitalmanagement.app-main-58:\\layout\\activity_notifications_adapter2.xml"
     },
     {
         "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.10.2\\com.example.hospitalmanagement.app-mergeDebugResources-55:\\layout\\activity_dashboard.xml",
@@ -186,6 +186,10 @@
     {
         "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.10.2\\com.example.hospitalmanagement.app-mergeDebugResources-55:\\layout\\notiification_item.xml",
         "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.10.2\\com.example.hospitalmanagement.app-main-58:\\layout\\notiification_item.xml"
+    },
+    {
+        "merged": "com.example.hospitalmanagement.app-mergeDebugResources-55:/layout/activity_admin_dashboard2.xml",
+        "source": "com.example.hospitalmanagement.app-main-58:/layout/activity_admin_dashboard2.xml"
     },
     {
         "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.10.2\\com.example.hospitalmanagement.app-mergeDebugResources-55:\\layout\\fragment_second2.xml",

@@ -10,6 +10,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
@@ -32,9 +33,10 @@ public class DoctorDashboardActivity extends AppCompatActivity {
     private FirebaseFirestore db;
     private FirebaseAuth mAuth;
     private String doctorId;
-    private Button appointmentButton, completedAppointmentButton, busyStatusButton, logoutBtn;
+    private Button appointmentButton, completedAppointmentButton, busyStatusButton, logoutBtn, prescribeButton;
     private boolean isBusy = false;
-    private Button  sendStatusButton;
+    private Button sendStatusButton;
+    private TextView doctorName, doctorSpecialty, doctorStatus, appointmentsCount, patientsCount, ratingValue;
 
     private String busyStartTime, busyEndTime;
     private static final String ASSISTANT_UID = "ICyFihhf1xfBSWPBgtE5YxIAJFC3";
@@ -44,27 +46,40 @@ public class DoctorDashboardActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_doctor_dashboard);
 
+        // Initialize views
         mAuth = FirebaseAuth.getInstance();
         db = FirebaseFirestore.getInstance();
         doctorId = mAuth.getCurrentUser().getUid();
 
+
+
+
+
+        // Profile views
+        doctorName = findViewById(R.id.doctorName);
+        doctorSpecialty = findViewById(R.id.doctorSpecialty);
+        doctorStatus = findViewById(R.id.doctorStatus);
+        appointmentsCount = findViewById(R.id.appointmentsCount);
+        patientsCount = findViewById(R.id.patientsCount);
+        ratingValue = findViewById(R.id.ratingValue);
+
+        // Initialize other views
         appointmentRecyclerView = findViewById(R.id.appointmentRecyclerView);
         appointmentButton = findViewById(R.id.appointmentButton);
         completedAppointmentButton = findViewById(R.id.completedAppointmentButton);
         busyStatusButton = findViewById(R.id.busyStatusButton);
         logoutBtn = findViewById(R.id.logoutBtn);
-
-
-
+        prescribeButton = findViewById(R.id.prescribeButton);
         sendStatusButton = findViewById(R.id.sendStatusButton);
-        sendStatusButton.setOnClickListener(v -> showStatusDialog());
+
+        // Load doctor profile data
+        loadDoctorProfile();
 
         // Set up RecyclerView
         appointmentRecyclerView.setLayoutManager(new LinearLayoutManager(this));
         appointmentList = new ArrayList<>();
         completedAppointmentList = new ArrayList<>();
-        Button prescribeButton = findViewById(R.id.prescribeButton);
-        prescribeButton.setOnClickListener(v -> showPrescriptionDialog());
+
         appointmentAdapter = new AppointmentAdapter(appointmentList, new AppointmentAdapter.OnAppointmentActionListener() {
             @Override
             public void onApprove(Appointment appointment) {
@@ -100,11 +115,44 @@ public class DoctorDashboardActivity extends AppCompatActivity {
             }
         });
 
+        prescribeButton.setOnClickListener(v -> showPrescriptionDialog());
+        sendStatusButton.setOnClickListener(v -> showStatusDialog());
         logoutBtn.setOnClickListener(v -> {
             mAuth.signOut();
             Toast.makeText(DoctorDashboardActivity.this, "Logged out", Toast.LENGTH_SHORT).show();
             finish();
         });
+    }
+
+    private void loadDoctorProfile() {
+        db.collection("doctors").document(doctorId)
+                .get()
+                .addOnSuccessListener(documentSnapshot -> {
+                    if (documentSnapshot.exists()) {
+                        String name = documentSnapshot.getString("name");
+                        String specialty = documentSnapshot.getString("specialty");
+                        boolean isBusy = documentSnapshot.getBoolean("busy");
+                        Long appointments = documentSnapshot.getLong("appointmentsCount");
+                        Long patients = documentSnapshot.getLong("patientsCount");
+                        Double rating = documentSnapshot.getDouble("rating");
+
+                        doctorName.setText(name != null ? name : "Dr.Sajib");
+                        doctorSpecialty.setText(specialty != null ? specialty : "Cardiologist");
+                        doctorStatus.setText(isBusy ? "Available" : "Available");
+                        doctorStatus.setTextColor(isBusy ? getResources().getColor(R.color.red_500) :
+                                getResources().getColor(R.color.green_500));
+                        doctorStatus.setCompoundDrawablesWithIntrinsicBounds(
+                                isBusy ? R.drawable.ic_circle_red : R.drawable.ic_circle_green,
+                                0, 0, 0);
+
+                        appointmentsCount.setText(appointments != null ? String.valueOf(appointments) : "40");
+                        patientsCount.setText(patients != null ? String.valueOf(patients) : "1");
+                        ratingValue.setText(rating != null ? String.format("%.1f", rating) : "4.0");
+                    }
+                })
+                .addOnFailureListener(e -> {
+                    Toast.makeText(this, "Failed to load profile", Toast.LENGTH_SHORT).show();
+                });
     }
 
     private void loadPendingAppointments() {
@@ -214,6 +262,9 @@ public class DoctorDashboardActivity extends AppCompatActivity {
                 .update(updates)
                 .addOnSuccessListener(aVoid -> {
                     Toast.makeText(this, "Doctor is now marked as busy", Toast.LENGTH_SHORT).show();
+                    doctorStatus.setText("Busy");
+                    doctorStatus.setTextColor(getResources().getColor(R.color.red_500));
+                    doctorStatus.setCompoundDrawablesWithIntrinsicBounds(R.drawable.ic_circle_red, 0, 0, 0);
                 })
                 .addOnFailureListener(e -> Toast.makeText(this, "Failed to update status", Toast.LENGTH_SHORT).show());
     }
@@ -257,10 +308,6 @@ public class DoctorDashboardActivity extends AppCompatActivity {
                     });
         });
     }
-    // Method to send approved status to the patient
-    // Method to send approved status to the patient
-
-
 
     private void showStatusDialog() {
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
