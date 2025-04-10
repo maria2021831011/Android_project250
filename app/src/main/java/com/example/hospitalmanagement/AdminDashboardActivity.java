@@ -1,7 +1,4 @@
-
-
 package com.example.hospitalmanagement;
-
 import android.app.AlertDialog;
 import android.content.Intent;
 import android.graphics.Color;
@@ -13,12 +10,10 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
-
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.cardview.widget.CardView;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
-
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.firestore.FirebaseFirestore;
@@ -31,7 +26,6 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Locale;
 import java.util.Map;
-
 public class AdminDashboardActivity extends AppCompatActivity {
 
     private static final String PATIENT_UID = "au3NyjugG2Z6pJBUN1m9sn5uNo02";
@@ -76,14 +70,14 @@ public class AdminDashboardActivity extends AppCompatActivity {
         bottomNav.setOnNavigationItemSelectedListener(item -> {
             int id = item.getItemId();
             if (id == R.id.nav_home) {
-                // Refresh home view
-                recreate(); // or refresh the data
+
+                recreate();
                 return true;
             } else if (id == R.id.nav_reports) {
                 showMonthlyReports();
                 return true;
             } else if (id == R.id.nav_profile) {
-                openProfile(); // Add this line to handle profile click
+                openProfile();
                 return true;
             }
             return false;
