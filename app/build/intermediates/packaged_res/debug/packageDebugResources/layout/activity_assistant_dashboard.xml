@@ -12,13 +12,13 @@
         android:layout_height="wrap_content"
         android:orientation="vertical">
 
-        <!-- Profile Header Section -->
+        <!--profile header section -->
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="280dp"
             android:background="@drawable/bg_gradient_blue_green">
 
-            <!-- Profile Image (Using standard ImageView with circular shape) -->
+            <!-- profile image  -->
             <ImageView
                 android:id="@+id/profileImage"
                 android:layout_width="120dp"
@@ -30,7 +30,7 @@
                 android:src="@drawable/pf"
                 android:background="@drawable/rounded_button_red"/>
 
-            <!-- Name and Title -->
+            <!-- name and title -->
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -244,7 +244,7 @@
                         android:orientation="vertical"
                         android:visibility="gone">
 
-                        <!-- Appointment items will be added here programmatically -->
+                        <!-- akta unvisible layer -->
                     </LinearLayout>
                 </LinearLayout>
             </androidx.cardview.widget.CardView>

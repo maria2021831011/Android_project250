@@ -94,28 +94,28 @@ public class AssistantDashboardActivity extends AppCompatActivity {
 
                     if (querySnapshot != null && !querySnapshot.isEmpty()) {
                         for (QueryDocumentSnapshot document : querySnapshot) {
-                            // Get appointment status from Firestore
+
                             String status = document.getString("status");
 
-                            // Set fixed values as per requirements
+
                             String patientName = "Riaz";
                             String doctorName = "Sajib";
                             String timeRange = "11 AM to 2 PM";
 
-                            // Create a button for each appointment
+                            //button for each appointment
                             Button appointmentBtn = new Button(this);
                             appointmentBtn.setLayoutParams(new LinearLayout.LayoutParams(
                                     LinearLayout.LayoutParams.MATCH_PARENT,
                                     LinearLayout.LayoutParams.WRAP_CONTENT));
 
-                            // Set button text with appointment details
+                            //set button text with appointment details
                             String btnText = "Patient: " + patientName +
                                     "\nStatus: " + (status != null ? status : "Pending") +
                                     "\nTime: " + timeRange +
                                     "\nDoctor: " + doctorName;
                             appointmentBtn.setText(btnText);
 
-                            // Set button style based on status
+                            //set button style based on status
                             String displayStatus = status != null ? status : "Pending";
                             switch (displayStatus) {
                                 case "Pending":
@@ -128,7 +128,7 @@ public class AssistantDashboardActivity extends AppCompatActivity {
                                     appointmentBtn.setBackground(ContextCompat.getDrawable(this, R.drawable.rounded_corners_red));
                                     break;
                                 default:
-                                    appointmentBtn.setBackground(ContextCompat.getDrawable(this, R.drawable.rounded_corners_gray));
+                                    appointmentBtn.setBackground(ContextCompat.getDrawable(this, R.drawable.card_gradient_green));
                             }
 
                             appointmentBtn.setTextColor(ContextCompat.getColor(this, android.R.color.white));
@@ -137,12 +137,12 @@ public class AssistantDashboardActivity extends AppCompatActivity {
                             appointmentBtn.setAllCaps(false);
                             appointmentBtn.setElevation(4);
 
-                            // Add margin between buttons
+                            //margin between buttons
                             LinearLayout.LayoutParams params = (LinearLayout.LayoutParams) appointmentBtn.getLayoutParams();
                             params.setMargins(0, 0, 0, 16);
                             appointmentBtn.setLayoutParams(params);
 
-                            // Add button to container
+                            //button to container
                             appointmentsContainer.addView(appointmentBtn);
                         }
                     } else {
@@ -180,7 +180,7 @@ public class AssistantDashboardActivity extends AppCompatActivity {
                             String busyStartTime = (String) doctorData.get("busyStartTime");
                             String busyEndTime = (String) doctorData.get("busyEndTime");
 
-                            // Update the TextView with the busy status
+                            //update  the busy status
                             if (busyStartTime != null && busyEndTime != null) {
                                 busyStatusTextView.setText("Doctor is busy from " + busyStartTime + " to " + busyEndTime);
                             } else {
@@ -200,7 +200,7 @@ public class AssistantDashboardActivity extends AppCompatActivity {
             return;
         }
 
-        // Create a status message for the patient
+        //message for the patient
         Map<String, Object> statusMessage = new HashMap<>();
         statusMessage.put("message", message);
         statusMessage.put("timestamp", FieldValue.serverTimestamp());
