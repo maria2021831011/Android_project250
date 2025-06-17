@@ -59,7 +59,7 @@ public class PatientDashboardActivity extends AppCompatActivity {
     private boolean isStatusVisible1 = false;
     private Button viewPrescriptionButton;
 
-    private static final String PATIENT_UID = "au3NyjugG2Z6pJBUN1m9sn5uNo02"; // Assistant's UID
+    private static final String PATIENT_UID = "au3NyjugG2Z6pJBUN1m9sn5uNo02";
 
     @SuppressLint("MissingInflatedId")
     @Override
@@ -67,7 +67,7 @@ public class PatientDashboardActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_patient_dashboard);
 
-        // Initialize views
+        // initialize views
         mAuth = FirebaseAuth.getInstance();
         db = FirebaseFirestore.getInstance();
 
@@ -77,7 +77,7 @@ public class PatientDashboardActivity extends AppCompatActivity {
         Button closeDoctorDetailsButton = findViewById(R.id.closeDoctorDetailsButton);
         selectedDoctorTextView = findViewById(R.id.selectedDoctorTextView);
 
-        // Initialize buttons
+        //initialize buttons
         viewPrescriptionButton = findViewById(R.id.viewPrescriptionButton);
         bookAppointmentButton = findViewById(R.id.bookAppointmentButton);
         logoutBtn = findViewById(R.id.logoutBtn);
@@ -86,12 +86,12 @@ public class PatientDashboardActivity extends AppCompatActivity {
         statusTextView = findViewById(R.id.statusTextView);
         statusTextView1 = findViewById(R.id.statusTextView1);
 
-        // Emergency buttons
+        // emergency buttons
         Button callAmbulanceButton = findViewById(R.id.callAmbulanceButton);
         Button helplineButton = findViewById(R.id.helplineButton);
         Button aboutHospitalButton = findViewById(R.id.aboutHospitalButton);
 
-        // Set up RecyclerView for doctors
+        // Set up recyclerView for doctors
         doctorRecyclerView = findViewById(R.id.doctorRecyclerView);
         doctorRecyclerView.setLayoutManager(new LinearLayoutManager(this));
         doctorList = new ArrayList<>();
@@ -100,13 +100,14 @@ public class PatientDashboardActivity extends AppCompatActivity {
             selectedDoctor = doctor;
             selectedDoctorTextView.setVisibility(View.VISIBLE);
             selectedDoctorTextView.setText("Selected Doctor: " + doctor.getUsername());
+           //shows popup msg
             Toast.makeText(PatientDashboardActivity.this, "Selected Doctor: " + doctor.getUsername(), Toast.LENGTH_SHORT).show();
         });
 
         doctorRecyclerView.setAdapter(doctorAdapter);
         doctorRecyclerView.setVisibility(View.GONE);
 
-        // Book appointment button click event
+        //book appointment  event
         bookAppointmentButton.setOnClickListener(v -> {
             if (doctorRecyclerView.getVisibility() == View.GONE) {
                 // Show doctors list
@@ -121,7 +122,7 @@ public class PatientDashboardActivity extends AppCompatActivity {
             }
         });
 
-        // Doctor details button
+        //doctor details button
         doctorDetailsButton.setOnClickListener(v -> {
             String doctorDetails = "\n\n1. Dr. Ayesha Rahman\nSpecialization: Cardiologist\nContact: +880 1712 345678\nEmail: ayesha.rahman@hospital.com\n\n" +
                     "2. Dr. Tanvir Ahmed\nSpecialization: Neurologist\nContact: +880 1813 456789\nEmail: tanvir.ahmed@hospital.com\n\n" +
@@ -138,19 +139,19 @@ public class PatientDashboardActivity extends AppCompatActivity {
             doctorDetailsCardView.setVisibility(View.GONE);
         });
 
-        // View prescription button
+        //view prescription button
         viewPrescriptionButton.setOnClickListener(v -> loadPrescriptions());
 
-        // Status buttons
+        //status buttons
         viewStatusButton.setOnClickListener(v -> fetchStatus());
         updateStatusButton.setOnClickListener(v -> fetchAssistantStatus());
 
-        // Emergency buttons
+        //emergency buttons
         callAmbulanceButton.setOnClickListener(v -> makePhoneCall("01310388215"));
         helplineButton.setOnClickListener(v -> showHelplineDialog());
         aboutHospitalButton.setOnClickListener(v -> showAboutHospitalDialog());
 
-        // Logout button
+        //logout button
         logoutBtn.setOnClickListener(v -> {
             mAuth.signOut();
             Toast.makeText(PatientDashboardActivity.this, "Logged out", Toast.LENGTH_SHORT).show();
@@ -177,7 +178,7 @@ public class PatientDashboardActivity extends AppCompatActivity {
         });
     }
 
-    // Show the appointment booking dialog
+    //show the appointment booking dialog
     private void showBookingDialog() {
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
         View view = LayoutInflater.from(this).inflate(R.layout.dialog_book_appointment, null);
@@ -194,7 +195,7 @@ public class PatientDashboardActivity extends AppCompatActivity {
         spinnerAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         slotSpinner.setAdapter(spinnerAdapter);
 
-        // Date selection
+        //date selection
         selectDateButton.setOnClickListener(v -> {
             Calendar calendar = Calendar.getInstance();
             DatePickerDialog datePickerDialog = new DatePickerDialog(this, (view1, year, month, dayOfMonth) -> {
@@ -204,7 +205,7 @@ public class PatientDashboardActivity extends AppCompatActivity {
             datePickerDialog.show();
         });
 
-        // Confirm the appointment booking
+        //confirm the appointment booking
         confirmButton.setOnClickListener(v -> {
             String slot = slotSpinner.getSelectedItem().toString();
             if (selectedDate[0].isEmpty() || slot.equals("No slots available")) {
@@ -217,7 +218,7 @@ public class PatientDashboardActivity extends AppCompatActivity {
         builder.create().show();
     }
 
-    // Book the appointment and save it to Firestore
+    //book the appointment and save it to firestore
     private void bookAppointment(String doctorId, String date, String time) {
         String patientId = mAuth.getCurrentUser().getUid();
         Appointment appointment = new Appointment(patientId, doctorId, "Pending", date, time);

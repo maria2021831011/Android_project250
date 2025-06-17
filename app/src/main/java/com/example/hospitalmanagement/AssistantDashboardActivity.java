@@ -39,7 +39,7 @@ public class AssistantDashboardActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_assistant_dashboard);
         mAuth = FirebaseAuth.getInstance();
-        // Initialize views
+        //initialize
         TextView welcomeText = findViewById(R.id.welcomeText);
         welcomeText.setText("Welcome, Assistant!");
 

@@ -49,7 +49,7 @@
                 android:textColor="@color/white" />
         </RelativeLayout>
 
-        <!-- Quick Actions Row -->
+        <!-- quick actions row -->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -178,7 +178,7 @@
             </androidx.cardview.widget.CardView>
         </LinearLayout>
 
-        <!-- Emergency Section -->
+        <!-- emergency section -->
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -236,7 +236,7 @@
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
 
-            <!-- Helpline Card -->
+            <!-- helpline card -->
             <androidx.cardview.widget.CardView
                 android:layout_width="0dp"
                 android:layout_height="100dp"
@@ -276,7 +276,7 @@
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
 
-            <!-- About Hospital Card -->
+            <!-- about  card -->
             <androidx.cardview.widget.CardView
                 android:layout_width="0dp"
                 android:layout_height="100dp"
@@ -315,7 +315,7 @@
             </androidx.cardview.widget.CardView>
         </LinearLayout>
 
-        <!-- Status Section -->
+        <!-- status part-->
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -387,7 +387,7 @@
             </LinearLayout>
         </androidx.cardview.widget.CardView>
 
-        <!-- Selected Doctor Info -->
+        <!-- selected doctor info -->
         <TextView
             android:id="@+id/selectedDoctorTextView"
             android:layout_width="match_parent"
@@ -400,7 +400,7 @@
             android:textSize="14sp"
             android:visibility="gone" />
 
-        <!-- Doctors List (Hidden by default) -->
+        <!-- doctors list (hide by default) -->
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/doctorRecyclerView"
             android:layout_width="match_parent"
@@ -408,7 +408,7 @@
             android:layout_margin="8dp"
             android:visibility="gone" />
 
-        <!-- Doctor Details (Hidden by default) -->
+        <!-- doctor details (hide by default) -->
         <androidx.cardview.widget.CardView
             android:id="@+id/doctorDetailsScrollView"
             android:layout_width="match_parent"

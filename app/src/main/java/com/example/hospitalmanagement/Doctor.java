@@ -3,13 +3,13 @@ package com.example.hospitalmanagement;
 import java.util.List;
 
 public class Doctor {
-    private String uid;      // Firestore document ID
+    private String uid;
     private String username;
     private String email;
     private String role;
     private List<String> availableSlots;
 
-    // Empty constructor required for Firestore
+    //  constructor required for firestore
     public Doctor() { }
 
     public Doctor(String username, String email, String role, List<String> availableSlots) {
@@ -19,7 +19,7 @@ public class Doctor {
         this.availableSlots = availableSlots;
     }
 
-    // Getters and setters
+    // getters and setters
     public String getUid() {
         return uid;
     }

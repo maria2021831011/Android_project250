@@ -322,7 +322,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
-            <!-- Reports will be added here -->
+
         </LinearLayout>
     </ScrollView>
     </LinearLayout>
@@ -344,10 +344,11 @@
         android:textColor="@color/white"
         android:backgroundTint="#F44336"
         android:textAllCaps="false"
-        android:minHeight="0dp"
+        android:minHeight="48dp"
         android:paddingVertical="8dp"
         app:cornerRadius="8dp"
-            
+
+
         style="@style/Widget.MaterialComponents.Button.OutlinedButton"/>
     <!-- Bottom Navigation -->
     <com.google.android.material.bottomnavigation.BottomNavigationView
