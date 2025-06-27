@@ -11,7 +11,7 @@
         android:layout_height="wrap_content"
         android:padding="8dp">
 
-        <!-- Profile Header Card -->
+        <!-- profile header -->
         <androidx.cardview.widget.CardView
             android:id="@+id/profileCard"
             android:layout_width="0dp"
@@ -177,7 +177,7 @@
             </LinearLayout>
         </androidx.cardview.widget.CardView>
 
-        <!-- Quick Actions Title -->
+        <!-- quick actions  -->
         <TextView
             android:id="@+id/quickActionsLabel"
             android:layout_width="wrap_content"
@@ -191,7 +191,7 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/profileCard"/>
 
-        <!-- First Row of Quick Actions -->
+        <!-- first row-->
         <LinearLayout
             android:id="@+id/firstActionRow"
             android:layout_width="0dp"
@@ -203,7 +203,7 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/quickActionsLabel">
 
-            <!-- Appointments Card -->
+            <!-- appointments card -->
             <androidx.cardview.widget.CardView
                 android:id="@+id/appointmentCard"
                 android:layout_width="0dp"
@@ -281,7 +281,7 @@
             </androidx.cardview.widget.CardView>
         </LinearLayout>
 
-        <!-- Second Row of Quick Actions -->
+        <!-- second row  -->
         <LinearLayout
             android:id="@+id/secondActionRow"
             android:layout_width="0dp"
@@ -293,7 +293,7 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/firstActionRow">
 
-            <!-- Completed Appointments Card -->
+            <!-- completed -->
             <androidx.cardview.widget.CardView
                 android:id="@+id/completedAppointmentCard"
                 android:layout_width="0dp"
@@ -370,7 +370,7 @@
             </androidx.cardview.widget.CardView>
         </LinearLayout>
 
-        <!-- Appointments Section Title -->
+        <!-- todays appointments -->
         <TextView
             android:id="@+id/appointmentsLabel"
             android:layout_width="wrap_content"
@@ -384,7 +384,7 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/secondActionRow"/>
 
-        <!-- Appointments RecyclerView -->
+        <!-- appointments recyclerView -->
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/appointmentRecyclerView"
             android:layout_width="0dp"
@@ -396,7 +396,7 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/appointmentsLabel"/>
 
-        <!-- Bottom Action Buttons -->
+        <!-- bottom action -->
         <LinearLayout
             android:layout_width="0dp"
             android:layout_height="wrap_content"

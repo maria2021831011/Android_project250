@@ -67,7 +67,6 @@ public class PatientDashboardActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_patient_dashboard);
 
-        // initialize views
         mAuth = FirebaseAuth.getInstance();
         db = FirebaseFirestore.getInstance();
 
@@ -77,7 +76,7 @@ public class PatientDashboardActivity extends AppCompatActivity {
         Button closeDoctorDetailsButton = findViewById(R.id.closeDoctorDetailsButton);
         selectedDoctorTextView = findViewById(R.id.selectedDoctorTextView);
 
-        //initialize buttons
+
         viewPrescriptionButton = findViewById(R.id.viewPrescriptionButton);
         bookAppointmentButton = findViewById(R.id.bookAppointmentButton);
         logoutBtn = findViewById(R.id.logoutBtn);
@@ -86,7 +85,6 @@ public class PatientDashboardActivity extends AppCompatActivity {
         statusTextView = findViewById(R.id.statusTextView);
         statusTextView1 = findViewById(R.id.statusTextView1);
 
-        // emergency buttons
         Button callAmbulanceButton = findViewById(R.id.callAmbulanceButton);
         Button helplineButton = findViewById(R.id.helplineButton);
         Button aboutHospitalButton = findViewById(R.id.aboutHospitalButton);
@@ -95,7 +93,7 @@ public class PatientDashboardActivity extends AppCompatActivity {
         doctorRecyclerView = findViewById(R.id.doctorRecyclerView);
         doctorRecyclerView.setLayoutManager(new LinearLayoutManager(this));
         doctorList = new ArrayList<>();
-
+// doctor select part
         doctorAdapter = new DoctorAdapter(doctorList, doctor -> {
             selectedDoctor = doctor;
             selectedDoctorTextView.setVisibility(View.VISIBLE);

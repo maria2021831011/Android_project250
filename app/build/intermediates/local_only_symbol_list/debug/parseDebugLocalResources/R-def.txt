@@ -78,6 +78,7 @@ drawable card_gradient_green
 drawable card_gradient_purple
 drawable circle_background
 drawable dc
+drawable doc
 drawable doctor
 drawable drawable_start_indicator
 drawable edittext_background

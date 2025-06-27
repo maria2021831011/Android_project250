@@ -12,7 +12,7 @@
         android:layout_height="wrap_content"
         android:orientation="vertical">
 
-        <!--profile header section -->
+        <!--profile -->
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="280dp"
@@ -154,14 +154,14 @@
             </LinearLayout>
         </RelativeLayout>
 
-        <!-- Content Section -->
+        <!-- content section -->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="16dp"
             android:orientation="vertical">
 
-            <!-- Doctor Status Card -->
+            <!-- doctor status card -->
             <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -204,7 +204,7 @@
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
 
-            <!-- Appointments Card -->
+            <!-- appointments card -->
             <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"

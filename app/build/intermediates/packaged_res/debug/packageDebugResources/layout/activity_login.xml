@@ -7,7 +7,6 @@
     android:background="@drawable/view"
     tools:context=".LoginActivity">
 
-    <!-- Title: Hospital Management -->
     <TextView
         android:id="@+id/tvTitle"
         android:layout_width="wrap_content"
@@ -22,7 +21,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <!-- CardView  Login -->
+    <!--   Login -->
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -78,14 +77,14 @@
                 android:textColor="@android:color/black"
                 android:textSize="24sp" />
 
-            <!--Password Visibility -->
+            <!--visibility -->
             <ImageView
                 android:id="@+id/ivTogglePassword"
                 android:layout_width="24dp"
                 android:layout_height="24dp"
                 android:layout_marginTop="8dp"
                 android:src="@drawable/ic_eye" />
-            <!-- Forgot Password -->
+            <!-- Forgot -->
             <TextView
                 android:id="@+id/tvForgotPassword"
                 android:layout_width="wrap_content"
@@ -96,7 +95,7 @@
                 android:textSize="24sp"
                 android:textStyle="bold" />
 
-            <!-- Login Button -->
+            <!-- Login -->
             <Button
                 android:id="@+id/btnLogin"
                 android:layout_width="match_parent"

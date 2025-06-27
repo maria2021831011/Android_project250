@@ -45,25 +45,15 @@ public class DoctorDashboardActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_doctor_dashboard);
-
-        // Initialize views
         mAuth = FirebaseAuth.getInstance();
         db = FirebaseFirestore.getInstance();
         doctorId = mAuth.getCurrentUser().getUid();
-
-
-
-
-
-        // Profile views
         doctorName = findViewById(R.id.doctorName);
         doctorSpecialty = findViewById(R.id.doctorSpecialty);
         doctorStatus = findViewById(R.id.doctorStatus);
         appointmentsCount = findViewById(R.id.appointmentsCount);
         patientsCount = findViewById(R.id.patientsCount);
         ratingValue = findViewById(R.id.ratingValue);
-
-        // Initialize other views
         appointmentRecyclerView = findViewById(R.id.appointmentRecyclerView);
         appointmentButton = findViewById(R.id.appointmentButton);
         completedAppointmentButton = findViewById(R.id.completedAppointmentButton);
@@ -71,15 +61,11 @@ public class DoctorDashboardActivity extends AppCompatActivity {
         logoutBtn = findViewById(R.id.logoutBtn);
         prescribeButton = findViewById(R.id.prescribeButton);
         sendStatusButton = findViewById(R.id.sendStatusButton);
-
-        // Load doctor profile data
         loadDoctorProfile();
-
-        // Set up RecyclerView
         appointmentRecyclerView.setLayoutManager(new LinearLayoutManager(this));
         appointmentList = new ArrayList<>();
         completedAppointmentList = new ArrayList<>();
-
+//recycle part a add korlm reject ,approved
         appointmentAdapter = new AppointmentAdapter(appointmentList, new AppointmentAdapter.OnAppointmentActionListener() {
             @Override
             public void onApprove(Appointment appointment) {
@@ -92,10 +78,9 @@ public class DoctorDashboardActivity extends AppCompatActivity {
         });
         appointmentRecyclerView.setAdapter(appointmentAdapter);
 
-        // Initially hide the RecyclerView
         appointmentRecyclerView.setVisibility(View.GONE);
 
-        // Button listeners
+        // doctor part er sobgula button jonno kaj
         appointmentButton.setOnClickListener(v -> {
             if (appointmentRecyclerView.getVisibility() == View.GONE) {
                 appointmentRecyclerView.setVisibility(View.VISIBLE);
@@ -123,7 +108,7 @@ public class DoctorDashboardActivity extends AppCompatActivity {
             finish();
         });
     }
-
+//profile er sobkisu
     private void loadDoctorProfile() {
         db.collection("doctors").document(doctorId)
                 .get()
@@ -138,7 +123,7 @@ public class DoctorDashboardActivity extends AppCompatActivity {
 
                         doctorName.setText(name != null ? name : "Dr.Sajib");
                         doctorSpecialty.setText(specialty != null ? specialty : "Cardiologist");
-                        doctorStatus.setText(isBusy ? "Available" : "Available");
+                        doctorStatus.setText(isBusy ? "Busy" : "Available");
                         doctorStatus.setTextColor(isBusy ? getResources().getColor(R.color.red_500) :
                                 getResources().getColor(R.color.green_500));
                         doctorStatus.setCompoundDrawablesWithIntrinsicBounds(
@@ -154,7 +139,7 @@ public class DoctorDashboardActivity extends AppCompatActivity {
                     Toast.makeText(this, "Failed to load profile", Toast.LENGTH_SHORT).show();
                 });
     }
-
+//apppointment ane firestore theke
     private void loadPendingAppointments() {
         db.collection("appointments")
                 .whereEqualTo("doctorId", doctorId)
@@ -250,14 +235,13 @@ public class DoctorDashboardActivity extends AppCompatActivity {
         if (hour > 12) hour -= 12;
         return String.format("%02d:%02d %s", hour, minute, amPm);
     }
-
+//doctor tar status update korlo busy kre diye
     private void updateBusyStatus() {
         Map<String, Object> updates = new HashMap<>();
         updates.put("busy", isBusy);
         updates.put("busyStartTime", busyStartTime);
         updates.put("busyEndTime", busyEndTime);
 
-        // Update the doctor's status in Firestore
         db.collection("doctors").document(doctorId)
                 .update(updates)
                 .addOnSuccessListener(aVoid -> {
@@ -280,13 +264,12 @@ public class DoctorDashboardActivity extends AppCompatActivity {
         EditText dosageEditText = view.findViewById(R.id.dosageEditText);
         Button prescribeButton = view.findViewById(R.id.prescribeButton);
 
-        // Pre-fill the patient ID with the specific UID
         patientIdEditText.setText("au3NyjugG2Z6pJBUN1m9sn5uNo02");
-        patientIdEditText.setEnabled(false); // Disable editing of the patient ID
+        patientIdEditText.setEnabled(false);
 
         AlertDialog dialog = builder.create();
         dialog.show();
-
+//jokhon prescribe btn click kora hy .jevbe handle kore .
         prescribeButton.setOnClickListener(v -> {
             String patientId = patientIdEditText.getText().toString();
             String medicine = medicineEditText.getText().toString();

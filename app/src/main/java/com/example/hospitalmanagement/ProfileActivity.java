@@ -27,11 +27,11 @@ public class ProfileActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_profile);
 
-        // Initialize Firebase
+
         db = FirebaseFirestore.getInstance();
         auth = FirebaseAuth.getInstance();
 
-        // Initialize views
+
         ImageView profileImage = findViewById(R.id.profileImage);
         TextView profileName = findViewById(R.id.profileName);
         TextView profileTitle = findViewById(R.id.profileTitle);
@@ -44,7 +44,7 @@ public class ProfileActivity extends AppCompatActivity {
         TextView statsTotal = findViewById(R.id.statsTotal);
         Button logoutButton = findViewById(R.id.logoutButton);
 
-        // Load profile picture from assets (pf.jpg)
+
         try {
             InputStream is = getAssets().open("pf.jpg");
             Bitmap bitmap = BitmapFactory.decodeStream(is);
@@ -52,10 +52,10 @@ public class ProfileActivity extends AppCompatActivity {
             is.close();
         } catch (IOException e) {
             e.printStackTrace();
-            // Keep the default placeholder if pf.jpg is not found
+
         }
 
-        // Set the static data as per requirements
+
         profilePhone.setText("01310388215");
         profileDepartment.setText("Administration");
 
@@ -65,28 +65,26 @@ public class ProfileActivity extends AppCompatActivity {
             SimpleDateFormat outputFormat = new SimpleDateFormat("MMMM yyyy", Locale.getDefault());
             profileJoinDate.setText(outputFormat.format(joinDate));
         } catch (Exception e) {
-            profileJoinDate.setText("January 2025"); // Fallback
+            profileJoinDate.setText("January 2025");
         }
 
-        // Set the static stats
-        statsApproved.setText("40");
-        statsRejected.setText("30");
+
+        statsApproved.setText("42");
+        statsRejected.setText("28");
         statsTotal.setText("70");
 
-        // Get user ID from intent or auth
         String userId = getIntent().getStringExtra("userId");
         if (userId == null && auth.getCurrentUser() != null) {
             userId = auth.getCurrentUser().getUid();
         }
 
-        // Load dynamic user data (name, email, etc.)
+
         if (userId != null) {
             db.collection("users").document(userId).get()
                     .addOnCompleteListener(task -> {
                         if (task.isSuccessful() && task.getResult() != null) {
                             DocumentSnapshot doc = task.getResult();
 
-                            // Set profile information
                             profileName.setText(doc.getString("name"));
                             profileTitle.setText(doc.getString("role"));
                             profileEmail.setText(doc.getString("email"));
@@ -97,7 +95,7 @@ public class ProfileActivity extends AppCompatActivity {
         logoutButton.setOnClickListener(v -> {
             auth.signOut();
             startActivity(new Intent(this, LoginActivity.class));
-            finishAffinity(); // Close all activities
+            finishAffinity();
         });
     }
 }

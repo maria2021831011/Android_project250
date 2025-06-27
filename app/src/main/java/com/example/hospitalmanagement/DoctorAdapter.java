@@ -14,8 +14,8 @@ public class DoctorAdapter extends RecyclerView.Adapter<DoctorAdapter.DoctorView
     }
 
     private List<Doctor> doctorList;
-    private OnDoctorClickListener listener;
-    private int selectedPosition = RecyclerView.NO_POSITION;
+    private OnDoctorClickListener listener;//doctor click korle jake notify korbo
+    private int selectedPosition = RecyclerView.NO_POSITION;// kon doctor select korbo tar track
 
     public DoctorAdapter(List<Doctor> doctorList, OnDoctorClickListener listener) {
         this.doctorList = doctorList;
@@ -27,14 +27,14 @@ public class DoctorAdapter extends RecyclerView.Adapter<DoctorAdapter.DoctorView
         View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.item_doctor, parent, false);
         return new DoctorViewHolder(view);
     }
-
+//potita doctor item er name and role bosay
     @Override
     public void onBindViewHolder(DoctorViewHolder holder, int position) {
         Doctor doctor = doctorList.get(position);
         holder.nameTextView.setText(doctor.getUsername());
         String roleText = doctor.getRole().equalsIgnoreCase("assistant") ? "Assistant" : "Doctor";
         holder.nameTextView.setText(doctor.getUsername() + " (" + roleText + ")");
-
+//jodi select kora hy
         holder.itemView.setSelected(selectedPosition == position);
         holder.itemView.setOnClickListener(v -> {
             notifyItemChanged(selectedPosition);

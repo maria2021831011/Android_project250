@@ -12,7 +12,7 @@
         android:layout_height="wrap_content"
         android:orientation="vertical">
 
-        <!-- Profile Header Card -->
+        <!-- profile header card -->
         <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -28,7 +28,7 @@
                 android:background="@drawable/gradient_blue"
                 android:gravity="center">
 
-                <!-- Circular Profile Image (using CardView) -->
+
                 <androidx.cardview.widget.CardView
                     android:layout_width="100dp"
                     android:layout_height="100dp"
@@ -44,7 +44,7 @@
                         android:src="@drawable/pf"/>
                 </androidx.cardview.widget.CardView>
 
-                <!-- Name and Title -->
+                <!-- name and title -->
                 <TextView
                     android:id="@+id/profileName"
                     android:layout_width="match_parent"
@@ -84,7 +84,7 @@
                 android:orientation="vertical"
                 android:padding="16dp">
 
-                <!-- Section Title -->
+
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -93,7 +93,7 @@
                     android:textSize="18sp"
                     android:textStyle="bold"/>
 
-                <!-- Detail Items -->
+                <!-- detail items -->
                 <View
                     android:layout_width="match_parent"
                     android:layout_height="1dp"
@@ -101,7 +101,7 @@
                     android:layout_marginBottom="16dp"
                     android:background="#EEEEEE"/>
 
-                <!-- Email -->
+                <!-- email -->
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -360,7 +360,7 @@
             </LinearLayout>
         </androidx.cardview.widget.CardView>
 
-        <!-- Logout Button -->
+        <!-- lgout button -->
         <Button
             android:id="@+id/logoutButton"
             android:layout_width="match_parent"

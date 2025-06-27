@@ -64,7 +64,7 @@ public class AdminDashboardActivity extends AppCompatActivity {
     private void setupFirebase() {
         db = FirebaseFirestore.getInstance();
     }
-
+//app er bottom navigation control korte parbo
     private void setupBottomNavigation() {
         BottomNavigationView bottomNav = findViewById(R.id.bottomNavigation);
         bottomNav.setOnNavigationItemSelectedListener(item -> {
@@ -83,7 +83,7 @@ public class AdminDashboardActivity extends AppCompatActivity {
             return false;
         });
     }
-
+//botton gula click korle je je method kaj korbe specific button jonno
     private void setupButtonListeners() {
         findViewById(R.id.toggleReportBtn).setOnClickListener(v -> toggleReport());
         findViewById(R.id.makeReportBtn).setOnClickListener(v -> generateDetailedReport());
@@ -233,7 +233,7 @@ public class AdminDashboardActivity extends AppCompatActivity {
     }
 
     private String buildMonthlyReportContent(QueryDocumentSnapshot doc) {
-        return "📅 " + doc.get("year") + "-" + doc.get("month") + "-" + doc.get("date") + "\n" +
+        return "📅 " +  doc.get("date") + "\n" +
                 "👨‍⚕️ " + doc.get("doctorName") + "\n" +
                 "👤 " + doc.get("patientName") + "\n" +
                 "✅ " + doc.get("totalApproved") + " approved\n" +

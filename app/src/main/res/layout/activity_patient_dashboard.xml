@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/patientb"
+    android:background="@drawable/doc"
     android:fillViewport="true">
 
     <LinearLayout
@@ -12,11 +12,13 @@
         android:layout_height="wrap_content"
         android:orientation="vertical">
 
-        <!-- Header Section -->
+        <!-- header section -->
+
+        <!-- quick actions row -->
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@color/colorAccent"
+            android:background="@color/material_dynamic_secondary20"
             android:padding="16dp">
 
             <ImageView
@@ -32,8 +34,8 @@
                 android:layout_height="wrap_content"
                 android:layout_alignParentStart="true"
                 android:layout_alignParentTop="true"
-                android:layout_marginStart="60dp"
-                android:layout_marginTop="56dp"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="26dp"
                 android:text="Patient Dashboard"
                 android:textColor="@color/white"
                 android:textSize="20sp"
@@ -44,12 +46,11 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentEnd="true"
-                android:background="@drawable/rounded_button_logout"
+                android:background="@drawable/profile_header_bg_gradient"
                 android:text="Logout"
                 android:textColor="@color/white" />
         </RelativeLayout>
 
-        <!-- quick actions row -->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -63,7 +64,7 @@
                 android:layout_height="120dp"
                 android:layout_margin="4dp"
                 android:layout_weight="1"
-                app:cardBackgroundColor="@color/light_blue"
+                app:cardBackgroundColor="@color/light_blue_transparent"
                 app:cardCornerRadius="12dp"
                 app:cardElevation="4dp">
 
@@ -92,7 +93,7 @@
                         android:paddingHorizontal="12dp"
                         android:text="Book Now"
                         android:textAllCaps="false"
-                        android:textColor="@color/colorAccent"
+                        android:textColor="@color/blue_100"
                         android:textSize="12sp" />
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
@@ -103,7 +104,7 @@
                 android:layout_height="120dp"
                 android:layout_margin="4dp"
                 android:layout_weight="1"
-                app:cardBackgroundColor="@color/light_green"
+                app:cardBackgroundColor="@color/teal_800"
                 app:cardCornerRadius="12dp"
                 app:cardElevation="4dp">
 
@@ -143,7 +144,7 @@
                 android:layout_height="120dp"
                 android:layout_margin="4dp"
                 android:layout_weight="1"
-                app:cardBackgroundColor="@color/light_purple"
+                app:cardBackgroundColor="@color/purple_800"
                 app:cardCornerRadius="12dp"
                 app:cardElevation="4dp">
 
@@ -185,7 +186,7 @@
             android:layout_marginStart="16dp"
             android:layout_marginTop="16dp"
             android:text="Emergency Services"
-            android:textColor="@color/colorAccent"
+            android:textColor="@color/teal_800"
             android:textSize="24sp"
             android:textStyle="bold" />
 
@@ -202,7 +203,7 @@
                 android:layout_height="100dp"
                 android:layout_margin="4dp"
                 android:layout_weight="1"
-                app:cardBackgroundColor="@color/white"
+                app:cardBackgroundColor="@color/colorPrimaryDark"
                 app:cardCornerRadius="12dp"
                 app:cardElevation="4dp">
 
@@ -227,12 +228,12 @@
                         android:background="@drawable/rounded_button_red"
                         android:drawableStart="@drawable/ic_ambulance"
                         android:drawablePadding="4dp"
+                        android:minHeight="48dp"
                         android:paddingHorizontal="12dp"
                         android:text="Ambulance"
                         android:textAllCaps="false"
                         android:textColor="@color/white"
-                        android:textSize="12sp"
-                        android:minHeight="48dp"/>
+                        android:textSize="12sp" />
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
 
@@ -242,7 +243,7 @@
                 android:layout_height="100dp"
                 android:layout_margin="4dp"
                 android:layout_weight="1"
-                app:cardBackgroundColor="@color/white"
+                app:cardBackgroundColor="@color/light_blue_transparent"
                 app:cardCornerRadius="12dp"
                 app:cardElevation="4dp">
 
@@ -257,7 +258,7 @@
                         android:layout_width="32dp"
                         android:layout_height="32dp"
                         android:src="@drawable/ic_ambulance"
-                        app:tint="@color/colorPrimaryDark" />
+                        app:tint="@color/colorAccent" />
 
                     <Button
                         android:id="@+id/helplineButton"
@@ -282,7 +283,7 @@
                 android:layout_height="100dp"
                 android:layout_margin="4dp"
                 android:layout_weight="1"
-                app:cardBackgroundColor="@color/white"
+                app:cardBackgroundColor="@color/light_blue_transparent"
                 app:cardCornerRadius="12dp"
                 app:cardElevation="4dp">
 
@@ -322,7 +323,7 @@
             android:layout_marginStart="16dp"
             android:layout_marginTop="16dp"
             android:text="My Status"
-            android:textColor="#B021C5"
+            android:textColor="#040626"
             android:textSize="24sp"
             android:textStyle="bold" />
 
@@ -330,7 +331,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="8dp"
-            app:cardBackgroundColor="@color/white"
+            app:cardBackgroundColor="@color/light_blue_transparent"
             app:cardCornerRadius="12dp"
             app:cardElevation="4dp">
 
@@ -350,7 +351,7 @@
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:background="@drawable/rounded_button_primary"
+                        android:background="@drawable/rounded_button_logout"
                         android:text="Appointment Status"
                         android:textAllCaps="false"
                         android:textColor="@color/white" />
@@ -361,7 +362,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginStart="8dp"
                         android:layout_weight="1"
-                        android:background="@drawable/rounded_button_green"
+                        android:background="@drawable/profile_header_bg_gradient"
                         android:text="Assistant Update"
                         android:textAllCaps="false"
                         android:textColor="@color/white" />
@@ -400,7 +401,7 @@
             android:textSize="14sp"
             android:visibility="gone" />
 
-        <!-- doctors list (hide by default) -->
+        <!-- doctors list -->
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/doctorRecyclerView"
             android:layout_width="match_parent"
@@ -408,14 +409,14 @@
             android:layout_margin="8dp"
             android:visibility="gone" />
 
-        <!-- doctor details (hide by default) -->
+        <!-- doctor details -->
         <androidx.cardview.widget.CardView
             android:id="@+id/doctorDetailsScrollView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="8dp"
             android:visibility="gone"
-            app:cardBackgroundColor="@color/white"
+            app:cardBackgroundColor="@color/colorAccent"
             app:cardCornerRadius="12dp"
             app:cardElevation="8dp">
 

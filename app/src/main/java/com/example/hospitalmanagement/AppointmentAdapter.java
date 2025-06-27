@@ -56,12 +56,12 @@ public class AppointmentAdapter extends RecyclerView.Adapter<RecyclerView.ViewHo
             ((CompletedAppointmentViewHolder) holder).bind(appointment);
         }
     }
-
+//jtogula appointment hyese
     @Override
     public int getItemCount() {
         return appointmentList.size();
     }
-
+//notun kre update kre
     public void updateAppointments(List<Appointment> appointments) {
         this.appointmentList.clear();
         this.appointmentList.addAll(appointments);

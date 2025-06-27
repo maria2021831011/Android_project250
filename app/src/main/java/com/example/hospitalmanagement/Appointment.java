@@ -2,14 +2,13 @@ package com.example.hospitalmanagement;
 
 public class Appointment {
 
-    private String id;       // Firestore document ID
+    private String id;
     private String patientId;
     private String doctorId;
-    private String status;   // "Pending", "Approved", "Rejected"
+    private String status;
     private String date;
     private String time;
 
-    // Empty constructor required for Firestore
     public Appointment() { }
 
     public Appointment(String patientId, String doctorId, String status, String date, String time) {
@@ -20,7 +19,7 @@ public class Appointment {
         this.time = time;
     }
 
-    // Getters and setters
+
     public String getId() {
         return id;
     }

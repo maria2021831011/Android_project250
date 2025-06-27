@@ -35,11 +35,11 @@ public class LoginActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
 
-        // Initialize FirebaseAuth and Firestore
+
         mAuth = FirebaseAuth.getInstance();
         db = FirebaseFirestore.getInstance();
 
-        // Initialize UI elements
+
         emailEditText = findViewById(R.id.etEmail);
         passwordEditText = findViewById(R.id.etPassword);
         Button loginButton = findViewById(R.id.btnLogin);
@@ -47,14 +47,14 @@ public class LoginActivity extends AppCompatActivity {
         TextView forgotPassword = findViewById(R.id.tvForgotPassword);
         TextView registerLink = findViewById(R.id.tvRegister);
 
-        // Toggle password visibility
+
         togglePassword.setOnClickListener(v -> {
             if (isPasswordVisible) {
                 passwordEditText.setTransformationMethod(PasswordTransformationMethod.getInstance());
-                togglePassword.setImageResource(R.drawable.ic_eye); // Closed eye icon
+                togglePassword.setImageResource(R.drawable.ic_eye);
             } else {
                 passwordEditText.setTransformationMethod(HideReturnsTransformationMethod.getInstance());
-                togglePassword.setImageResource(R.drawable.ic_eye_open); // Open eye icon
+                togglePassword.setImageResource(R.drawable.ic_eye_open);
             }
             isPasswordVisible = !isPasswordVisible;
             passwordEditText.setSelection(passwordEditText.getText().length());
@@ -70,12 +70,10 @@ public class LoginActivity extends AppCompatActivity {
         registerLink.setOnClickListener(v -> startActivity(new Intent(LoginActivity.this, RegisterActivity.class)));
     }
 
-    // Validate user's email and password before login
     private void loginUser() {
         String email = emailEditText.getText().toString().trim();
         String password = passwordEditText.getText().toString().trim();
 
-        // Validate email and password
         if (email.isEmpty()) {
             emailEditText.setError("Email is required");
             emailEditText.requestFocus();
@@ -96,10 +94,10 @@ public class LoginActivity extends AppCompatActivity {
         mAuth.signInWithEmailAndPassword(email, password)
                 .addOnCompleteListener(task -> {
                     if (task.isSuccessful()) {
-                        // Login successful, retrieve user role from Firestore
+
                         FirebaseUser user = mAuth.getCurrentUser();
                         if (user != null) {
-                            // Query Firestore for user's role (assuming 'users' collection)
+
                             db.collection("users").document(user.getUid())
                                     .get()
                                     .addOnCompleteListener(task1 -> {
@@ -110,7 +108,7 @@ public class LoginActivity extends AppCompatActivity {
                                                 if (role != null) {
                                                     switch (role) {
                                                         case "doctor":
-                                                            // Automatically create doctor if needed
+
                                                             createDoctorIfNotExist(user);
                                                             startActivity(new Intent(LoginActivity.this, DoctorDashboardActivity.class));
                                                             break;
@@ -126,7 +124,7 @@ public class LoginActivity extends AppCompatActivity {
                                                         default:
                                                             Toast.makeText(LoginActivity.this, "Unknown role", Toast.LENGTH_SHORT).show();
                                                     }
-                                                    finish(); // Close the login activity
+                                                    finish();
                                                 } else {
                                                     Toast.makeText(LoginActivity.this, "Role not found", Toast.LENGTH_SHORT).show();
                                                 }
@@ -145,19 +143,19 @@ public class LoginActivity extends AppCompatActivity {
                 });
     }
 
-    // Automatically create a doctor document in Firestore if it doesn't exist
+
     private void createDoctorIfNotExist(FirebaseUser user) {
-        String userId = user.getUid(); // Get the UID of the logged-in user
+        String userId = user.getUid();
         DocumentReference doctorRef = db.collection("doctors").document(userId);
 
         doctorRef.get().addOnCompleteListener(task -> {
             if (task.isSuccessful()) {
                 DocumentSnapshot document = task.getResult();
                 if (!document.exists()) {
-                    // If the document doesn't exist, create a new one
+
                     Map<String, Object> doctorData = new HashMap<>();
                     doctorData.put("email", user.getEmail());
-                    doctorData.put("username", "sajib"); // You can set this dynamically
+                    doctorData.put("username", "sajib");
                     doctorData.put("role", "doctor");
                     doctorData.put("availableSlots", Arrays.asList("10:00 AM", "2:00 PM")); // Example slots
 

@@ -6,14 +6,14 @@
     android:orientation="vertical"
     android:background="@drawable/ic_hospital">
 
-    <!-- Header Section -->
+    <!--header Section -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:padding="16dp"
         android:background="@color/white"
-        android:elevation="4dp">
+        android:elevation="4dp"> <!--shadow-->
 
         <ImageView
             android:id="@+id/profileImage"
@@ -21,7 +21,7 @@
             android:layout_height="48dp"
             android:src="@drawable/ad"
             android:contentDescription="Admin profile"
-            android:layout_marginEnd="16dp"/>
+            android:layout_marginEnd="16dp"/> <!-- text and img gap-->
 
         <LinearLayout
             android:layout_width="0dp"
@@ -49,7 +49,7 @@
 
     </LinearLayout>
 
-    <!-- Action Cards -->
+    <!-- action cards -->
     <HorizontalScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -61,7 +61,7 @@
             android:layout_height="wrap_content"
             android:orientation="horizontal">
 
-            <!-- Quick Report Card -->
+            <!-- quick report card -->
             <androidx.cardview.widget.CardView
                 android:layout_width="160dp"
                 android:layout_height="160dp"
@@ -103,7 +103,7 @@
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
 
-            <!-- Detailed Report Card -->
+            <!-- detailed report card -->
             <androidx.cardview.widget.CardView
                 android:layout_width="160dp"
                 android:layout_height="160dp"
@@ -326,8 +326,8 @@
         </LinearLayout>
     </ScrollView>
     </LinearLayout>
-    <!-- Logout Button -->
-    <!-- Compact Bottom Section -->
+
+    <!-- bottom Section -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -350,7 +350,7 @@
 
 
         style="@style/Widget.MaterialComponents.Button.OutlinedButton"/>
-    <!-- Bottom Navigation -->
+    <!-- bottom navigation -->
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottomNavigation"
         android:layout_width="match_parent"

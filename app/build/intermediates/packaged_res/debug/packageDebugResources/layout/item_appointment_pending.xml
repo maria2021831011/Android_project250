@@ -5,6 +5,7 @@
     android:layout_height="wrap_content"
     android:padding="8dp">
 
+    <!-- Date -->
     <TextView
         android:id="@+id/dateTextView"
         android:layout_width="0dp"
@@ -13,6 +14,7 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"/>
 
+    <!-- Time -->
     <TextView
         android:id="@+id/timeTextView"
         android:layout_width="0dp"
@@ -21,21 +23,26 @@
         app:layout_constraintTop_toBottomOf="@id/dateTextView"
         app:layout_constraintStart_toStartOf="parent"/>
 
+    <!-- Approve Button -->
     <Button
         android:id="@+id/approveButton"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
         android:text="Approve"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintEnd_toStartOf="@id/rejectButton"
-        app:layout_constraintBottom_toBottomOf="parent"/>
+        app:layout_constraintTop_toBottomOf="@id/timeTextView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/rejectButton"/>
 
+    <!-- Reject Button -->
     <Button
         android:id="@+id/rejectButton"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
         android:text="Reject"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"/>
+        app:layout_constraintTop_toBottomOf="@id/timeTextView"
+        app:layout_constraintStart_toEndOf="@id/approveButton"
+        app:layout_constraintEnd_toEndOf="parent"/>
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -81,6 +81,7 @@ public class AssistantDashboardActivity extends AppCompatActivity {
             appointmentsBtn.setText("Show Appointments");
         }
     }
+    // appointment btn click korle sb kisu
     private void listenForAppointments() {
         db.collection("appointments")
                 .addSnapshotListener((querySnapshot, error) -> {
