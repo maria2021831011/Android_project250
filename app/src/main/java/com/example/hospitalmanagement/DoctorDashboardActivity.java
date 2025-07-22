@@ -109,6 +109,8 @@ public class DoctorDashboardActivity extends AppCompatActivity {
         });
     }
 //profile er sobkisu
+
+    //long method problem
     private void loadDoctorProfile() {
         db.collection("doctors").document(doctorId)
                 .get()
@@ -139,6 +141,58 @@ public class DoctorDashboardActivity extends AppCompatActivity {
                     Toast.makeText(this, "Failed to load profile", Toast.LENGTH_SHORT).show();
                 });
     }
+
+
+
+//extract method
+    /*private void loadDoctorProfile() {
+    db.collection("doctors").document(doctorId)
+            .get()
+            .addOnSuccessListener(documentSnapshot -> {
+                if (documentSnapshot.exists()) {
+                    updateDoctorUI(documentSnapshot);
+                }
+            })
+            .addOnFailureListener(e -> showToast("Failed to load profile"));
+}
+
+private void updateDoctorUI(DocumentSnapshot documentSnapshot) {
+    String name = documentSnapshot.getString("name");
+    String specialty = documentSnapshot.getString("specialty");
+    boolean isBusy = documentSnapshot.getBoolean("busy");
+    Long appointments = documentSnapshot.getLong("appointmentsCount");
+    Long patients = documentSnapshot.getLong("patientsCount");
+    Double rating = documentSnapshot.getDouble("rating");
+
+    setDoctorBasicInfo(name, specialty);
+    setDoctorStatus(isBusy);
+    setDoctorStats(appointments, patients, rating);
+}
+
+private void setDoctorBasicInfo(String name, String specialty) {
+    doctorName.setText(name != null ? name : "Dr.Sajib");
+    doctorSpecialty.setText(specialty != null ? specialty : "Cardiologist");
+}
+
+private void setDoctorStatus(boolean isBusy) {
+    doctorStatus.setText(isBusy ? "Busy" : "Available");
+    doctorStatus.setTextColor(isBusy ? getColor(R.color.red_500) : getColor(R.color.green_500));
+    doctorStatus.setCompoundDrawablesWithIntrinsicBounds(
+            isBusy ? R.drawable.ic_circle_red : R.drawable.ic_circle_green, 0, 0, 0);
+}
+
+private void setDoctorStats(Long appointments, Long patients, Double rating) {
+    appointmentsCount.setText(appointments != null ? String.valueOf(appointments) : "40");
+    patientsCount.setText(patients != null ? String.valueOf(patients) : "1");
+    ratingValue.setText(rating != null ? String.format("%.1f", rating) : "4.0");
+}
+
+*/
+
+
+
+
+
 //apppointment ane firestore theke
     private void loadPendingAppointments() {
         db.collection("appointments")
@@ -219,6 +273,8 @@ public class DoctorDashboardActivity extends AppCompatActivity {
         }, 12, 0, true);
         timePickerDialog.show();
     }
+
+
 
     private void showEndTimePickerDialog() {
         TimePickerDialog timePickerDialog = new TimePickerDialog(DoctorDashboardActivity.this, (view, hourOfDay, minute) -> {

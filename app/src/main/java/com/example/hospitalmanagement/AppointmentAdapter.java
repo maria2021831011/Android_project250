@@ -83,7 +83,17 @@ public class AppointmentAdapter extends RecyclerView.Adapter<RecyclerView.ViewHo
         public void bind(Appointment appointment, OnAppointmentActionListener listener) {
             dateTextView.setText("Date: " + appointment.getDate());
             timeTextView.setText("Time: " + appointment.getTime());
-            approveButton.setOnClickListener(v -> listener.onApprove(appointment));
+            approveButton.setOnClickListener(v -> listener.onApprove(appointment));//msg chain
+
+            /*interface AppointmentCommand {
+    void execute(Appointment appointment);
+}
+
+// In adapter:
+approveButton.setOnClickListener(v ->
+    new ApproveCommand(listener).execute(appointment)
+);*/
+
             rejectButton.setOnClickListener(v -> listener.onReject(appointment));
         }
     }

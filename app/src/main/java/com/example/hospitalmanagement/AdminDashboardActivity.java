@@ -27,9 +27,24 @@ import java.util.List;
 import java.util.Locale;
 import java.util.Map;
 public class AdminDashboardActivity extends AppCompatActivity {
-
+// primitive obsession
     private static final String PATIENT_UID = "au3NyjugG2Z6pJBUN1m9sn5uNo02";
     private static final String DOCTOR_UID = "AgsP6s8GciMxwmeeegMLSmRGHBF3";
+
+    //use constants or a configuration class
+
+/*class AppConfig {
+    static final String DEFAULT_PATIENT_UID = "au3NyjugG2Z6pJBUN1m9sn5uNo02";
+    static final String DEFAULT_DOCTOR_UID = "AgsP6s8GciMxwmeeegMLSmRGHBF3";
+}
+
+// Usage:
+db.collection("appointments")
+    .whereEqualTo("doctorId", AppConfig.DEFAULT_DOCTOR_UID)
+    */
+
+
+
 
     private FirebaseFirestore db;
     private LinearLayout reportsContainer;
@@ -137,6 +152,9 @@ public class AdminDashboardActivity extends AppCompatActivity {
                 });
     }
 
+
+
+//data clumps
     private String buildQuickReportContent(int approved, int rejected,
                                            List<String> approvedAppts, List<String> rejectedAppts) {
         return "👨‍⚕️ Doctor: " + DOCTOR_UID + "\n\n" +
@@ -145,6 +163,22 @@ public class AdminDashboardActivity extends AppCompatActivity {
                 "❌ Rejected: " + rejected + "\n" +
                 formatAppointments(rejectedAppts);
     }
+    //Introduce a Report DTO (Data Transfer Object).
+    /*class Report {
+    final int approved;
+    final int rejected;
+    final List<String> approvedAppointments;
+    final List<String> rejectedAppointments;
+
+    Report(int approved, int rejected, List<String> approvedAppts, List<String> rejectedAppts) {
+        this.approved = approved;
+        this.rejected = rejected;
+        this.approvedAppointments = approvedAppts;
+        this.rejectedAppointments = rejectedAppts;
+    }
+}
+// Usage:
+String content = buildReport(new Report(approved, rejected, approvedList, rejectedList));*/
 
     private void generateDetailedReport() {
         reportsContainer.removeAllViews();
@@ -268,6 +302,8 @@ public class AdminDashboardActivity extends AppCompatActivity {
         return sb.toString();
     }
 
+
+//feature envy
     private void loadTodayStats() {
         db.collection("appointments")
                 .whereEqualTo("doctorId", DOCTOR_UID)
@@ -286,7 +322,25 @@ public class AdminDashboardActivity extends AppCompatActivity {
                     }
                 });
     }
+// move to a service class
+    /*class StatsService {
+    static void loadTodayStats(String doctorId, Consumer<StatsResult> callback) {
+        FirebaseFirestore.getInstance()
+                .collection("appointments")
+                .whereEqualTo("doctorId", doctorId)
+                .get()
+                .addOnCompleteListener(task -> {
+                    // Process data
+                    callback.accept(new StatsResult(approved, rejected));
+                });
+    }
+}
 
+// Usage:
+StatsService.loadTodayStats(DOCTOR_UID, result -> {
+    todayApprovedCount.setText(String.valueOf(result.approved));
+    todayRejectedCount.setText(String.valueOf(result.rejected));
+});*/
 
 
     private void openProfile() {

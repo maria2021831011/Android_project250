@@ -36,10 +36,6 @@
         "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.10.2\\com.example.hospitalmanagement.app-main-58:\\drawable\\gradient_orange.xml"
     },
     {
-        "merged": "com.example.hospitalmanagement.app-debug-56:/drawable_doc.jpg.flat",
-        "source": "com.example.hospitalmanagement.app-main-58:/drawable/doc.jpg"
-    },
-    {
         "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.10.2\\com.example.hospitalmanagement.app-debug-56:\\layout_fragment_second.xml.flat",
         "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.10.2\\com.example.hospitalmanagement.app-main-58:\\layout\\fragment_second.xml"
     },
@@ -152,10 +148,6 @@
         "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.10.2\\com.example.hospitalmanagement.app-main-58:\\layout\\activity_doctor_manage_schedule.xml"
     },
     {
-        "merged": "com.example.hospitalmanagement.app-debug-56:/drawable_rounded_button_white.xml.flat",
-        "source": "com.example.hospitalmanagement.app-main-58:/drawable/rounded_button_white.xml"
-    },
-    {
         "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.10.2\\com.example.hospitalmanagement.app-debug-56:\\drawable_card_gradient_blue.xml.flat",
         "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.10.2\\com.example.hospitalmanagement.app-main-58:\\drawable\\card_gradient_blue.xml"
     },
@@ -182,6 +174,10 @@
     {
         "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.10.2\\com.example.hospitalmanagement.app-debug-56:\\drawable_ic_profile.xml.flat",
         "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.10.2\\com.example.hospitalmanagement.app-main-58:\\drawable\\ic_profile.xml"
+    },
+    {
+        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.10.2\\com.example.hospitalmanagement.app-debug-56:\\drawable_doc.jpg.flat",
+        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.10.2\\com.example.hospitalmanagement.app-main-58:\\drawable\\doc.jpg"
     },
     {
         "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.10.2\\com.example.hospitalmanagement.app-debug-56:\\anim_slide_in_right.xml.flat",

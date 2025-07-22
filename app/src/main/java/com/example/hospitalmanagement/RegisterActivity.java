@@ -46,6 +46,8 @@ public class RegisterActivity extends AppCompatActivity {
         String password = passwordEditText.getText().toString().trim();
         String selectedRole = roleSpinner.getSelectedItem().toString().toLowerCase(); // Get the selected role from the Spinner
 
+
+        // Primitive Obsession
         if (email.isEmpty()) {
             emailEditText.setError("Email is required");
             emailEditText.requestFocus();
@@ -56,11 +58,35 @@ public class RegisterActivity extends AppCompatActivity {
             emailEditText.requestFocus();
             return;
         }
+        /*// Create a Validator class
+public class RegistrationValidator {
+    public static boolean validateEmail(EditText emailField) {
+        String email = emailField.getText().toString().trim();
+        if (email.isEmpty()) {
+            emailField.setError("Email is required");
+            return false;
+        }
+        if (!Patterns.EMAIL_ADDRESS.matcher(email).matches()) {
+            emailField.setError("Enter a valid email");
+            return false;
+        }
+        return true;
+    }
+}
+
+// Usage:
+if (!RegistrationValidator.validateEmail(emailEditText)) return;*/
+
+
+
         if (password.isEmpty()) {
             passwordEditText.setError("Password is required");
             passwordEditText.requestFocus();
             return;
         }
+
+
+
         // Firebase registration
         mAuth.createUserWithEmailAndPassword(email, password)
                 .addOnCompleteListener(task -> {
@@ -68,9 +94,32 @@ public class RegisterActivity extends AppCompatActivity {
                         FirebaseUser user = mAuth.getCurrentUser();
                         if (user != null) {
                             String role = selectedRole;
+
+                            //data clumps
                             Map<String, Object> userData = new HashMap<>();
                             userData.put("email", email);
                             userData.put("role", role);
+                            /*// User.java model class
+public class User {
+    private String uid;
+    private String email;
+    private String role;
+
+    public Map<String, Object> toMap() {
+        Map<String, Object> map = new HashMap<>();
+        map.put("email", email);
+        map.put("role", role);
+        return map;
+    }
+}
+
+// Usage:
+User newUser = new User(user.getUid(), email, role);
+db.collection("users").document(user.getUid()).set(newUser.toMap());*/
+
+
+
+
 
                             // Firestore
                             db.collection("users").document(user.getUid())

@@ -340,7 +340,7 @@ public class PatientDashboardActivity extends AppCompatActivity {
             startActivity(intent);
         }
     }
-
+//duplicate code
     private void showAboutHospitalDialog() {
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
         View view = getLayoutInflater().inflate(R.layout.dialog_about_hospital, null);
@@ -364,6 +364,29 @@ public class PatientDashboardActivity extends AppCompatActivity {
         builder.setPositiveButton("Close", (dialog, which) -> dialog.dismiss());
         builder.create().show();
     }
+
+/*private void showDialog(int layoutResId, DialogSetupCallback callback) {
+    AlertDialog.Builder builder = new AlertDialog.Builder(this);
+    View view = getLayoutInflater().inflate(layoutResId, null);
+    builder.setView(view);
+    callback.setup(view);
+    builder.create().show();
+}
+
+interface DialogSetupCallback {
+    void setup(View dialogView);
+}
+
+// Usage:
+showDialog(R.layout.dialog_helpline, view -> {
+    Button btn = view.findViewById(R.id.btnCallHelpline);
+    btn.setOnClickListener(v -> makePhoneCall("01310388215"));
+});*/
+
+
+
+
+
 
     @Override
     public void onRequestPermissionsResult(int requestCode, String[] permissions, int[] grantResults) {

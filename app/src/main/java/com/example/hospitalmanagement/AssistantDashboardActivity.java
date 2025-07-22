@@ -32,8 +32,20 @@ public class AssistantDashboardActivity extends AppCompatActivity {
     private Button sendMessageButton;
     private LinearLayout appointmentsContainer;
     private static final String ASSISTANT_UID = "ICyFihhf1xfBSWPBgtE5YxIAJFC3";
+
+    //specutative generality
     private static final String PATIENT_UID = "au3NyjugG2Z6pJBUN1m9sn5uNo02";
 
+    /*public class UserProvider {
+    private final SharedPreferences prefs;
+
+    public String getCurrentPatientId() {
+        return prefs.getString("current_patient_id");
+    }
+}
+
+// Usage:
+String patientId = userProvider.getCurrentPatientId();*/
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -131,12 +143,27 @@ public class AssistantDashboardActivity extends AppCompatActivity {
                                 default:
                                     appointmentBtn.setBackground(ContextCompat.getDrawable(this, R.drawable.card_gradient_green));
                             }
-
+                           //Shotgun Surgery
                             appointmentBtn.setTextColor(ContextCompat.getColor(this, android.R.color.white));
                             appointmentBtn.setPadding(16, 16, 16, 16);
                             appointmentBtn.setTextSize(14);
                             appointmentBtn.setAllCaps(false);
                             appointmentBtn.setElevation(4);
+
+                            /*public final class ButtonStyles {
+    public static void applyAppointmentStyle(Button button) {
+                                 appointmentBtn.setPadding(16, 16, 16, 16);
+                            appointmentBtn.setTextSize(14);
+                            appointmentBtn.setAllCaps(false);
+                            appointmentBtn.setElevation(4);}
+}
+
+// Usage:
+ButtonStyles.applyAppointmentStyle(appointmentBtn);*/
+
+
+
+
 
                             //margin between buttons
                             LinearLayout.LayoutParams params = (LinearLayout.LayoutParams) appointmentBtn.getLayoutParams();
@@ -205,11 +232,29 @@ public class AssistantDashboardActivity extends AppCompatActivity {
         Map<String, Object> statusMessage = new HashMap<>();
         statusMessage.put("message", message);
         statusMessage.put("timestamp", FieldValue.serverTimestamp());
+//Inappropriate Intimacy
+
 
         db.collection("assistantStatus")
                 .document(PATIENT_UID)
                 .collection("messages")
                 .add(statusMessage)
+
+/* /*public class MessageRepository {
+    private final FirebaseFirestore db;
+
+    public void sendToPatient(String patientId, String message) {
+        // Encapsulates Firestore structure
+        db.collection("assistantStatus")
+          .document(patientId)
+          .collection("messages")
+          .add(createMessage(message));
+    }
+}
+
+messageRepository.sendToPatient(patientId, message);*/
+
+
                 .addOnSuccessListener(documentReference -> {
                     Toast.makeText(this, "Message sent to patient", Toast.LENGTH_SHORT).show();
                     messageInput.setText("");
